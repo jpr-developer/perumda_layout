@@ -52,6 +52,6 @@ Peraturan ini dibuat untuk kebaikan bersama serta untuk melihat kesesuaian dan k
 
 <p align="center">
     <a href="https://perumdajepara.co.id" target="_blank">
-    <img src="https://www.gambaranimasi.org/data/media/466/animasi-bergerak-terima-kasih-0111.gif" width="400" border="0">
+    <img src="https://github.com/andris0405/assets/blob/main/thx_vektor.png" width="100%">
     </a>
 </p>
