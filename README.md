@@ -1,64 +1,57 @@
 <p align="center"><a href="https://perumdajepara.co.id" target="_blank"><img src="https://github.com/andris0405/base_layout_perumda/blob/main/assets/logo/logo.png" width="400"></a></p>
 
+## Tentang Repository
+
+Ini adalag repository untuk website Leadership Dashboard Perumda Aneka Usaha Jepara. Yang dikembangkan dengan menggunakan framework laravel 8. Dengan konsep sistem adalah integrasi atau microservices, maka repository ini hanya untuk client side. Yang berarti tidak ada query database.
+Hanya menggunakan View dan Controller untuk menggunakannya.
+
+## Cara Install
+
+Silahkan clone repository ke laptop / komputer kalian dengan cara
+
+```sh
+git clone https://github.com/jpr-developer/perumda_layout.git
+```
+
+Setelah proses clone selesai, Selanjutnya install dependencies dengan menjalanka perintah
+
+```sh
+composer install
+```
+
+Buka project, lalu buat file .env dan isinya silahkan copy paste dari .env.example
+
+Selanjutnya buat key dengan cara menjalankan perintah
+
+```sh
+php artisan key:generate
+```
+
+Untuk testing apakah berhasil atau tidak, silahkan run local serve kalian dan jalankan perintah
+
+```sh
+php artisan serve
+```
+
+Untuk running laravel
+
+Lalu pada browser kalian, bisa ketik kan http://127.0.0.1:8000/ untuk menjalankan di browser. Jika tampilannya muncul, maka installasi dari repository telah berhasil. Jika tidak maka silahkan ulang proses dari awal, karena kemungkinan ada kesalahan dalam installasi ke laptop / komputer kalian.
+
+### Peraturan Pengembangan
+
+- Silahkan join, dengan cara klik fork
+- Setiap melakukan pull request, silahkan buat branch baru sesuai dengan fitur yang dibuat.
+- Nama branch yang dibuat berdasarkan fitur yang dibuat. Misal fitur 'karyawan', maka nama branch adalah 'karyawan'.
+- Revisi akan dilakukan secara langsung pada file yang di pull request. Dan notifikasi akan dikirimkan lewat email.
+- Setiap pull request baik yang revisi atau tidak, diwajibkan mengisi commit pada github sebelum project di push / pull request.
+- Checking dari project yang dibuat setiap pukul 22.00 WIB. Jika mengirim project setelah waktu yang ditentukan, maka project tidak akan diterima.
+- Pastikan project yang dibuat sesuai dengan arahan dan rancangan yang sudah dibuat. Karena ada penilaiannya.
+- Project yang tidak sesuai, otomatis akan dikembalikan.
+
+Peraturan ini dibuat untuk kebaikan bersama serta untuk melihat kesesuaian dan ketepatan teman - teman dalam mengerjakan project yang diberikan.
+
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <a href="https://perumdajepara.co.id" target="_blank">
+    <img src="https://www.gambaranimasi.org/data/media/466/animasi-bergerak-terima-kasih-0111.gif" width="400" border="0">
+    </a>
 </p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
