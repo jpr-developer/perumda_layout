@@ -1,0 +1,271 @@
+svg.radial-progress {
+    height: auto;
+    max-width: 100px;
+    padding: 1em;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+svg.radial-progress circle {
+    fill: rgba(0,0,0,0);
+    stroke: #fff;
+    stroke-dashoffset: 219.91148575129; /* Circumference */
+    stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+
+svg.radial-progress text {
+    fill: rgb(0, 0, 0);
+    font: 400 1em/1 'Oswald', sans-serif;
+    text-anchor: middle;
+}
+
+svg.radial-progress  circle.primary { stroke: #a2ed56; }
+svg.radial-progress  circle.secondary { stroke: #83e4e2; }
+svg.radial-progress  circle.third { stroke: #fd6470; }
+
+/* Scroll bar color */
+.scrollbar-red::-webkit-scrollbar-thumb {
+    background: #d63939;
+}
+.scrollbar-blue::-webkit-scrollbar-thumb {
+    background: #4299e1;
+}
+.scrollbar-green::-webkit-scrollbar-thumb {
+    background: #2fb344;
+}
+
+.markdown>table thead th, .table-mitra thead th {
+    color: #626976;
+    background: #2fb344;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    line-height: 1.6;
+    color: #141414;
+    padding-top: .8rem;
+    padding-bottom: 0.8rem;
+    white-space: nowrap;
+}
+.markdown>table, .table-mitra {
+    --tblr-table-bg: transparent;
+    --tblr-table-accent-bg: transparent;
+    --tblr-table-striped-color: inherit;
+    --tblr-table-striped-bg: var(--tblr-border-color-light);
+    --tblr-table-active-color: inherit;
+    --tblr-table-active-bg: rgba(0, 0, 0, 0.1);
+    --tblr-table-hover-color: inherit;
+    --tblr-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: inherit;
+    vertical-align: top;
+    border-color: rgba(98,105,118,.16);
+}
+
+.markdown>table>:not(caption)>*>*, .table-mitra>:not(caption)>*>* {
+    padding: 0.75rem 0.5rem;
+    background-color: var(--tblr-table-bg);
+    box-shadow: inset 0 0 0 9999px var(--tblr-table-accent-bg);
+}
+
+.table-mitra tr td:first-child, .table-mitra tr th:first-child {
+    padding-left: 1rem;
+
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 267px;
+    transition: all .3s ease-in-out;
+    z-index: 9999;
+    display: none;
+}
+
+
+.side-top {
+    background-color: #141414f8;
+    top: 0;
+
+}
+
+/* Close */
+.close img{
+    cursor: pointer;
+    height: 20px;
+}
+
+/* End Close */
+/* Logo */
+.logo-box{
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    transition: all .5s ease;
+}
+.logo-brand img{
+    height: 50px;
+}
+/* End Logo */
+
+/* Menu */
+
+.sidebar-list{
+    height: 87%;
+    padding: 10px 0 15px 0;
+    overflow: auto;
+
+}
+.sidebar-group {
+    height: 100%;
+    background-color: #141414e3;
+}
+
+.sidebar-list::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar-list li {
+    margin-bottom: 10px;
+    list-style: none;
+    transition: all .5s ease;
+
+}
+.sidebar-list li:hover {
+    background-color: #141414f8;
+}
+
+.sidebar-list li .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.sidebar-list li.active .title {
+    background-color: #141414;
+}
+
+.sidebar-list li .title img{
+    margin-right: 15px;
+    margin-left: 25px;
+}
+
+.sidebar-list li .title .name {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(235, 235, 235);
+}
+
+a.link {
+    text-decoration: none;
+}
+
+.tombolview {
+    background-color: #FD0499;
+    width: 100px;
+    height: 35px;
+    color: white;
+    border-color: unset;
+    border-radius: 7px;
+}
+
+hr.solid {
+    border-top: 2px solid rgb(65, 63, 63);
+}
+
+/* End Menu */
+
+/* End Sidebar */
+
+/* mitra supplier hover */
+
+a.link1{
+    color:#141414;
+}
+a.link1:hover{
+    color: #2fb344;
+}
+
+
+/* end mitra supplier hover */
+
+/* warna button action tabel */
+
+.bg-pink{
+    background-color: #fd6470;
+}
+
+.bg-pink:hover{
+    background-color: #c21422;
+    color: black;
+}
+
+/* end warna button action tabel */
+
+/* table */
+
+:root {
+    font-size: 16px;
+    height: 100%;
+    --tblr-card-bg: #ffffff;
+    --tblr-card-bg-rgb: 255, 255, 255;
+    --tblr-border-color: #e6e7e9;
+    --tblr-border-color-rgb: 230, 231, 233;
+    --tblr-border-color-light: #2fb344;
+    --tblr-border-color-light-rgb: 242, 243, 244;
+  }
+
+/* end table */
+
+/* active nav */
+
+.active-nav{
+    color: #2fb344 !important;
+}
+
+/* end active nav */
+
+/* dropdown item nav*/
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #2fb344;
+
+}
+
+/* end dropdown item nav */
+
+@media screen and (max-width:768px)
+{
+    .order-md-last {
+        order: 6 !important;
+    }
+      .navbar-expand-md .navbar-nav {
+        flex-direction: row;
+      }
+      .navbar-expand-md .navbar-nav .dropdown-menu {
+        position: absolute;
+      }
+      .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+      }
+      .navbar-expand-md .navbar-nav-scroll {
+        overflow: visible;
+      }
+      .navbar-expand-md .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+      }
+}
