@@ -39,9 +39,9 @@
                     </a>
                 </div>
             </li>
-            <li>
+            <li class="@if(Request::is('products*')) active @endif">
                 <div class="title">
-                    <a href="./product.html" class="link mb-2 mt-2">
+                    <a href="{{url('/products')}}" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/Product_white.png')}}" alt="" class="icon">
                         <span class="name">Produk</span>
                     </a>
