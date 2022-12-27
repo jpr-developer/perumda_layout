@@ -30,13 +30,35 @@ Route::prefix('/employee')->group(function() {
 });
 
 Route::prefix('/mitra')->group(function() {
+    // Supplier
     Route::get('/supplier', function() {
         return view('mitra.supplier.index');
     });
+    Route::get('/supplier/detail', function() {
+        return view('mitra.supplier.detail');
+    });
+
+    // Reseller
     Route::get('/reseller', function() {
         return view('mitra.reseller.index');
     });
+    Route::get('/reseller/detail', function() {
+        return view('mitra.reseller.detail');
+    });
+
+    // Toko
     Route::get('/store', function() {
         return view('mitra.toko.index');
     });
+    Route::get('/store/detail', function() {
+        return view('mitra.toko.detail');
+    });
+});
+
+// Products
+Route::get('/products', function() {
+    return view('product.index');
+});
+Route::get('/products/detail', function() {
+    return view('product.detail');
 });

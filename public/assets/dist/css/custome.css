@@ -46,8 +46,8 @@ svg.radial-progress  circle.third { stroke: #fd6470; }
     letter-spacing: .04em;
     line-height: 1.6;
     color: #141414;
-    padding-top: .8rem;
-    padding-bottom: 0.8rem;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
     white-space: nowrap;
 }
 .markdown>table, .table-mitra {

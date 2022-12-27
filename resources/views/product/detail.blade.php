@@ -1,17 +1,85 @@
 @extends('layout.general')
-@section('title', 'Karyawan')
+@section('title', 'Detail Karyawan')
 
 @section('content')
 <div class="col-md-12">
-    <h1>KARYAWAN BIDANG PERDAGANGAN</h1>
+    <h1>PRODUK BIDANG PERDAGANGAN</h1>
 </div>
 <div class="col-md-12">
-    <div class="card">
+    <div class="card shadow-sm">
         <div class="card-body">
-            <p>
-                <font class="fs-1 fw-bold">Karyawan</font> <br>
-                <a href="" class="text-decoration-underline">Data karyawan</a>
-            </p>
+            <a href="{{url('/products')}}" class="text-decoration-underline fs-2 fw-bold">Produk</a>
+            <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <polyline points="7 7 12 12 7 17"></polyline>
+                <polyline points="13 7 18 12 13 17"></polyline>
+            </svg>
+            <span class="fs-2 fw-bold">Kopi Rojoku Pouds</span>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 text-center">
+                    <img class="rounded-circle" src="{{asset('assets/static/avatars/000f.jpg')}}" alt="" height="200" width="200">
+                </div>
+                <div class="col-md-8 mb-3">
+                    <h2>Kopi Rojoku Pouds</h2>
+                    <span class="fs-3">Kopi</span> <br>
+                    <span class="fs-3">Produk Bidang Perdagangan</span>
+                </div>
+                <hr>
+                <table class="fs-3 table table-borderless">
+                    <tr>
+                        <td>ID produk</td>
+                        <td class="text-end">PR.123456789</td>
+                    </tr>
+                    <tr>
+                        <td>Kategori Produk</td>
+                        <td class="text-end">Kopi</td>
+                    </tr>
+                    <tr>
+                        <td>Sub Kategori Produk</td>
+                        <td class="text-end">Kopi Sachet</td>
+                    </tr>
+                    <tr>
+                        <td>Stok Produk</td>
+                        <td class="text-end">500 DUS</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="mb-3">
+                <h2>Deskripsi Produk</h2>
+                <hr class="mt-1 mb-1">
+                <p class="fs-3">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged. It was popularised in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.
+                </p>
+                <p class="fs-3">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged. It was popularised in
+                    the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including
+                    versions of Lorem Ipsum.
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -20,13 +88,13 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-8 mb-3">
-                    <h2>Data Karyawan Perdagangan</h2>
+                    <h2>Data Produk Perdagangan</h2>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                             <form action="">
-                                <input type="search" class="form-control" placeholder="Cari karyawan ...">
+                                <input type="search" class="form-control" placeholder="Cari produk ...">
                             </form>
                         </div>
                         <div class="col-lg-1 col-md-1 col-sm-1 col-1 me-1">
@@ -71,27 +139,22 @@
                                 </th>
                                 <th style="width: 20%">
                                     <div class="form-control">
-                                        ID Karyawan
+                                        Tanggal
                                     </div>
                                 </th>
                                 <th style="width: 25%">
                                     <div class="form-control">
-                                        Nama Karyawan
+                                        Produk Masuk
                                     </div>
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Posisi Karyawan
+                                        Produk Keluar
                                     </div>
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Status Karyawan
-                                    </div>
-                                </th>
-                                <th style="width: 10%" class="text-center rounded-end">
-                                    <div class="form-control">
-                                        Action
+                                        Sisa Stok
                                     </div>
                                 </th>
                             </thead>
@@ -101,21 +164,16 @@
                                         <span class="form-control border border-0 fs-3">1</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">K.12345678</span>
+                                        <span class="form-control border border-0 fs-3">Selasa, 24 Mei 2022</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Muhammad Fahruddin</span>
+                                        <span class="form-control border border-0 fs-3">20 DUS</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Manager</span>
+                                        <span class="form-control border border-0 fs-3">-</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Aktif</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/employee/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
+                                        <span class="form-control border border-0 fs-3">30 DUS</span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -123,87 +181,16 @@
                                         <span class="form-control border border-0 fs-3">2</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">K.12345678</span>
+                                        <span class="form-control border border-0 fs-3">Senin, 23 Mei 2022</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Endah Mulyana</span>
+                                        <span class="form-control border border-0 fs-3">-</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Staf</span>
+                                        <span class="form-control border border-0 fs-3">10 DUS</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Aktif</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/employee/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">3</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">K.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Andreas Salsabila</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Komisaris</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Aktif</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/employee/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">4</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">K.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Tsaniyatul Faiz</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Staf</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Aktif</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/employee/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">5</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">K.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Agus Alfaridli</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Staf</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Aktif</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/employee/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
+                                        <span class="form-control border border-0 fs-3">10 DUS</span>
                                     </td>
                                 </tr>
                             </tbody>

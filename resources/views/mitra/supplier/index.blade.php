@@ -67,7 +67,7 @@
                     <div class="table-responsive">
                         <table class="table table-borderless">
                             <thead class="card-table">
-                                <th style="width: 5%">
+                                <th style="width: 5%" class="rounded-start">
                                     <div class="form-control">
                                         No
                                     </div>
@@ -92,7 +92,7 @@
                                         Status Supplier
                                     </div>
                                 </th>
-                                <th style="width: 10%" class="text-center">
+                                <th style="width: 10%" class="text-center rounded-end">
                                     <div class="form-control">
                                         Action
                                     </div>
@@ -117,7 +117,7 @@
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/mitra/supplier/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -139,7 +139,7 @@
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/mitra/supplier/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -161,7 +161,7 @@
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/mitra/supplier/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -183,7 +183,7 @@
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/mitra/supplier/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -205,7 +205,7 @@
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/mitra/supplier/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>

@@ -55,7 +55,7 @@
   --tblr-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --tblr-body-font-family: var(--tblr-font-sans-serif);
   --tblr-body-font-size: 0.875rem;
-  --tblr-body-font-weight: 400; 
+  --tblr-body-font-weight: 400;
   --tblr-body-line-height: 1.4285714286;
   --tblr-body-color: #1e293b;
   --tblr-body-bg: #f5f7fb;
@@ -17770,8 +17770,8 @@ a.step-item:hover {
   letter-spacing: 0.04em;
   line-height: 1.6;
   color: #626976;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
   white-space: nowrap;
 }
 @media print {
