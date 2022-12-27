@@ -614,9 +614,9 @@
     });
 </script>
 <!-- Libs JS -->
-<script src="./assets/dist/libs/apexcharts/dist/apexcharts.min.js" defer></script>
+<script src="{{asset('assets/dist/libs/apexcharts/dist/apexcharts.min.js')}}" defer></script>
 <!-- Maps -->
-<script src="./assets/plugin/leaflet.js"></script>
+<script src="{{asset('assets/plugin/leaflet.js')}}"></script>
 <script>
 
     var map = L.map('map', { zoomControl: false }).setView([-6.587920031313035, 110.66716816848049], 13);
