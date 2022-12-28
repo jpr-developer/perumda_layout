@@ -62,3 +62,45 @@ Route::get('/products', function() {
 Route::get('/products/detail', function() {
     return view('product.detail');
 });
+
+// Pergudangan
+Route::prefix('/warehouse')->group(function () {
+    Route::prefix('/pengadaan')->group(function() {
+        // Pemesanan
+        Route::get('/pemesanan', function() {
+            return view('pergudangan.pengadaan.pemesanan.index');
+        });
+        Route::get('/pemesanan/detail', function() {
+            return view('pergudangan.pengadaan.pemesanan.detail');
+        });
+        // Pembayaran
+        Route::get('/pembayaran', function() {
+            return view('pergudangan.pengadaan.pembayaran.index');
+        });
+        Route::get('/pembayaran/detail', function() {
+            return view('pergudangan.pengadaan.pembayaran.detail');
+        });
+        // Retur
+        Route::get('/retur', function() {
+            return view('pergudangan.pengadaan.retur.index');
+        });
+        Route::get('/retur/detail', function() {
+            return view('pergudangan.pengadaan.retur.detail');
+        });
+    });
+
+    Route::prefix('/penyimpanan')->group(function() {
+         // Opname
+         Route::get('/opname', function() {
+            return view('pergudangan.penyimpanan.opname.index');
+        });
+        Route::get('/opname/detail', function() {
+            return view('pergudangan.penyimpanan.opname.detail');
+        });
+
+         // Spoil
+         Route::get('/spoil', function() {
+            return view('pergudangan.penyimpanan.spoil.index');
+        });
+    });
+});

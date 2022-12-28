@@ -243,6 +243,10 @@ a.link1:hover{
     background-color: #2fb344;
 
 }
+.dropdown-active {
+    color: #fff;
+    background-color: #2fb344;
+}
 
 /* end dropdown item nav */
 
