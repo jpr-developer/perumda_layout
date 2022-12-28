@@ -1,4 +1,4 @@
-<p align="center"><a href="https://perumdajepara.co.id" target="_blank"><img src="https://github.com/andris0405/base_layout_perumda/blob/main/assets/logo/logo.png" width="400"></a></p>
+<p align="center"><a href="https://perumdajepara.co.id" target="_blank"><img src="https://github.com/jpr-developer/base_layout_perumda/blob/master/assets/logo/logo.png" width="400"></a></p>
 
 ## Tentang Repository
 
