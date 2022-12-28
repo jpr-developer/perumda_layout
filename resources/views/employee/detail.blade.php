@@ -61,49 +61,49 @@
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="mb-3">
-                <h2>Posisi Kepegawaian</h2>
+                <h2>Informasi Kepegawaian</h2>
                 <hr class="mt-1 mb-1">
                 <div class="table-responsive">
                     <table class="fs-3 table table-borderless">
                         <tr>
-                            <td>Alamat</td>
-                            <td class="text-end">Jl. Pemuda No.03</td>
+                            <td>No Induk Karyawan</td>
+                            <td class="text-end">876788787687</td>
                         </tr>
                         <tr>
-                            <td>Tempat, Tanggal Lahir</td>
-                            <td class="text-end">Jepara, 20 Mei 1990</td>
+                            <td>Tanggal Bergabung</td>
+                            <td class="text-end">20 Mei 2020</td>
                         </tr>
                         <tr>
-                            <td>No Telepon</td>
-                            <td class="text-end">+62 8945 9878 4567</td>
+                            <td>Posisi</td>
+                            <td class="text-end">Bidang Perdangan</td>
                         </tr>
                         <tr>
-                            <td>Email</td>
-                            <td class="text-end">muhammadfahruddin@gmail.com</td>
+                            <td>Jabatan</td>
+                            <td class="text-end">Manager</td>
+                        </tr>
+                        <tr>
+                            <td>Status Kepegawaian</td>
+                            <td class="text-end">Honorer</td>
+                        </tr>
+                        <tr>
+                            <td>No Kontrak</td>
+                            <td class="text-end">34398437532</td>
                         </tr>
                     </table>
                 </div>
             </div>
             <div>
-                <h2>Status Kepegawaian</h2>
+                <h2>Hak Akses</h2>
                 <hr class="mt-1 mb-1">
                 <div class="table-responsive">
                     <table class="fs-3 table table-borderless">
                         <tr>
-                            <td>Alamat</td>
-                            <td class="text-end">Jl. Pemuda No.03</td>
+                            <td>Role User / Privilage</td>
+                            <td class="text-end">Admin Perumda</td>
                         </tr>
                         <tr>
-                            <td>Tempat, Tanggal Lahir</td>
-                            <td class="text-end">Jepara, 20 Mei 1990</td>
-                        </tr>
-                        <tr>
-                            <td>No Telepon</td>
-                            <td class="text-end">+62 8945 9878 4567</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td class="text-end">muhammadfahruddin@gmail.com</td>
+                            <td>Status</td>
+                            <td class="text-end">Aktif</td>
                         </tr>
                     </table>
                 </div>

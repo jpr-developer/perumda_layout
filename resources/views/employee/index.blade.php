@@ -86,7 +86,7 @@
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Status Karyawan
+                                        Jabatan
                                     </div>
                                 </th>
                                 <th style="width: 10%" class="text-center rounded-end">
@@ -107,10 +107,10 @@
                                         <span class="form-control border border-0 fs-3">Muhammad Fahruddin</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Manager</span>
+                                        <span class="form-control border border-0 fs-3">Bidang Perdagangan</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Aktif</span>
+                                        <span class="form-control border border-0 fs-3">Manager</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
@@ -126,13 +126,13 @@
                                         <span class="form-control border border-0 fs-3">K.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Endah Mulyana</span>
+                                        <span class="form-control border border-0 fs-3">Muhammad Fahruddin</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Staf</span>
+                                        <span class="form-control border border-0 fs-3">Bidang Perdagangan</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Aktif</span>
+                                        <span class="form-control border border-0 fs-3">Manager</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
@@ -148,13 +148,13 @@
                                         <span class="form-control border border-0 fs-3">K.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Andreas Salsabila</span>
+                                        <span class="form-control border border-0 fs-3">Muhammad Fahruddin</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Komisaris</span>
+                                        <span class="form-control border border-0 fs-3">Bidang Perdagangan</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Aktif</span>
+                                        <span class="form-control border border-0 fs-3">Manager</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
@@ -170,35 +170,13 @@
                                         <span class="form-control border border-0 fs-3">K.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Tsaniyatul Faiz</span>
+                                        <span class="form-control border border-0 fs-3">Muhammad Fahruddin</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Staf</span>
+                                        <span class="form-control border border-0 fs-3">Bidang Perdagangan</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Aktif</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/employee/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">5</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">K.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Agus Alfaridli</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Staf</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Aktif</span>
+                                        <span class="form-control border border-0 fs-3">Manager</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
