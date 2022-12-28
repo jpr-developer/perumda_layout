@@ -49,7 +49,7 @@
             </li>
             <li class="@if(Request::is('warehouse*')) active @endif">
                 <div class="title">
-                    <a href="{{url('/warehouse/pengadaan/pemesanan')}}" class="link mb-2 mt-2">
+                    <a href="{{url('/warehouse/stock')}}" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/warehouse_white.png')}}" alt="" class="icon">
                         <span class="name">Pergudangan</span>
                     </a>

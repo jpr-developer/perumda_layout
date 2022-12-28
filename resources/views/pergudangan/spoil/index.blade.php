@@ -1,10 +1,11 @@
 @extends('layout.general')
-@section('title', 'Spoil')
+@section('title', 'Opname')
 
 @section('content')
 <div class="col-md-12">
-    <h1>PERGUDANGAN BIDANG PERDAGANGAN</h1>
+    <h1>SPOIL PRODUK BIDANG PERDAGANGAN</h1>
 </div>
+
 {{-- Include Nav Menu Start --}}
 @include('pergudangan.layout.nav-menu')
 {{-- Include Nav Menu End --}}
@@ -12,8 +13,8 @@
     <div class="card">
         <div class="card-body">
             <p>
-                <font class="fs-1 fw-bold">Spoil</font> <br>
-                <a href="" class="text-decoration-underline">Data spoil</a>
+                <font class="fs-1 fw-bold">Spoil Produk</font> <br>
+                <a href="" class="text-decoration-underline">Data spoil produk</a>
             </p>
         </div>
     </div>
@@ -84,12 +85,17 @@
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Jumlah
+                                        Kategori Produk
                                     </div>
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Tanggal
+                                        Sub Kategori Produk
+                                    </div>
+                                </th>
+                                <th style="width: 10%" class="rounded-end">
+                                    <div class="form-control">
+                                        Stok Spoil
                                     </div>
                                 </th>
                             </thead>
@@ -99,16 +105,79 @@
                                         <span class="form-control border border-0 fs-3">1</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">OPNM.12345678</span>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">10 PCS</span>
+                                        <span class="form-control border border-0 fs-3">Kopi</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Selasa, 24 Mei 2022</span>
+                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">20 DUS</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <span class="form-control border border-0 fs-3">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">Kopi</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">20 DUS</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <span class="form-control border border-0 fs-3">3</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">Kopi</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">20 DUS</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center">
+                                        <span class="form-control border border-0 fs-3">4</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">Kopi</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">20 DUS</span>
                                     </td>
                                 </tr>
                             </tbody>

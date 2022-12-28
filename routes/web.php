@@ -65,42 +65,26 @@ Route::get('/products/detail', function() {
 
 // Pergudangan
 Route::prefix('/warehouse')->group(function () {
-    Route::prefix('/pengadaan')->group(function() {
-        // Pemesanan
-        Route::get('/pemesanan', function() {
-            return view('pergudangan.pengadaan.pemesanan.index');
-        });
-        Route::get('/pemesanan/detail', function() {
-            return view('pergudangan.pengadaan.pemesanan.detail');
-        });
-        // Pembayaran
-        Route::get('/pembayaran', function() {
-            return view('pergudangan.pengadaan.pembayaran.index');
-        });
-        Route::get('/pembayaran/detail', function() {
-            return view('pergudangan.pengadaan.pembayaran.detail');
-        });
-        // Retur
-        Route::get('/retur', function() {
-            return view('pergudangan.pengadaan.retur.index');
-        });
-        Route::get('/retur/detail', function() {
-            return view('pergudangan.pengadaan.retur.detail');
-        });
+    // Stock
+    Route::get('/stock', function() {
+        return view('pergudangan.stock.index');
     });
-
-    Route::prefix('/penyimpanan')->group(function() {
-         // Opname
-         Route::get('/opname', function() {
-            return view('pergudangan.penyimpanan.opname.index');
-        });
-        Route::get('/opname/detail', function() {
-            return view('pergudangan.penyimpanan.opname.detail');
-        });
-
-         // Spoil
-         Route::get('/spoil', function() {
-            return view('pergudangan.penyimpanan.spoil.index');
-        });
+    // Opname
+    Route::get('/opname', function() {
+        return view('pergudangan.opname.index');
+    });
+    Route::get('/opname/detail', function() {
+        return view('pergudangan.opname.detail');
+    });
+    // Spoil
+    Route::get('/spoil', function() {
+        return view('pergudangan.spoil.index');
+    });
+    // Arus Distribusi
+    Route::get('/arus-distribusi', function() {
+        return view('pergudangan.arus_distribusi.index');
+    });
+    Route::get('/arus-distribusi/detail', function() {
+        return view('pergudangan.arus_distribusi.detail');
     });
 });

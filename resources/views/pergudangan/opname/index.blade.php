@@ -1,10 +1,11 @@
 @extends('layout.general')
-@section('title', 'Pemesanan')
+@section('title', 'Opname')
 
 @section('content')
 <div class="col-md-12">
-    <h1>PERGUDANGAN BIDANG PERDAGANGAN</h1>
+    <h1>OPNAME PRODUK BIDANG PERDAGANGAN</h1>
 </div>
+
 {{-- Include Nav Menu Start --}}
 @include('pergudangan.layout.nav-menu')
 {{-- Include Nav Menu End --}}
@@ -12,8 +13,8 @@
     <div class="card">
         <div class="card-body">
             <p>
-                <font class="fs-1 fw-bold">Retur Pemesanan</font> <br>
-                <a href="" class="text-decoration-underline">Data retur pemesanan</a>
+                <font class="fs-1 fw-bold">Opname Produk</font> <br>
+                <a href="" class="text-decoration-underline">Data opname produk</a>
             </p>
         </div>
     </div>
@@ -23,7 +24,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-8 mb-3">
-                    <h2>Data Retur Pemesanan Produk</h2>
+                    <h2>Data Opname Produk</h2>
                 </div>
                 <div class="col-md-4 mb-3">
                     <div class="row">
@@ -74,7 +75,7 @@
                                 </th>
                                 <th style="width: 20%">
                                     <div class="form-control">
-                                        ID Retur Pemesanan
+                                        ID Opname
                                     </div>
                                 </th>
                                 <th style="width: 25%">
@@ -84,12 +85,12 @@
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Tanggal Retur Pemesanan
+                                        Kategori Produk
                                     </div>
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Supplier
+                                        Sub Kategori Produk
                                     </div>
                                 </th>
                                 <th style="width: 10%" class="text-center rounded-end">
@@ -104,20 +105,20 @@
                                         <span class="form-control border border-0 fs-3">1</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">RT/RO.12345678</span>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Selasa, 24 Mei 2022</span>
+                                        <span class="form-control border border-0 fs-3">Kopi</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">PT. Indah Jaya</span>
+                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/warehouse/pengadaan/retur/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/warehouse/opname/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -126,20 +127,20 @@
                                         <span class="form-control border border-0 fs-3">2</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">RT/RO.12345678</span>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Selasa, 24 Mei 2022</span>
+                                        <span class="form-control border border-0 fs-3">Kopi</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">PT. Indah Jaya</span>
+                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/warehouse/pengadaan/retur/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/warehouse/opname/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -148,20 +149,20 @@
                                         <span class="form-control border border-0 fs-3">3</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">RT/RO.12345678</span>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Selasa, 24 Mei 2022</span>
+                                        <span class="form-control border border-0 fs-3">Kopi</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">PT. Indah Jaya</span>
+                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/warehouse/pengadaan/retur/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/warehouse/opname/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -170,20 +171,20 @@
                                         <span class="form-control border border-0 fs-3">4</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">RT/RO.12345678</span>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Selasa, 24 Mei 2022</span>
+                                        <span class="form-control border border-0 fs-3">Kopi</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">PT. Indah Jaya</span>
+                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/warehouse/pengadaan/retur/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/warehouse/opname/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>

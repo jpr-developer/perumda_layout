@@ -1,19 +1,18 @@
 @extends('layout.general')
-@section('title', 'Detail Pemesanan')
+@section('title', 'Opname')
 
 @section('content')
 <div class="col-md-12">
-    <h1>PERGUDANGAN BIDANG PERDAGANGAN</h1>
+    <h1>OPNAME PRODUK BIDANG PERDAGANGAN</h1>
 </div>
 {{-- Include Nav Menu Start --}}
 @include('pergudangan.layout.nav-menu')
 {{-- Include Nav Menu End --}}
 
-
 <div class="col-md-12">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/warehouse/penyimpanan/opname')}}" class="text-decoration-underline fs-2 fw-bold">Opname</a>
+            <a href="{{url('/warehouse/opname')}}" class="text-decoration-underline fs-2 fw-bold">Opname Produk</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
@@ -50,10 +49,6 @@
                         <td>Sub Kategori Produk</td>
                         <td class="text-end">Kopi Sachet</td>
                     </tr>
-                    <tr>
-                        <td>Stok Produk</td>
-                        <td class="text-end">120 DUS</td>
-                    </tr>
                 </table>
             </div>
         </div>
@@ -63,41 +58,37 @@
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="mb-3">
-                <h2>Hasil Opname</h2>
+                <h2>Status Opname Produk</h2>
                 <hr class="mt-1 mb-1">
                 <div class="table-responsive">
-                    <table class="fs-3 table-md table table-borderless">
+                    <table class="fs-3 table table-borderless">
                         <tr>
                             <td>ID Opname</td>
-                            <td class="text-end">OPNM.123456789</td>
+                            <td class="text-end">SP.123456789</td>
                         </tr>
                         <tr>
                             <td>Tanggal Opname</td>
-                            <td class="text-end">Selasa, 24 Mei 2022</td>
+                            <td class="text-end">Selasa, 20 Maret 2022</td>
                         </tr>
                         <tr>
-                            <td>Petugas</td>
-                            <td class="text-end">Angga Hendrawan</td>
+                            <td>Petugas Opname</td>
+                            <td class="text-end">Andre Irawan</td>
                         </tr>
                         <tr>
-                            <td>Total Produk Opname</td>
-                            <td class="text-end">100 DUS</td>
+                            <td>Stok Aktual</td>
+                            <td class="text-end">300 DUS</td>
+                        </tr>
+                        <tr>
+                            <td>Stok Opname</td>
+                            <td class="text-end">280 DUS</td>
                         </tr>
                         <tr>
                             <td>Selisih</td>
                             <td class="text-end">20 DUS</td>
                         </tr>
                         <tr>
-                            <td>Status Opname</td>
-                            <td class="text-end">
-                                <span class="badge bg-danger">Tidak Sesuai</span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                Keterangan Opname<br>
-                                <textarea class="form-control" disabled id="" cols="30" rows="10" style="height: 80px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</textarea>
-                            </td>
+                            <td>Penyesuaian</td>
+                            <td class="text-end"></td>
                         </tr>
                     </table>
                 </div>
@@ -105,5 +96,4 @@
         </div>
     </div>
 </div>
-
 @endsection
