@@ -89,11 +89,6 @@
                                         Sub Kategori Produk
                                     </div>
                                 </th>
-                                <th style="width: 15%">
-                                    <div class="form-control">
-                                        Stok Produk
-                                    </div>
-                                </th>
                                 <th style="width: 10%" class="text-center rounded-end">
                                     <div class="form-control">
                                         Action
@@ -118,9 +113,6 @@
                                         <span class="form-control border border-0 fs-3">Kopi Sachet</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">500 DUS</span>
-                                    </td>
-                                    <td>
                                         <div style="width: 75%;">
                                             <a href="{{url('/products/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
@@ -141,9 +133,6 @@
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">500 DUS</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
@@ -168,9 +157,6 @@
                                         <span class="form-control border border-0 fs-3">Kopi Sachet</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">500 DUS</span>
-                                    </td>
-                                    <td>
                                         <div style="width: 75%;">
                                             <a href="{{url('/products/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
@@ -191,9 +177,6 @@
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">500 DUS</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
