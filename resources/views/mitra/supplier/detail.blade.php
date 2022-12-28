@@ -93,7 +93,7 @@
                         <tr>
                             <td>Dokumen Kontrak Kerjasama</td>
                             <td class="text-end">
-                                <a href="" class="btn btn-dribbble">Lihat Dokumen</a>
+                                <a href="" class="btn btn-dribbble" data-bs-toggle="modal" data-bs-target="#modal-contract">Lihat Dokumen</a>
                             </td>
                         </tr>
                     </table>
@@ -524,6 +524,21 @@
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary">Import</button>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal modal-blur fade" id="modal-contract" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Dokumen Kontrak Kerjasama</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://berita.99.co/wp-content/uploads/2020/11/kartap.jpg" alt="" width="100%">
             </div>
         </div>
     </div>
