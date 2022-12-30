@@ -49,23 +49,23 @@
             </li>
             <li class="@if(Request::is('warehouse*')) active @endif">
                 <div class="title">
-                    <a href="{{url('/warehouse/stock')}}" class="link mb-2 mt-2">
+                    <a href="{{url('/warehouse/pemesanan')}}" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/warehouse_white.png')}}" alt="" class="icon">
                         <span class="name">Pergudangan</span>
                     </a>
                 </div>
             </li>
-            <li>
+            <li class="@if(Request::is('penjualan*')) active @endif">
                 <div class="title">
-                    <a href="laporan_penjualan.html" class="link mb-2 mt-2">
+                    <a href="{{url('/penjualan')}}" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/penjualan_white.png')}}" alt="" class="icon">
                         <span class="name">Penjualan</span>
                     </a>
                 </div>
             </li>
-            <li>
+            <li class="@if(Request::is('pengiriman*')) active @endif">
                 <div class="title">
-                    <a href="jadwal_pengiriman.html" class="link mb-2 mt-2">
+                    <a href="{{url('/pengiriman/permintaan')}}" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/Pengiriman_white.png')}}" alt="" class="icon">
                         <span class="name">Pengiriman</span>
                     </a>

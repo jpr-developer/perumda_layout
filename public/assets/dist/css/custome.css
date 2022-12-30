@@ -273,3 +273,10 @@ a.link1:hover{
         flex-basis: auto;
       }
 }
+
+.link-custome {
+    color: rgb(78, 78, 78);
+}
+.link-custome:hover {
+    color: green;
+}

@@ -65,6 +65,10 @@ Route::get('/products/detail', function() {
 
 // Pergudangan
 Route::prefix('/warehouse')->group(function () {
+    // Pemesanan
+    Route::get('/pemesanan', function() {
+        return view('pergudangan.pemesanan.index');
+    });
     // Stock
     Route::get('/stock', function() {
         return view('pergudangan.stock.index');
@@ -86,5 +90,38 @@ Route::prefix('/warehouse')->group(function () {
     });
     Route::get('/arus-distribusi/detail', function() {
         return view('pergudangan.arus_distribusi.detail');
+    });
+});
+
+Route::prefix('/penjualan')->group(function() {
+    Route::get('/', function() {
+        return view('penjualan.sales.index');
+    });
+    Route::get('/detail', function() {
+        return view('penjualan.sales.detail');
+    });
+
+    // Retur Penjualan
+    Route::get('/retur', function() {
+        return view('penjualan.retur.index');
+    });
+    // Spoil Penjualan
+    Route::get('/spoil', function() {
+        return view('penjualan.spoil.index');
+    });
+});
+
+Route::prefix('/pengiriman')->group(function() {
+    Route::get('/permintaan', function() {
+        return view('pengiriman.permintaan.index');
+    });
+    Route::get('/permintaan/detail', function() {
+        return view('pengiriman.permintaan.detail');
+    });
+    Route::get('/retur', function() {
+        return view('pengiriman.retur.index');
+    });
+    Route::get('/spoil', function() {
+        return view('pengiriman.spoil.index');
     });
 });
