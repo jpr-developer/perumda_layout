@@ -280,3 +280,11 @@ a.link1:hover{
 .link-custome:hover {
     color: green;
 }
+
+.carousel-indicators {
+    margin-bottom: -4rem;
+}
+.carousel-indicators-thumb [data-bs-target]
+{
+    opacity: 100%;
+}

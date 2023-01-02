@@ -2,9 +2,6 @@
 @section('title', 'Opname')
 
 @section('content')
-<div class="col-md-12">
-    <h1>OPNAME PRODUK BIDANG PERDAGANGAN</h1>
-</div>
 {{-- Include Nav Menu Start --}}
 @include('pergudangan.layout.nav-menu')
 {{-- Include Nav Menu End --}}

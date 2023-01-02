@@ -55,17 +55,17 @@
                                 </th>
                                 <th style="width: 25%">
                                     <div class="form-control">
-                                        Nama Produk
-                                    </div>
-                                </th>
-                                <th style="width: 15%">
-                                    <div class="form-control">
-                                        Jumlah Spoil
+                                        Tanggal Spoil
                                     </div>
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
                                         Nominal
+                                    </div>
+                                </th>
+                                <th style="width: 10%" class="text-center rounded-end">
+                                    <div class="form-control">
+                                        Action
                                     </div>
                                 </th>
                             </thead>
@@ -78,13 +78,15 @@
                                         <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">100 PCS</span>
+                                        <span class="form-control border border-0 fs-3">20 Mei 2022</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Rp 1.500.000</span>
+                                    </td>
+                                    <td>
+                                        <div style="width: 75%;">
+                                            <a href="{{url('/penjualan/spoil/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>

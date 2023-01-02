@@ -71,9 +71,9 @@
                     </a>
                 </div>
             </li>
-            <li>
+            <li class="@if(Request::is('operasional*')) active @endif">
                 <div class="title">
-                    <a href="" class="link mb-2 mt-2">
+                    <a href="{{url('/operasional/bisnis')}}" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/operasional.png')}}" alt="" class="icon">
                         <span class="name">Operasional</span>
                     </a>

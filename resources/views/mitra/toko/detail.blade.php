@@ -12,7 +12,7 @@
 <div class="col-md-12">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/mitra/supplier')}}" class="text-decoration-underline fs-2 fw-bold">Mitra Toko</a>
+            <a href="{{url('/mitra/store')}}" class="text-decoration-underline fs-2 fw-bold">Mitra Toko</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
@@ -106,37 +106,17 @@
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-8 mb-3">
+                <div class="col-md-9 mb-3">
                     <h2>Data Transaksi Toko Indah Lestari</h2>
                 </div>
-                <div class="col-md-4 mb-3">
+                <div class="col-md-3 mb-3">
                     <div class="row">
-                        <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                        <div class="col-md-10 col-10">
                             <form action="">
-                                <input type="search" class="form-control" placeholder="Cari Toko ...">
+                                <input type="search" class="form-control" placeholder="Cari produk ...">
                             </form>
                         </div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 me-1">
-                            <a href="#" class="btn btn-danger w-100 btn-icon" aria-label="Upload" data-bs-toggle="modal" data-bs-target="#modal-upload">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-upload" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"></path>
-                                    <polyline points="9 15 12 12 15 15"></polyline>
-                                    <line x1="12" y1="12" x2="12" y2="21"></line>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 me-1">
-                            <a href="#" class="btn btn-success w-100 btn-icon" aria-label="Download">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4"></path>
-                                    <line x1="12" y1="13" x2="12" y2="22"></line>
-                                    <polyline points="9 19 12 22 15 19"></polyline>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class=" col-lg-1 col-md-1 col-sm-1 col-1 me-1">
+                        <div class="col-md-2 col-2">
                             <a href="#" class="btn btn-rss w-100 btn-icon" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -171,14 +151,9 @@
                                         Nominal
                                     </div>
                                 </th>
-                                <th style="width: 15%">
-                                    <div class="form-control">
-                                        Metode Pembayaran
-                                    </div>
-                                </th>
                                 <th style="width: 10%" class="text-center rounded-end">
                                     <div class="form-control">
-                                        Nota
+                                        Action
                                     </div>
                                 </th>
                             </thead>
@@ -197,77 +172,8 @@
                                         <span class="form-control border border-0 fs-3">Rp. 1.500.000</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Transfer</span>
-                                    </td>
-                                    <td>
                                         <div style="width: 75%;">
-                                            <a href="" class="btn btn-dribbble form-control mx-2" data-bs-toggle="modal" data-bs-target="#modal-nota">Lihat</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">2</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">TR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">20 Mei 2022</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Rp. 1.500.000</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Transfer</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="" class="btn btn-dribbble form-control mx-2">Lihat</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">3</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">TR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">20 Mei 2022</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Rp. 1.500.000</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Transfer</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="" class="btn btn-dribbble form-control mx-2">Lihat</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">4</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">TR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">20 Mei 2022</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Rp. 1.500.000</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Transfer</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="" class="btn btn-dribbble form-control mx-2">Lihat</a>
+                                            <a href="{{url('/mitra/store/detail/transaksi')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -322,7 +228,15 @@
 </div>
 <div class="col-md-6">
     <div class="card shadow-sm" style="height: 20rem">
-        <h2 class="ms-3 mt-3">Data Piutang</h2>
+        <h2 class="ms-3 mt-3">Piutang Toko</h2>
+        <div class="mx-3">
+            <table class="fs-3 fw-bold w-100">
+                <tr>
+                    <td>Tanggal</td>
+                    <td class="text-end">Nominal</td>
+                </tr>
+            </table>
+        </div>
         <div class="card-body card-body-scrollable card-body-scrollable-shadow">
             <table class="table table-borderless fs-3">
                 <tr>
@@ -348,6 +262,14 @@
                 <tr>
                     <td>20 Mei 2022</td>
                     <td class="text-end">Rp. 500.000</td>
+                </tr>
+            </table>
+        </div>
+        <div class="mx-3 m-2">
+            <table class="fs-3 w-100">
+                <tr>
+                    <td class="fw-bold">Total</td>
+                    <td class="text-end fw-bold">Rp. 1.000.000</td>
                 </tr>
             </table>
         </div>

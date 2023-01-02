@@ -37,6 +37,9 @@ Route::prefix('/mitra')->group(function() {
     Route::get('/supplier/detail', function() {
         return view('mitra.supplier.detail');
     });
+    Route::get('/supplier/detail/transaksi', function() {
+        return view('mitra.supplier.detail-transaksi');
+    });
 
     // Reseller
     Route::get('/reseller', function() {
@@ -45,6 +48,9 @@ Route::prefix('/mitra')->group(function() {
     Route::get('/reseller/detail', function() {
         return view('mitra.reseller.detail');
     });
+    Route::get('/reseller/detail/transaksi', function() {
+        return view('mitra.reseller.detail-transaksi');
+    });
 
     // Toko
     Route::get('/store', function() {
@@ -52,6 +58,9 @@ Route::prefix('/mitra')->group(function() {
     });
     Route::get('/store/detail', function() {
         return view('mitra.toko.detail');
+    });
+    Route::get('/store/detail/transaksi', function() {
+        return view('mitra.toko.detail-transaksi');
     });
 });
 
@@ -69,6 +78,9 @@ Route::prefix('/warehouse')->group(function () {
     Route::get('/pemesanan', function() {
         return view('pergudangan.pemesanan.index');
     });
+    Route::get('/pemesanan/detail', function() {
+        return view('pergudangan.pemesanan.detail');
+    });
     // Stock
     Route::get('/stock', function() {
         return view('pergudangan.stock.index');
@@ -84,12 +96,15 @@ Route::prefix('/warehouse')->group(function () {
     Route::get('/spoil', function() {
         return view('pergudangan.spoil.index');
     });
-    // Arus Distribusi
-    Route::get('/arus-distribusi', function() {
-        return view('pergudangan.arus_distribusi.index');
+    Route::get('/spoil/detail', function() {
+        return view('pergudangan.spoil.detail');
     });
-    Route::get('/arus-distribusi/detail', function() {
-        return view('pergudangan.arus_distribusi.detail');
+    // Arus Produk
+    Route::get('/arus-produk', function() {
+        return view('pergudangan.arus_produk.index');
+    });
+    Route::get('/arus-produk/detail', function() {
+        return view('pergudangan.arus_produk.detail');
     });
 });
 
@@ -105,9 +120,15 @@ Route::prefix('/penjualan')->group(function() {
     Route::get('/retur', function() {
         return view('penjualan.retur.index');
     });
+    Route::get('/retur/detail', function() {
+        return view('penjualan.retur.detail');
+    });
     // Spoil Penjualan
     Route::get('/spoil', function() {
         return view('penjualan.spoil.index');
+    });
+    Route::get('/spoil/detail', function() {
+        return view('penjualan.spoil.detail');
     });
 });
 
@@ -123,5 +144,22 @@ Route::prefix('/pengiriman')->group(function() {
     });
     Route::get('/spoil', function() {
         return view('pengiriman.spoil.index');
+    });
+});
+
+Route::prefix('/operasional')->group(function() {
+    // Bisnis
+    Route::get('/bisnis', function() {
+        return view('operasional.bisnis.index');
+    });
+    Route::get('/bisnis/detail', function() {
+        return view('operasional.bisnis.detail');
+    });
+    // Non Bisnis
+    Route::get('/non-bisnis', function() {
+        return view('operasional.non_bisnis.index');
+    });
+    Route::get('/non-bisnis/detail', function() {
+        return view('operasional.non_bisnis.detail');
     });
 });

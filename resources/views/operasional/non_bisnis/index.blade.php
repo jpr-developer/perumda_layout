@@ -1,16 +1,14 @@
 @extends('layout.general')
-@section('title', 'Stock')
 
 @section('content')
-{{-- Include Nav Menu Start --}}
-@include('pergudangan.layout.nav-menu')
-{{-- Include Nav Menu End --}}
+@include('operasional.layout.nav-menu')
+
 <div class="col-md-12">
     <div class="card">
         <div class="card-body">
             <p>
-                <font class="fs-1 fw-bold">Stok Produk</font> <br>
-                <a href="" class="text-decoration-underline">Data stok produk</a>
+                <font class="fs-1 fw-bold">Operasional Non Bisnis</font> <br>
+                <a href="" class="text-decoration-underline">Data operasional non bisnis</a>
             </p>
         </div>
     </div>
@@ -20,7 +18,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-9 mb-3">
-                    <h2>Data Stok Produk</h2>
+                    <h2>Data Operasional Non Bisnis</h2>
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="row">
@@ -39,6 +37,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-12">
                     <div class="table-responsive">
                         <table class="table table-borderless">
@@ -50,27 +49,22 @@
                                 </th>
                                 <th style="width: 20%">
                                     <div class="form-control">
-                                        ID Produk
+                                        ID Operasional Non Bisnis
                                     </div>
                                 </th>
                                 <th style="width: 25%">
                                     <div class="form-control">
-                                        Nama Produk
+                                        Tanggal
                                     </div>
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Kategori Produk
-                                    </div>
-                                </th>
-                                <th style="width: 15%">
-                                    <div class="form-control">
-                                        Sub Kategori Produk
+                                        Nominal
                                     </div>
                                 </th>
                                 <th style="width: 10%" class="text-center rounded-end">
                                     <div class="form-control">
-                                        Stok
+                                        Action
                                     </div>
                                 </th>
                             </thead>
@@ -83,76 +77,15 @@
                                         <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
+                                        <span class="form-control border border-0 fs-3">Selasa, 24 Mei 2022</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
+                                        <span class="form-control border border-0 fs-3">Rp 2.500.000</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">100 DUS</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">2</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">100 DUS</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">3</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">100 DUS</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">4</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">100 DUS</span>
+                                        <div style="width: 75%;">
+                                            <a href="{{url('/operasional/non-bisnis/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>

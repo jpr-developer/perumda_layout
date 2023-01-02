@@ -1,4 +1,7 @@
 <div class="col-md-12">
+    <h1>PERGUDANGAN BIDANG PERDAGANGAN</h1>
+</div>
+<div class="col-md-12">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
@@ -55,7 +58,7 @@
                     </a>
                 </div>
                 <div class="col-md-2 col-4">
-                    <a href="{{url('/warehouse/arus-distribusi')}}" class="d-flex align-items-center @if(Request::is('warehouse/arus-distribusi*')) active-nav @else link-secondary @endif">
+                    <a href="{{url('/warehouse/arus-produk')}}" class="d-flex align-items-center @if(Request::is('warehouse/arus-produk*')) active-nav @else link-secondary @endif">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -64,7 +67,7 @@
                                 <path d="M4 12v6a8 3 0 0 0 16 0v-6"></path>
                             </svg>
                         </span>
-                        <span class="fs-3 fw-bolder">Arus Distribusi</span>
+                        <span class="fs-3 fw-bolder">Arus Produk</span>
                     </a>
                 </div>
             </div>

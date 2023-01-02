@@ -58,14 +58,14 @@
                                         Tanggal Retur
                                     </div>
                                 </th>
-                                <th style="width: 25%">
-                                    <div class="form-control">
-                                        Nama Produk
-                                    </div>
-                                </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
                                         Nominal
+                                    </div>
+                                </th>
+                                <th style="width: 10%" class="text-center rounded-end">
+                                    <div class="form-control">
+                                        Action
                                     </div>
                                 </th>
                             </thead>
@@ -81,10 +81,12 @@
                                         <span class="form-control border border-0 fs-3">Selasa, 20 Mei 2022</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
+                                        <span class="form-control border border-0 fs-3">RP. 1.500.000</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">RP. 1.500.000</span>
+                                        <div style="width: 75%;">
+                                            <a href="{{url('/penjualan/retur/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>
