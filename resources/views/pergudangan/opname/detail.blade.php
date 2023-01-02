@@ -85,7 +85,7 @@
                         </tr>
                         <tr>
                             <td>Penyesuaian</td>
-                            <td class="text-end"></td>
+                            <td class="text-end">Selesai disesuaikan</td>
                         </tr>
                     </table>
                 </div>

@@ -139,11 +139,20 @@ Route::prefix('/pengiriman')->group(function() {
     Route::get('/permintaan/detail', function() {
         return view('pengiriman.permintaan.detail');
     });
+    // Detail Retur Pengiriman
     Route::get('/retur', function() {
         return view('pengiriman.retur.index');
     });
+    Route::get('/retur/detail', function() {
+        return view('pengiriman.retur.detail');
+    });
+
+    // Spoil Pengiriman Produk
     Route::get('/spoil', function() {
         return view('pengiriman.spoil.index');
+    });
+    Route::get('/spoil/detail', function() {
+        return view('pengiriman.spoil.detail');
     });
 });
 

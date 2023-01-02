@@ -61,11 +61,6 @@
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Status
-                                    </div>
-                                </th>
-                                <th style="width: 15%">
-                                    <div class="form-control">
                                         Nominal
                                     </div>
                                 </th>
@@ -81,13 +76,10 @@
                                         <span class="form-control border border-0 fs-3">1</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">20 Mei 2022</span>
+                                        <span class="form-control border border-0 fs-3">Selasa, 20 Mei 2022</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Produk Masuk</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Rp 1.500.000</span>

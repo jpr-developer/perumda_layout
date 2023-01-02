@@ -1,12 +1,12 @@
 @extends('layout.general')
 
 @section('content')
-@include('penjualan.layout.nav-menu')
+@include('pengiriman.layout.nav-menu')
 
 <div class="col-md-12">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/penjualan/spoil')}}" class="text-decoration-underline fs-2 fw-bold">Spoil Penjualan Produk</a>
+            <a href="{{url('/pengiriman/retur')}}" class="text-decoration-underline fs-2 fw-bold">Retur Pengiriman Produk</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
@@ -19,8 +19,8 @@
 <div class="col-md-12">
     <div class="card">
         <div class="card-body">
-            <h3>Taggal Spoil : Selasa, 20 Mei 2022</h3>
-            <h3>ID Spoil : TR.123456789</h3>
+            <h3>Taggal Retur : Selasa, 20 Mei 2022</h3>
+            <h3>ID Retur : TR.123456789</h3>
 
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -78,6 +78,36 @@
                             </td>
                         </tr>
                     </tbody>
+                </table>
+            </div>
+
+            <div class="mt-4">
+                <h2>Informasi Lainnya</h2>
+                <table class="table table-borderless fs-3">
+                    <tr>
+                        <td style="width: 40%">
+                            Pembeli
+                        </td>
+                        <td>
+                            : Toko Indah Jaya
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Petugas Distribusi
+                        </td>
+                        <td>
+                            : Hendrawan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Keterangan Retur
+                        </td>
+                        <td>
+                            : Salah Kirim
+                        </td>
+                    </tr>
                 </table>
             </div>
         </div>

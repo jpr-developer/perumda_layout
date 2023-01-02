@@ -68,6 +68,11 @@
                                         Nominal
                                     </div>
                                 </th>
+                                <th style="width: 10%" class="text-center rounded-end">
+                                    <div class="form-control">
+                                        Action
+                                    </div>
+                                </th>
                             </thead>
                             <tbody class="fs-3">
                                 <tr>
@@ -85,6 +90,11 @@
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">RP. 1.500.000</span>
+                                    </td>
+                                    <td>
+                                        <div style="width: 75%;">
+                                            <a href="{{url('/pengiriman/retur/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>

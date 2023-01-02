@@ -6,7 +6,7 @@
 <div class="col-md-12">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/penjualan/retur')}}" class="text-decoration-underline fs-2 fw-bold">Retur Produk</a>
+            <a href="{{url('/penjualan/retur')}}" class="text-decoration-underline fs-2 fw-bold">Retur Penjualan Produk</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>

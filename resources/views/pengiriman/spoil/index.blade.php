@@ -60,12 +60,12 @@
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Jumlah Spoil
+                                        Nominal
                                     </div>
                                 </th>
-                                <th style="width: 15%">
+                                <th style="width: 10%" class="text-center rounded-end">
                                     <div class="form-control">
-                                        Nominal
+                                        Action
                                     </div>
                                 </th>
                             </thead>
@@ -81,10 +81,12 @@
                                         <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">100 PCS</span>
+                                        <span class="form-control border border-0 fs-3">Rp 1.500.000</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Rp 1.500.000</span>
+                                        <div style="width: 75%;">
+                                            <a href="{{url('/pengiriman/spoil/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                        </div>
                                     </td>
                                 </tr>
                             </tbody>

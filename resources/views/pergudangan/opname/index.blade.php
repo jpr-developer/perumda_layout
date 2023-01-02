@@ -56,17 +56,12 @@
                                 </th>
                                 <th style="width: 25%">
                                     <div class="form-control">
+                                        Tanggal Opname
+                                    </div>
+                                </th>
+                                <th style="width: 15%">
+                                    <div class="form-control">
                                         Nama Produk
-                                    </div>
-                                </th>
-                                <th style="width: 15%">
-                                    <div class="form-control">
-                                        Kategori Produk
-                                    </div>
-                                </th>
-                                <th style="width: 15%">
-                                    <div class="form-control">
-                                        Sub Kategori Produk
                                     </div>
                                 </th>
                                 <th style="width: 10%" class="text-center rounded-end">
@@ -84,13 +79,10 @@
                                         <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
+                                        <span class="form-control border border-0 fs-3">Rabu, 21 Mei 2022</span>
+                                    </td>
+                                    <td>
                                         <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
@@ -106,57 +98,10 @@
                                         <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/warehouse/opname/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">3</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
+                                        <span class="form-control border border-0 fs-3">Selasa, 20 Mei 2022</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/warehouse/opname/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">4</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
