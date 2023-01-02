@@ -91,7 +91,7 @@
                 <div class="title">
                     <a href="" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/RKAB_white.png')}}" alt="" class="icon">
-                        <span class="name">RKAPB</span>
+                        <span class="name">RKAP</span>
                     </a>
                 </div>
             </li>
