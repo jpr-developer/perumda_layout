@@ -1,16 +1,15 @@
 @extends('layout.general')
-@section('title', 'Opname')
 
 @section('content')
-{{-- Include Nav Menu Start --}}
-@include('pergudangan.layout.nav-menu')
-{{-- Include Nav Menu End --}}
+<div class="col-md-12">
+    <h1>PENDAPATAN LAIN BIDANG PERDAGANGAN</h1>
+</div>
 <div class="col-md-12">
     <div class="card">
         <div class="card-body">
             <p>
-                <font class="fs-1 fw-bold">Pembelian Produk</font> <br>
-                <a href="" class="text-decoration-underline">Data pembelian produk</a>
+                <font class="fs-1 fw-bold">Pendapatan Lain</font> <br>
+                <a href="" class="text-decoration-underline">Data pendpaatan lain</a>
             </p>
         </div>
     </div>
@@ -20,13 +19,13 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-9 mb-3">
-                    <h2>Data Pembelian Produk</h2>
+                    <h2>Data Pendapatan Lain</h2>
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="row">
                         <div class="col-md-10 col-10">
                             <form action="">
-                                <input type="search" class="form-control" placeholder="Cari produk ...">
+                                <input type="search" class="form-control" placeholder="Cari ...">
                             </form>
                         </div>
                         <div class="col-md-2 col-2">
@@ -40,7 +39,6 @@
                     </div>
                 </div>
 
-
                 <div class="col-md-12">
                     <div class="table-responsive">
                         <table class="table table-borderless">
@@ -50,9 +48,9 @@
                                         No
                                     </div>
                                 </th>
-                                <th style="width: 20%">
+                                <th style="width: 15%">
                                     <div class="form-control">
-                                        ID Pembelian
+                                        ID Pendapatan Lain
                                     </div>
                                 </th>
                                 <th style="width: 20%">
@@ -80,14 +78,14 @@
                                         <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Selasa, 24 Mei 2022</span>
+                                        <span class="form-control border border-0 fs-3">Selasa, 20 Mei 2022</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">RP. 1.500.000</span>
+                                        <span class="form-control border border-0 fs-3">Rp 1.500.000</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/warehouse/pemesanan/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/pendapatan_lain/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>

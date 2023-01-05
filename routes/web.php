@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RkapbController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -107,7 +108,7 @@ Route::prefix('/warehouse')->group(function () {
         return view('pergudangan.arus_produk.detail');
     });
 });
-
+// Penjualan
 Route::prefix('/penjualan')->group(function() {
     Route::get('/', function() {
         return view('penjualan.sales.index');
@@ -131,7 +132,7 @@ Route::prefix('/penjualan')->group(function() {
         return view('penjualan.spoil.detail');
     });
 });
-
+// Pengiriman
 Route::prefix('/pengiriman')->group(function() {
     Route::get('/permintaan', function() {
         return view('pengiriman.permintaan.index');
@@ -155,7 +156,14 @@ Route::prefix('/pengiriman')->group(function() {
         return view('pengiriman.spoil.detail');
     });
 });
-
+// Pendapatan Lain
+Route::get('/pendapatan_lain', function() {
+    return view('pendapatan_lain.index');
+});
+Route::get('/pendapatan_lain/detail', function() {
+    return view('pendapatan_lain.detail');
+});
+// Operasional
 Route::prefix('/operasional')->group(function() {
     // Bisnis
     Route::get('/bisnis', function() {
@@ -171,4 +179,41 @@ Route::prefix('/operasional')->group(function() {
     Route::get('/non-bisnis/detail', function() {
         return view('operasional.non_bisnis.detail');
     });
+});
+
+// KPI
+Route::prefix('kpi')->group(function() {
+    Route::get('/setting', function() {
+        return view('KPI.setting.index');
+    });
+});
+
+// RKAPB
+Route::get('/rkapb', [RkapbController::class, 'index']);
+
+// Financial
+Route::prefix('/financial')->group(function() {
+    Route::get('/pendapatan_usaha', function() {
+        return view('financial.pendapatan_usaha.index');
+    });
+    Route::get('/pendapatan_usaha/detail', function() {
+        return view('financial.pendapatan_usaha.detail');
+    });
+
+    // HPP
+    Route::get('/hpp', function() {
+        return view('financial.hpp.index');
+    });
+    Route::get('/hpp/detail', function() {
+        return view('financial.hpp.detail');
+    });
+
+    // Biaya Operasional
+    Route::get('/biaya_operasional', function() {
+        return view('financial.biaya_operasional.index');
+    });
+    Route::get('/biaya_operasional/detail', function() {
+        return view('financial.biaya_operasional.detail');
+    });
+
 });

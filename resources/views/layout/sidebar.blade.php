@@ -71,6 +71,14 @@
                     </a>
                 </div>
             </li>
+            <li class="@if(Request::is('pendapatan_lain*')) active @endif">
+                <div class="title">
+                    <a href="{{url('/pendapatan_lain')}}" class="link mb-2 mt-2">
+                        <img src="{{asset('assets/icon/operasional.png')}}" alt="" class="icon">
+                        <span class="name">Pendapatan Lain</span>
+                    </a>
+                </div>
+            </li>
             <li class="@if(Request::is('operasional*')) active @endif">
                 <div class="title">
                     <a href="{{url('/operasional/bisnis')}}" class="link mb-2 mt-2">
@@ -79,25 +87,25 @@
                     </a>
                 </div>
             </li>
-            <li>
+            <li class="@if(Request::is('financial*')) active @endif">
                 <div class="title">
-                    <a href="" class="link mb-2 mt-2">
+                    <a href="{{url('/financial/pendapatan_usaha')}}" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/Financial_white.png')}}" alt="" class="icon">
                         <span class="name">Financial</span>
                     </a>
                 </div>
             </li>
-            <li>
+            <li class="@if(Request::is('rkapb*')) active @endif">
                 <div class="title">
-                    <a href="" class="link mb-2 mt-2">
+                    <a href="{{url('/rkapb')}}" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/RKAB_white.png')}}" alt="" class="icon">
                         <span class="name">RKAP</span>
                     </a>
                 </div>
             </li>
-            <li>
+            <li class="@if(Request::is('kpi*')) active @endif">
                 <div class="title">
-                    <a href="" class="link mb-2 mt-2">
+                    <a href="{{url('/kpi/setting')}}" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/KPI_white.png')}}" alt="" class="icon">
                         <span class="name">KPI</span>
                     </a>

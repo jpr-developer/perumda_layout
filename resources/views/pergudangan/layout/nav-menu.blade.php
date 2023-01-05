@@ -15,7 +15,7 @@
                                 <path d="M4 12v6a8 3 0 0 0 16 0v-6"></path>
                             </svg>
                         </span>
-                        <span class="fs-3 fw-bolder">Pemesanan</span>
+                        <span class="fs-3 fw-bolder">Pembelian</span>
                     </a>
                 </div>
                 <div class="col-md-2 col-4">
