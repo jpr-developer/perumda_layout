@@ -184,12 +184,26 @@ Route::prefix('/operasional')->group(function() {
 // KPI
 Route::prefix('kpi')->group(function() {
     Route::get('/setting', function() {
-        return view('KPI.setting.index');
+        return view('KPI.setting.form');
+    });
+    // Performa Indikator
+    Route::get('/performa_indikator', function() {
+        return view('KPI.performa_indikator.index');
     });
 });
 
 // RKAPB
-Route::get('/rkapb', [RkapbController::class, 'index']);
+Route::prefix('/rkapb')->group(function() {
+    Route::get('/program-bisnis', function() {
+        return view('rkapb.bisnis.index');
+    });
+    Route::get('/program-penunjang-bisnis', function() {
+        return view('rkapb.penunjang_bisnis.index');
+    });
+    Route::get('/general', function() {
+        return view('rkapb.general.index');
+    });
+});
 
 // Financial
 Route::prefix('/financial')->group(function() {

@@ -16711,7 +16711,6 @@ Dimmer
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: var(--tblr-border-color-light);
 }
 .progress::-webkit-progress-bar {
   background: #f1f5f9;

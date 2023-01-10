@@ -97,7 +97,7 @@
             </li>
             <li class="@if(Request::is('rkapb*')) active @endif">
                 <div class="title">
-                    <a href="{{url('/rkapb')}}" class="link mb-2 mt-2">
+                    <a href="{{url('/rkapb/program-bisnis')}}" class="link mb-2 mt-2">
                         <img src="{{asset('assets/icon/RKAB_white.png')}}" alt="" class="icon">
                         <span class="name">RKAP</span>
                     </a>
