@@ -184,7 +184,10 @@ Route::prefix('/operasional')->group(function() {
 // KPI
 Route::prefix('kpi')->group(function() {
     Route::get('/setting', function() {
-        return view('KPI.setting.form');
+        return view('KPI.setting.index');
+    });
+    Route::get('/view', function() {
+        return view('KPI.view.index');
     });
     // Performa Indikator
     Route::get('/performa_indikator', function() {
@@ -194,8 +197,33 @@ Route::prefix('kpi')->group(function() {
 
 // RKAPB
 Route::prefix('/rkapb')->group(function() {
-    Route::get('/program-bisnis', function() {
-        return view('rkapb.bisnis.index');
+    // Program Bisnis
+    Route::prefix('/program-bisnis')->group(function() {
+        Route::get('/pendapatan-usaha', function() {
+            return view('rkapb.bisnis.pendapatan_usaha.index');
+        });
+        Route::get('/harga-pokok-penjualan', function() {
+            return view('rkapb.bisnis.hpp.index');
+        });
+        Route::get('/laba-kotor-usaha', function() {
+            return view('rkapb.bisnis.laba_kotor.index');
+        });
+    });
+
+    // Penjunjang Bisnis
+    Route::prefix('/program-penunjang-bisnis')->group(function() {
+        Route::get('/biaya-pegawai', function() {
+            return view('rkapb.penunjang_bisnis.biaya_pegawai.index');
+        });
+        Route::get('/biaya-kantor', function() {
+            return view('rkapb.penunjang_bisnis.biaya_kantor.index');
+        });
+        Route::get('/biaya-umum', function() {
+            return view('rkapb.penunjang_bisnis.biaya_umum.index');
+        });
+        Route::get('/biaya-pemasaran', function() {
+            return view('rkapb.penunjang_bisnis.biaya_pemasaran.index');
+        });
     });
     Route::get('/program-penunjang-bisnis', function() {
         return view('rkapb.penunjang_bisnis.index');

@@ -4,9 +4,9 @@
 <div class="col-md-12">
     <div class="card shadow-sm">
         <div class="card-body">
-            <ul class="d-flex fs-3 fw-bolder" style="list-style: none;">
+            <ul class="d-flex fs-3 fw-bolder" style="list-style: none; padding:0;margin:0;">
                 <li class="me-4">
-                    <a href="{{url('/rkapb/program-bisnis')}}" class="link-custome @if(Request::is('rkapb/program-bisnis*')) active-nav @endif">
+                    <a href="{{url('/rkapb/program-bisnis/pendapatan-usaha')}}" class="link-custome @if(Request::is('rkapb/program-bisnis*')) active-nav @endif">
                         <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>
@@ -17,7 +17,7 @@
                     </a>
                 </li>
                 <li class="me-4">
-                    <a href="{{url('/rkapb/program-penunjang-bisnis')}}" class="link-custome @if(Request::is('rkapb/program-penunjang-bisnis*')) active-nav @endif">
+                    <a href="{{url('/rkapb/program-penunjang-bisnis/biaya-pegawai')}}" class="link-custome @if(Request::is('rkapb/program-penunjang-bisnis*')) active-nav @endif">
                         <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <ellipse cx="12" cy="6" rx="8" ry="3"></ellipse>

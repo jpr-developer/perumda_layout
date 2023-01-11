@@ -19,7 +19,7 @@
     <div class="card">
         <div class="card-body">
             <h2>Program Kegiatan Bisnis</h2>
-            <div class="mb-3">
+            <div class=" mb-3">
                 <div class="d-flex mb-2">
                     <div class="fs-3">Penjualan Kopi</div>
                     <div class="ms-auto">

@@ -7,23 +7,15 @@
 <!-- Menu RKAPB End -->
 
 
-<div class="col-md-12">
-    <div class="card">
-        <div class="card-body">
-            <p>
-                <font class="fs-1 fw-bold">Program Penunjang Bisnis</font> <br>
-                <span href="" class="">Data program penunjang bisnis</span>
-            </p>
-        </div>
-    </div>
-</div>
+@include('rkapb.penunjang_bisnis.menu.menu')
+
 
 <div class="col-md-12">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
                 <div class="col-md-9 mb-3">
-                    <h2>RKAPB Tahun 2023</h2>
+                    <h2>RKAPB Tahun 2023 - Biaya Pemasaran</h2>
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="row">
@@ -64,12 +56,12 @@
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Bulan
+                                        Per Bulan
                                     </div>
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Tahun
+                                        Per Tahun
                                     </div>
                                 </th>
                                 <th style="width: 20%" class="rounded-end">
@@ -87,18 +79,17 @@
                                         <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Gaji dan Upah</span>
+                                        <span class="form-control border border-0 fs-3">Biaya Iklan / Promosi</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Rp 17.574.000</span>
+                                        <span class="form-control border border-0 fs-3">Rp. 0</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Rp 228.462.000</span>
+                                        <span class="form-control border border-0 fs-3">Rp 0</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">
-                                            160,212,000 	(Pegawai Tetap 5 Orang)		<br>
-                                            68,250,000 	(Pegawai Kontrak 3 Orang)
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         </span>
                                     </td>
                                 </tr>
@@ -110,17 +101,17 @@
                                         <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Biaya Kesejahteraan Pegawai</span>
+                                        <span class="form-control border border-0 fs-3">Biaya penjualan</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Rp  8.427.500</span>
+                                        <span class="form-control border border-0 fs-3">Rp 4.166.666</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Rp 109.557.500</span>
+                                        <span class="form-control border border-0 fs-3">Rp 50.000.000</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">
-                                            109,557,500 	(Pegawai Tetap 5 Orang)
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         </span>
                                     </td>
                                 </tr>
@@ -134,13 +125,13 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Filter RKAPB</h5>
+                                <h5 class="modal-title">Filter RKAPB - Biaya Pemasaran</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="">
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Filter RKAPB</label>
+                                        <label class="form-label">Pilih Tahun</label>
                                         <select name="" id="" class="form-select">
                                             <option value="">2023</option>
                                             <option value="">2022</option>

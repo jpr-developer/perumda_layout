@@ -6,24 +6,14 @@
 @include('rkapb.layout.nav-menu')
 <!-- Menu RKAPB End -->
 
-
-<div class="col-md-12">
-    <div class="card">
-        <div class="card-body">
-            <p>
-                <font class="fs-1 fw-bold">Program Bisnis</font> <br>
-                <span href="" class="">Data program bisnis</span>
-            </p>
-        </div>
-    </div>
-</div>
+@include('rkapb.bisnis.menu.menu')
 
 <div class="col-md-12">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
                 <div class="col-md-9 mb-3">
-                    <h2>RKAPB Tahun 2023</h2>
+                    <h2>RKAPB Tahun 2023 - Pendapatan Usaha</h2>
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="row">
@@ -97,7 +87,7 @@
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">
-                                            143,333,333 	x	12	bulan	=	 1,720,000,000
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         </span>
                                     </td>
                                 </tr>
@@ -119,7 +109,7 @@
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">
-
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         </span>
                                     </td>
                                 </tr>
@@ -141,7 +131,7 @@
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">
-
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                         </span>
                                     </td>
                                 </tr>
@@ -151,39 +141,17 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal modal-blur fade" id="modal-upload" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Upload Data Supplier</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <form action="">
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                        <label class="form-label">Import data supplier</label>
-                                        <input type="file" class="form-control" name="file">
-                                        <small class="text-small"><b>Note:</b> format file .xlxs, .xls</small>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">Import</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
                 <div class="modal modal-blur fade" id="modal-filter" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Filter RKAPB</h5>
+                                <h5 class="modal-title">Filter RKAPB - Pendapatan Usaha</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="">
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Filter RKAPB</label>
+                                        <label class="form-label">Pilih Tahun</label>
                                         <select name="" id="" class="form-select">
                                             <option value="">2023</option>
                                             <option value="">2022</option>

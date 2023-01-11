@@ -1,32 +1,25 @@
 @extends('layout.general')
-@section('title', 'Karyawan')
 
 @section('content')
+
+<!-- Menu RKAPB Start -->
+@include('rkapb.layout.nav-menu')
+<!-- Menu RKAPB End -->
+
+@include('rkapb.bisnis.menu.menu')
+
 <div class="col-md-12">
-    <h1>KARYAWAN BIDANG PERDAGANGAN</h1>
-</div>
-<div class="col-md-12">
-    <div class="card">
-        <div class="card-body">
-            <p>
-                <font class="fs-1 fw-bold">Karyawan</font> <br>
-                <span>Data karyawan</span>
-            </p>
-        </div>
-    </div>
-</div>
-<div class="col-md-12">
-    <div class="card">
+    <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
                 <div class="col-md-9 mb-3">
-                    <h2>Data Karyawan Perdagangan</h2>
+                    <h2>RKAPB Tahun 2023 - Laba Kotor Usaha</h2>
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="row">
                         <div class="col-md-10 col-10">
                             <form action="">
-                                <input type="search" class="form-control" placeholder="Cari karyawan ...">
+                                <input type="search" class="form-control" placeholder="Cari uraian program ...">
                             </form>
                         </div>
                         <div class="col-md-2 col-2">
@@ -49,29 +42,29 @@
                                         No
                                     </div>
                                 </th>
+                                <th style="width: 15%">
+                                    <div class="form-control">
+                                        ID Program Bisnis
+                                    </div>
+                                </th>
                                 <th style="width: 20%">
                                     <div class="form-control">
-                                        ID Karyawan
-                                    </div>
-                                </th>
-                                <th style="width: 25%">
-                                    <div class="form-control">
-                                        Nama Karyawan
+                                        Uraian Program
                                     </div>
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Posisi Karyawan
+                                        Per Bulan
                                     </div>
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Jabatan
+                                        Per Tahun
                                     </div>
                                 </th>
-                                <th style="width: 10%" class="text-center rounded-end">
+                                <th style="width: 20%" class="rounded-end">
                                     <div class="form-control">
-                                        Action
+                                        Keterangan
                                     </div>
                                 </th>
                             </thead>
@@ -81,21 +74,21 @@
                                         <span class="form-control border border-0 fs-3">1</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">K.12345678</span>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Muhammad Fahruddin</span>
+                                        <span class="form-control border border-0 fs-3">Penerimaan Alat Tulis Kantor</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Bidang Perdagangan</span>
+                                        <span class="form-control border border-0 fs-3">Rp  143.333.333</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Manager</span>
+                                        <span class="form-control border border-0 fs-3">Rp 1.720.000.000</span>
                                     </td>
                                     <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/employee/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
+                                        <span class="form-control border border-0 fs-3">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -103,21 +96,21 @@
                                         <span class="form-control border border-0 fs-3">2</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">K.12345678</span>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Muhammad Fahruddin</span>
+                                        <span class="form-control border border-0 fs-3">Penjualan Barang Lain</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Bidang Perdagangan</span>
+                                        <span class="form-control border border-0 fs-3">Rp 0</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Manager</span>
+                                        <span class="form-control border border-0 fs-3">Rp 0</span>
                                     </td>
                                     <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/employee/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
+                                        <span class="form-control border border-0 fs-3">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </span>
                                     </td>
                                 </tr>
                                 <tr>
@@ -125,43 +118,21 @@
                                         <span class="form-control border border-0 fs-3">3</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">K.12345678</span>
+                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Muhammad Fahruddin</span>
+                                        <span class="form-control border border-0 fs-3">Penjualan Kopi</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Bidang Perdagangan</span>
+                                        <span class="form-control border border-0 fs-3">Rp 171.270.833</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Manager</span>
+                                        <span class="form-control border border-0 fs-3">Rp 2.055.250.000</span>
                                     </td>
                                     <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/employee/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">4</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">K.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Muhammad Fahruddin</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Bidang Perdagangan</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Manager</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/employee/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
+                                        <span class="form-control border border-0 fs-3">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </span>
                                     </td>
                                 </tr>
                             </tbody>
@@ -174,17 +145,17 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Filter Jabatan Karyawan</h5>
+                                <h5 class="modal-title">Filter RKAPB - Laba Kotor Usaha</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="">
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Filter berdasarkan jabatan karyawan</label>
+                                        <label class="form-label">Pilih Tahun</label>
                                         <select name="" id="" class="form-select">
-                                            <option value="">Komisaris</option>
-                                            <option value="">Staf</option>
-                                            <option value="">Manager</option>
+                                            <option value="">2023</option>
+                                            <option value="">2022</option>
+                                            <option value="">2021</option>
                                         </select>
                                     </div>
                                 </div>

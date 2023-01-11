@@ -16,116 +16,116 @@
     <div class="sidebar-group">
         <ul class="sidebar-list ">
             <li class="@if(Request::is('/')) active @endif">
-                <div class="title">
-                    <a href="{{url('/')}}" class="link mb-2 mt-2">
+                <a href="{{url('/')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Dashboard_white.png')}}" alt="" class="icon">
                         <span class="name">Dashboard</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('employee*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/employee')}}" class="link mb-2 mt-2">
+                <a href="{{url('/employee')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Mitra_white.png')}}" alt="" class="icon">
                         <span class="name">Karyawan</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('mitra*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/mitra/supplier')}}" class="link mb-2 mt-2">
+                <a href="{{url('/mitra/supplier')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/partner.png')}}" alt="" class="icon">
                         <span class="name">Mitra</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('products*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/products')}}" class="link mb-2 mt-2">
+                <a href="{{url('/products')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Product_white.png')}}" alt="" class="icon">
                         <span class="name">Produk</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('warehouse*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/warehouse/pemesanan')}}" class="link mb-2 mt-2">
+                <a href="{{url('/warehouse/pemesanan')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/warehouse_white.png')}}" alt="" class="icon">
                         <span class="name">Pergudangan</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('penjualan*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/penjualan')}}" class="link mb-2 mt-2">
+                <a href="{{url('/penjualan')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/penjualan_white.png')}}" alt="" class="icon">
                         <span class="name">Penjualan</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('pengiriman*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/pengiriman/permintaan')}}" class="link mb-2 mt-2">
+                <a href="{{url('/pengiriman/permintaan')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Pengiriman_white.png')}}" alt="" class="icon">
                         <span class="name">Pengiriman</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('pendapatan_lain*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/pendapatan_lain')}}" class="link mb-2 mt-2">
+                <a href="{{url('/pendapatan_lain')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/operasional.png')}}" alt="" class="icon">
                         <span class="name">Pendapatan Lain</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('operasional*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/operasional/bisnis')}}" class="link mb-2 mt-2">
+                <a href="{{url('/operasional/bisnis')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/operasional.png')}}" alt="" class="icon">
                         <span class="name">Operasional</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('financial*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/financial/pendapatan_usaha')}}" class="link mb-2 mt-2">
+                <a href="{{url('/financial/pendapatan_usaha')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Financial_white.png')}}" alt="" class="icon">
                         <span class="name">Financial</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('rkapb*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/rkapb/program-bisnis')}}" class="link mb-2 mt-2">
+                <a href="{{url('/rkapb/program-bisnis/pendapatan-usaha')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/RKAB_white.png')}}" alt="" class="icon">
                         <span class="name">RKAP</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li class="@if(Request::is('kpi*')) active @endif">
-                <div class="title">
-                    <a href="{{url('/kpi/setting')}}" class="link mb-2 mt-2">
+                <a href="{{url('/kpi/performa_indikator')}}" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/KPI_white.png')}}" alt="" class="icon">
                         <span class="name">KPI</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li>
-                <div class="title">
-                    <a href="" class="link mb-2 mt-2">
+                <a href="" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Quality_white.png')}}" alt="" class="icon">
                         <span class="name">Jaminan Mutu</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
             <li>
-                <div class="title">
-                    <a href="" class="link mb-2 mt-2">
+                <a href="" class="title">
+                    <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Kegiatan_white.png')}}" alt="" class="icon">
                         <span class="name">Kegiatan</span>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </li>
         </ul>
     </div>

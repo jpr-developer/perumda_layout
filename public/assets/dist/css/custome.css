@@ -149,6 +149,7 @@ svg.radial-progress  circle.third { stroke: #fd6470; }
     align-items: center;
     transition: all .5s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .sidebar-list li.active .title {
