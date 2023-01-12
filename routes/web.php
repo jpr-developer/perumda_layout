@@ -259,3 +259,11 @@ Route::prefix('/financial')->group(function() {
     });
 
 });
+
+// Kegiatan
+Route::get('/kegiatan', function() {
+    return view('kegiatan.index');
+});
+Route::get('/kegiatan/detail', function() {
+    return view('kegiatan.detail');
+});

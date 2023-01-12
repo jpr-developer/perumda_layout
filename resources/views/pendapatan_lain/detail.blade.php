@@ -13,7 +13,7 @@
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <span class="fs-2 fw-bold">Detail</span>
+            <span class="fs-2 fw-bold">TR.123456789</span>
         </div>
     </div>
 </div>

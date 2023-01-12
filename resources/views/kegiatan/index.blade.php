@@ -1,15 +1,15 @@
 @extends('layout.general')
 
 @section('content')
-<!-- Get Nav menu Pengiriman -->
-@include('pengiriman.layout.nav-menu')
-
+<div class="col-md-12">
+    <h1>KEGIATAN BIDANG PERDAGANGAN</h1>
+</div>
 <div class="col-md-12">
     <div class="card">
         <div class="card-body">
             <p>
-                <font class="fs-1 fw-bold">Spoil Pengiriman Produk</font> <br>
-                <span>Data spoil pengiriman produk</span>
+                <font class="fs-1 fw-bold">Kegiatan</font> <br>
+                <span>Data kegiatan</span>
             </p>
         </div>
     </div>
@@ -18,10 +18,17 @@
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-12 mb-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h2>Data Spoil Pengiriman Produk</h2>
-                        <div>
+                <div class="col-md-9 mb-3">
+                    <h2>Data Kegiatan</h2>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="row">
+                        <div class="col-md-10 col-10">
+                            <form action="">
+                                <input type="search" class="form-control" placeholder="Cari nama kegiatan ...">
+                            </form>
+                        </div>
+                        <div class="col-md-2 col-2">
                             <a href="#" class="btn btn-rss w-100 btn-icon" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -31,7 +38,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-md-12">
                     <div class="table-responsive">
                         <table class="table table-borderless">
@@ -43,17 +49,17 @@
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        ID Spoil Pengiriman
+                                        ID kegiatan
                                     </div>
                                 </th>
-                                <th style="width: 25%">
+                                <th style="width: 20%">
                                     <div class="form-control">
-                                        Tanggal Spoil
+                                        Nama Kegiatan
                                     </div>
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        Nominal
+                                        Status Kegiatan
                                     </div>
                                 </th>
                                 <th style="width: 10%" class="text-center rounded-end">
@@ -71,14 +77,14 @@
                                         <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Selasa, 23 Maret 2023</span>
+                                        <span class="form-control border border-0 fs-3">Rapat Bersama di Bali</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Rp 1.500.000</span>
+                                        <span class="form-control border border-0 fs-3">Terlaksana</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/pengiriman/spoil/detail')}}" class="btn btn-dribbble form-control mx-3">View</a>
+                                            <a href="{{url('/kegiatan/detail')}}" class="btn btn-dribbble form-control mx-3">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -92,17 +98,17 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Filter By Date</h5>
+                                <h5 class="modal-title">Filter By Status</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="">
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Filter by date</label>
+                                        <label class="form-label">Filter by status</label>
                                         <select name="" id="" class="form-select">
                                             <option value="">All</option>
-                                            <option value="">Bulan</option>
-                                            <option value="">Tahun</option>
+                                            <option value="">Terlaksana</option>
+                                            <option value="">Belum Terlaksana</option>
                                         </select>
                                     </div>
                                 </div>

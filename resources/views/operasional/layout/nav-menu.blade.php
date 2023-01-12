@@ -4,7 +4,7 @@
 <div class="col-md-12">
     <div class="card shadow-sm">
         <div class="card-body">
-            <ul class="d-flex fs-3 fw-bolder" style="list-style: none;">
+            <ul class="d-flex fs-3 fw-bolder" style="list-style: none;padding:0;margin:0">
                 <li class="me-4">
                     <a href="{{url('/operasional/bisnis')}}" class="link-custome @if(Request::is('operasional/bisnis*')) active-nav @endif">
                         <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">

@@ -84,10 +84,10 @@
     <div class="card">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-3">
                     {{-- <img src="{{asset('assets/images/kopi_rojoku.png')}}" alt=""> --}}
                     <div id="carousel-indicators-thumb" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-indicators carousel-indicators-thumb">
+                        <div class="carousel-indicators carousel-indicators-thumb mb-1">
                           <button type="button" data-bs-target="#carousel-indicators-thumb" data-bs-slide-to="0" class=" ratio ratio-4x3 active" style="background-image: url({{asset('assets/static/photos/a12804818c417ea3.jpg')}})"></button>
                           <button type="button" data-bs-target="#carousel-indicators-thumb" data-bs-slide-to="1" class=" ratio ratio-4x3" style="background-image: url({{asset('assets/static/photos/abb0721ac43820f9.jpg')}})"></button>
                           <button type="button" data-bs-target="#carousel-indicators-thumb" data-bs-slide-to="2" class=" ratio ratio-4x3" style="background-image: url({{asset('assets/static/photos/d366fc3df37fe65b.jpg')}})"></button>

@@ -13,7 +13,7 @@
         <div class="card-body">
             <p>
                 <font class="fs-1 fw-bold">Mitra Toko</font> <br>
-                <a href="" class="text-decoration-underline">Data mitra toko</a>
+                <span>Data mitra toko</span>
             </p>
         </div>
     </div>
@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-md-10 col-10">
                             <form action="">
-                                <input type="search" class="form-control" placeholder="Cari produk ...">
+                                <input type="search" class="form-control" placeholder="Cari toko ...">
                             </form>
                         </div>
                         <div class="col-md-2 col-2">
@@ -195,43 +195,21 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal modal-blur fade" id="modal-upload" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Upload Data Supplier</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <form action="">
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                        <label class="form-label">Import data supplier</label>
-                                        <input type="file" class="form-control" name="file">
-                                        <small class="text-small"><b>Note:</b> format file .xlxs, .xls</small>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">Import</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
                 <div class="modal modal-blur fade" id="modal-filter" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Filter Data Supplier</h5>
+                                <h5 class="modal-title">Filter Kategori Toko</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="">
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Filter data supplier</label>
+                                        <label class="form-label">Filter kategori</label>
                                         <select name="" id="" class="form-select">
-                                            <option value="">Filter 1</option>
-                                            <option value="">Filter 2</option>
-                                            <option value="">Filter 3</option>
+                                            <option value="">UMKM</option>
+                                            <option value="">Agen</option>
+                                            <option value="">Cafe</option>
                                         </select>
                                     </div>
                                 </div>

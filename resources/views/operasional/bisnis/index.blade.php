@@ -8,7 +8,7 @@
         <div class="card-body">
             <p>
                 <font class="fs-1 fw-bold">Operasional Bisnis</font> <br>
-                <a href="" class="text-decoration-underline">Data operasional bisnis</a>
+                <span>Data operasional bisnis</span>
             </p>
         </div>
     </div>
@@ -17,17 +17,10 @@
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-9 mb-3">
-                    <h2>Data Operasional Bisnis</h2>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="row">
-                        <div class="col-md-10 col-10">
-                            <form action="">
-                                <input type="search" class="form-control" placeholder="Cari produk ...">
-                            </form>
-                        </div>
-                        <div class="col-md-2 col-2">
+                <div class="col-md-12 mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2>Data Operasional Bisnis</h2>
+                        <div>
                             <a href="#" class="btn btn-rss w-100 btn-icon" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -84,7 +77,7 @@
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/operasional/bisnis/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('/operasional/bisnis/detail')}}" class="btn btn-dribbble form-control mx-3">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -94,43 +87,21 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal modal-blur fade" id="modal-upload" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Upload Data Supplier</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <form action="">
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                        <label class="form-label">Import data supplier</label>
-                                        <input type="file" class="form-control" name="file">
-                                        <small class="text-small"><b>Note:</b> format file .xlxs, .xls</small>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">Import</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
                 <div class="modal modal-blur fade" id="modal-filter" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Filter Data Supplier</h5>
+                                <h5 class="modal-title">Filter By Date</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="">
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Filter data supplier</label>
+                                        <label class="form-label">Filter by date</label>
                                         <select name="" id="" class="form-select">
-                                            <option value="">Filter 1</option>
-                                            <option value="">Filter 2</option>
-                                            <option value="">Filter 3</option>
+                                            <option value="">All</option>
+                                            <option value="">Bulan</option>
+                                            <option value="">Tahun</option>
                                         </select>
                                     </div>
                                 </div>

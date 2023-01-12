@@ -119,8 +119,8 @@
                     </div>
                 </a>
             </li>
-            <li>
-                <a href="" class="title">
+            <li class="@if(Request::is('kegiatan*')) active @endif">
+                <a href="{{url('/kegiatan')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Kegiatan_white.png')}}" alt="" class="icon">
                         <span class="name">Kegiatan</span>

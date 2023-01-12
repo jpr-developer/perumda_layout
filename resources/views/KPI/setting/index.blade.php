@@ -57,7 +57,7 @@
                             60 >
                         </th>
                     </tr>
-                    <tr>
+                    <tr class="align-middle">
                         <th style="width: 10%">Kategori Kegiatan</th>
                         <th style="width: 8%">Bobot Kategori</th>
                         <th>Kegiatan Bisnis</th>

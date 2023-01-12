@@ -363,100 +363,116 @@
 </div>
 <!-- Data Saldo -->
 <div class="col-md-4">
-    <div class="card shadow-sm" style="height: 20rem">
-        <h2 class="ms-3 mt-3">Penarikan Saldo Reseller</h2>
-        <div class="mx-3">
-            <table class="fs-3 fw-bold w-100">
+    <div class="card shadow-sm" style="height: 22rem">
+        <h2 class="ms-3 mt-3">Saldo Reseller</h2>
+        <div class="card-body card-body-scrollable card-body-scrollable-shadow mx-3" style="padding: 0;margin:0">
+            <table class="table table-borderless">
                 <tr>
-                    <td>Tanggal Penarikan</td>
-                    <td class="text-end">Nominal Penarikan</td>
+                    <th style="width: 30%">Uraian</th>
+                    <th>Tipe</th>
+                    <th style="width: 30%">Nominal</th>
+                    <th style="width: 30%" class="text-center">Sisa Saldo</th>
                 </tr>
-            </table>
-        </div>
-        <div class="card-body card-body-scrollable card-body-scrollable-shadow">
-            <table class="table table-borderless fs-3">
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-            </table>
-        </div>
-        <div class="mx-3 m-2">
-            <table class="fs-3 w-100">
-                <tr>
-                    <td class="fw-bold">Sisa Saldo</td>
-                    <td class="text-end fw-bold">Rp. 1.000.000</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td style="width: 30%">
+                            Tarik tunai kartu 32523532532532532
+                            Bank Negara Indonesia Jepara
+                            <br>
+                            <div class="d-flex justify-content-between">
+                                <small class="text-orange">2023-01-10</small>
+                                <small class="text-secondary">19:00:30</small>
+                            </div>
+                        </td>
+                        <td class="text-orange fw-bold">D</td>
+                        <td style="width: 30%">250.000</td>
+                        <td style="width: 30%" class="text-center">500.000</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%">
+                            TopUp Echannel Kartu 3243243243242 Vivit Wulan Sari
+                            <br>
+                            <div class="d-flex justify-content-between">
+                                <small class="text-orange">2023-01-09</small>
+                                <small class="text-secondary">16:00:30</small>
+                            </div>
+                        </td>
+                        <td class="text-orange fw-bold">K</td>
+                        <td style="width: 30%">500.000</td>
+                        <td style="width: 30%" class="text-center">750.000</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 30%">
+                            TopUp Echannel Kartu 3243243243242 Vivit Wulan Sari
+                            <br>
+                            <div class="d-flex justify-content-between">
+                                <small class="text-orange">2023-01-09</small>
+                                <small class="text-secondary">16:00:30</small>
+                            </div>
+                        </td>
+                        <td class="text-orange fw-bold">K</td>
+                        <td style="width: 30%">500.000</td>
+                        <td style="width: 30%" class="text-center">750.000</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
 </div>
 <!-- Data Piutang -->
 <div class="col-md-4">
-    <div class="card shadow-sm" style="height: 20rem">
+    <div class="card shadow-sm" style="height: 22rem">
         <h2 class="ms-3 mt-3">Piutang Reseller</h2>
-        <div class="mx-3">
-            <table class="fs-3 fw-bold w-100">
+        <div class="card-body card-body-scrollable card-body-scrollable-shadow mx-3" style="padding: 0;margin:0">
+            <table class="table table-borderless">
                 <tr>
-                    <td>Tanggal</td>
-                    <td class="text-end">Nominal</td>
+                    <th style="width: 30%">Uraian</th>
+                    <th style="width: 30%">Tempo</th>
+                    <th style="width: 15%">Nominal</th>
+                    <th style="width: 15%" class="text-center">Terbayar</th>
                 </tr>
-            </table>
-        </div>
-        <div class="card-body card-body-scrollable card-body-scrollable-shadow">
-            <table class="table table-borderless fs-3">
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-            </table>
-        </div>
-        <div class="mx-3 m-2">
-            <table class="fs-3 w-100">
-                <tr>
-                    <td class="fw-bold">Total</td>
-                    <td class="text-end fw-bold">Rp. 1.000.000</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            Toko Indah Lestari
+                            <br>
+                            <small class="text-orange">2023-01-10</small>
+                        </td>
+                        <td class="fw-bold">3 Maret 2023</td>
+                        <td>500.000</td>
+                        <td class="text-center">250.000</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Toko Barokah Jaya
+                            <br>
+                            <small class="text-orange">2023-01-09</small>
+                        </td>
+                        <td class="fw-bold">3 Maret 2023</td>
+                        <td>700.000</td>
+                        <td class="text-center">350.000</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Toko Abadi
+                            <br>
+                            <small class="text-orange">2023-01-09</small>
+                        </td>
+                        <td class="fw-bold">3 Maret 2023</td>
+                        <td>700.000</td>
+                        <td class="text-center">350.000</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Toko Sejahtera
+                            <br>
+                            <small class="text-orange">2023-01-09</small>
+                        </td>
+                        <td class="fw-bold">3 Maret 2023</td>
+                        <td>700.000</td>
+                        <td class="text-center">350.000</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
@@ -465,7 +481,7 @@
 <div class="col-lg-4">
     <div class="row row-cards">
         <div class="col-12">
-            <div class="card shadow-sm" style="height: 20rem">
+            <div class="card shadow-sm" style="height: 22rem">
                 <h2 class="ms-3 mt-3">Permasalahan ( Komplain )</h2>
                 <div class="card-body card-body-scrollable card-body-scrollable-shadow">
                     <div class="divide-y">

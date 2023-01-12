@@ -18,7 +18,7 @@
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <span class="fs-2 fw-bold">Muhammad Fahruddin</span>
+            <span class="fs-2 fw-bold">PT. Aston Putra</span>
         </div>
     </div>
 </div>
@@ -31,8 +31,8 @@
                     <img class="rounded-circle" src="{{asset('assets/static/avatars/000f.jpg')}}" alt="" height="180" width="180">
                 </div>
                 <div class="col-md-8 mb-3">
-                    <h2>Muhammad Fahruddin</h2>
-                    <span class="fs-3">Personal</span> <br>
+                    <h2>PT. Aston Putra</h2>
+                    <span class="fs-3">PT</span> <br>
                     <span class="fs-3">Mitra Supplier Bidang Perdagangan</span>
                 </div>
                 <hr>
@@ -106,17 +106,10 @@
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-9 mb-3">
-                    <h2>Data Transaksi PT. Aston Putra</h2>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="row">
-                        <div class="col-md-10 col-10">
-                            <form action="">
-                                <input type="search" class="form-control" placeholder="Cari produk ...">
-                            </form>
-                        </div>
-                        <div class="col-md-2 col-2">
+                <div class="col-md-12 mb-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2>Data Transaksi PT. Aston Putra</h2>
+                        <div>
                             <a href="#" class="btn btn-rss w-100 btn-icon" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -202,43 +195,21 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal modal-blur fade" id="modal-upload" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Upload Data Supplier</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <form action="">
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                        <label class="form-label">Import data supplier</label>
-                                        <input type="file" class="form-control" name="file">
-                                        <small class="text-small"><b>Note:</b> format file .xlxs, .xls</small>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">Import</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
                 <div class="modal modal-blur fade" id="modal-filter" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Filter Data Supplier</h5>
+                                <h5 class="modal-title">Fillter Transaksi</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="">
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Filter data supplier</label>
+                                        <label class="form-label">Filter berdasarkan</label>
                                         <select name="" id="" class="form-select">
-                                            <option value="">Filter 1</option>
-                                            <option value="">Filter 2</option>
-                                            <option value="">Filter 3</option>
+                                            <option value="">All</option>
+                                            <option value="">Bulan</option>
+                                            <option value="">Tahun</option>
                                         </select>
                                     </div>
                                 </div>
@@ -294,34 +265,58 @@
     </div>
 </div>
 <div class="col-md-6">
-    <div class="card shadow-sm" style="height: 20rem">
-        <h2 class="ms-3 mt-3">Data Hutang</h2>
-        <div class="card-body card-body-scrollable card-body-scrollable-shadow">
-            <table class="table table-borderless fs-3">
+    <div class="card shadow-sm" style="height: 22rem">
+        <h2 class="ms-3 mt-3">Hutang Supllier</h2>
+        <div class="card-body card-body-scrollable card-body-scrollable-shadow mx-3" style="padding: 0;margin:0">
+            <table class="table table-borderless">
                 <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
+                    <th style="width: 30%">Uraian</th>
+                    <th style="width: 30%">Tempo</th>
+                    <th style="width: 15%">Nominal</th>
+                    <th style="width: 15%" class="text-center">Terbayar</th>
                 </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
-                <tr>
-                    <td>20 Mei 2022</td>
-                    <td class="text-end">Rp. 500.000</td>
-                </tr>
+                <tbody>
+                    <tr>
+                        <td>
+                            simply dummy text of the printing and typesetting
+                            <br>
+                            <small class="text-orange">2023-01-10</small>
+                        </td>
+                        <td class="fw-bold">3 Maret 2023</td>
+                        <td>500.000</td>
+                        <td class="text-center">250.000</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            simply dummy text of the printing and typesetting
+                            <br>
+                            <small class="text-orange">2023-01-09</small>
+                        </td>
+                        <td class="fw-bold">3 Maret 2023</td>
+                        <td>700.000</td>
+                        <td class="text-center">350.000</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            simply dummy text of the printing and typesetting
+                            <br>
+                            <small class="text-orange">2023-01-09</small>
+                        </td>
+                        <td class="fw-bold">3 Maret 2023</td>
+                        <td>700.000</td>
+                        <td class="text-center">350.000</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            simply dummy text of the printing and typesetting
+                            <br>
+                            <small class="text-orange">2023-01-09</small>
+                        </td>
+                        <td class="fw-bold">3 Maret 2023</td>
+                        <td>700.000</td>
+                        <td class="text-center">350.000</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
@@ -329,7 +324,7 @@
 <div class="col-lg-6">
     <div class="row row-cards">
         <div class="col-12">
-            <div class="card shadow-sm" style="height: 20rem">
+            <div class="card shadow-sm" style="height: 22rem">
                 <h2 class="ms-3 mt-3">Permasalahan ( Komplain )</h2>
                 <div class="card-body card-body-scrollable card-body-scrollable-shadow">
                     <div class="divide-y">
