@@ -2,14 +2,14 @@
 @section('title', 'Mitra Toko')
 
 @section('content')
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <h1>MITRA BIDANG PERDAGANGAN</h1>
 </div>
 <!-- Nav Menu Toko Start -->
 @include('mitra.layout.nav-menu')
 <!-- Nav Menu Toko End -->
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <a href="{{url('/mitra/store')}}" class="fs-2 fw-bold">Mitra Toko</a>
@@ -28,7 +28,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <h3>Taggal Transaksi : Selasa, 20 Mei 2022</h3>

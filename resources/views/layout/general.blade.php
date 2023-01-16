@@ -21,7 +21,7 @@
         <div class="page-wrapper">
             <div class="container-fluid">
                 <div class="page-body">
-                    <div class="row row-deck row-cards">
+                    <div class="row">
                         @yield('content')
                     </div>
                 </div>

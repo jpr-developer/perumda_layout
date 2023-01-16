@@ -1,11 +1,11 @@
 @extends('layout.general')
 
 @section('content')
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <h1>PENDAPATAN LAIN BIDANG PERDAGANGAN</h1>
 </div>
-<div class="col-md-12">
-    <div class="card">
+<div class="col-md-12 mb-3">
+    <div class="card shadow-sm">
         <div class="card-body">
             <p>
                 <font class="fs-1 fw-bold">Pendapatan Lain</font> <br>
@@ -14,7 +14,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">

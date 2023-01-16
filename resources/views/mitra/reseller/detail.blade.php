@@ -2,14 +2,14 @@
 @section('title', 'Mitra Reseller')
 
 @section('content')
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <h1>MITRA BIDANG PERDAGANGAN</h1>
 </div>
 <!-- Menu Nav Reseller Start -->
 @include('mitra.layout.nav-menu')
 <!-- Menu Nav Reseller End -->
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <a href="{{url('/mitra/reseller')}}" class="fs-2 fw-bold">Mitra Reseller</a>
@@ -22,8 +22,9 @@
         </div>
     </div>
 </div>
-<!-- Data Personal -->
-<div class="col-md-6">
+<div class="row row-deck">
+    <!-- Data Personal -->
+<div class="col-md-6 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row align-items-center">
@@ -59,7 +60,7 @@
     </div>
 </div>
 <!-- Status Reseller -->
-<div class="col-md-6">
+<div class="col-md-6 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="mb-3">
@@ -103,8 +104,9 @@
         </div>
     </div>
 </div>
+</div>
 <!-- Table Transaksi -->
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
@@ -183,7 +185,7 @@
     </div>
 </div>
 <!-- Grafik -->
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card">
         <div class="card-body">
             <div class="d-flex">
@@ -224,7 +226,7 @@
     </div>
 </div>
 <!-- Profit Sharing -->
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <h2>Profit Sharing</h2>
@@ -321,7 +323,7 @@
     </div>
 </div>
 <!-- Grafik Profit Sharing -->
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card">
         <div class="card-body">
             <div class="d-flex">
@@ -362,7 +364,7 @@
     </div>
 </div>
 <!-- Data Saldo -->
-<div class="col-md-4">
+<div class="col-md-4 mb-3">
     <div class="card shadow-sm" style="height: 22rem">
         <h2 class="ms-3 mt-3">Saldo Reseller</h2>
         <div class="card-body card-body-scrollable card-body-scrollable-shadow mx-3" style="padding: 0;margin:0">
@@ -420,7 +422,7 @@
     </div>
 </div>
 <!-- Data Piutang -->
-<div class="col-md-4">
+<div class="col-md-4 mb-3">
     <div class="card shadow-sm" style="height: 22rem">
         <h2 class="ms-3 mt-3">Piutang Reseller</h2>
         <div class="card-body card-body-scrollable card-body-scrollable-shadow mx-3" style="padding: 0;margin:0">
@@ -478,7 +480,7 @@
     </div>
 </div>
 <!-- Komplain -->
-<div class="col-lg-4">
+<div class="col-lg-4 mb-3">
     <div class="row row-cards">
         <div class="col-12">
             <div class="card shadow-sm" style="height: 22rem">

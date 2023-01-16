@@ -10,7 +10,7 @@
 @include('rkapb.penunjang_bisnis.menu.menu')
 
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">

@@ -2,14 +2,14 @@
 @section('title', 'Mitra Supplier')
 
 @section('content')
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <h1>MITRA BIDANG PERDAGANGAN</h1>
 </div>
 {{-- Include Nav Menu Start --}}
 @include('mitra.layout.nav-menu')
 {{-- Include Nav Menu End --}}
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <a href="{{url('/mitra/supplier')}}" class="fs-2 fw-bold">Mitra Supplier</a>
@@ -23,86 +23,88 @@
     </div>
 </div>
 
-<div class="col-md-6">
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-md-4 mb-3 text-center">
-                    <img class="rounded-circle" src="{{asset('assets/static/avatars/000f.jpg')}}" alt="" height="180" width="180">
-                </div>
-                <div class="col-md-8 mb-3">
-                    <h2>PT. Aston Putra</h2>
-                    <span class="fs-3">PT</span> <br>
-                    <span class="fs-3">Mitra Supplier Bidang Perdagangan</span>
-                </div>
-                <hr>
-                <table class="fs-3 table table-borderless">
-                    <tr>
-                        <td>Alamat</td>
-                        <td class="text-end">Jl. Pemuda No.03</td>
-                    </tr>
-                    <tr>
-                        <td>No Telepon Perusahaan</td>
-                        <td class="text-end">(0291) 4564 4565</td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td class="text-end">muhammadfahruddin@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Website</td>
-                        <td class="text-end">fahruddin.com</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-md-6">
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <div class="mb-3">
-                <h2>Status Supplier</h2>
-                <hr class="mt-1 mb-1">
-                <div class="table-responsive">
+<div class="row row-deck">
+    <div class="col-md-6 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-md-4 mb-3 text-center">
+                        <img class="rounded-circle" src="{{asset('assets/static/avatars/000f.jpg')}}" alt="" height="180" width="180">
+                    </div>
+                    <div class="col-md-8 mb-3">
+                        <h2>PT. Aston Putra</h2>
+                        <span class="fs-3">PT</span> <br>
+                        <span class="fs-3">Mitra Supplier Bidang Perdagangan</span>
+                    </div>
+                    <hr>
                     <table class="fs-3 table table-borderless">
                         <tr>
-                            <td>ID Supplier</td>
-                            <td class="text-end">SP.123456789</td>
+                            <td>Alamat</td>
+                            <td class="text-end">Jl. Pemuda No.03</td>
                         </tr>
                         <tr>
-                            <td>Kategori Supplier</td>
-                            <td class="text-end">Lembaga</td>
+                            <td>No Telepon Perusahaan</td>
+                            <td class="text-end">(0291) 4564 4565</td>
                         </tr>
                         <tr>
-                            <td>Sub Kategori Supplier</td>
-                            <td class="text-end">PT (Perseroan Terbatas)</td>
+                            <td>Email</td>
+                            <td class="text-end">muhammadfahruddin@gmail.com</td>
                         </tr>
                         <tr>
-                            <td>Tanggal Mulai Kerjasama</td>
-                            <td class="text-end">Selasa, 20 Mei 2022</td>
-                        </tr>
-                        <tr>
-                            <td>Durasi Kerjasama</td>
-                            <td class="text-end">1 Tahun</td>
-                        </tr>
-                        <tr>
-                            <td>NO Rekening Resmi</td>
-                            <td class="text-end">BNI - PT.Aston Putra - 32709273025</td>
-                        </tr>
-                        <tr>
-                            <td>Dokumen Kontrak Kerjasama</td>
-                            <td class="text-end">
-                                <a href="" class="btn btn-dribbble" data-bs-toggle="modal" data-bs-target="#modal-contract">Lihat Dokumen</a>
-                            </td>
+                            <td>Website</td>
+                            <td class="text-end">fahruddin.com</td>
                         </tr>
                     </table>
                 </div>
             </div>
         </div>
     </div>
+    <div class="col-md-6 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <div class="mb-3">
+                    <h2>Status Supplier</h2>
+                    <hr class="mt-1 mb-1">
+                    <div class="table-responsive">
+                        <table class="fs-3 table table-borderless">
+                            <tr>
+                                <td>ID Supplier</td>
+                                <td class="text-end">SP.123456789</td>
+                            </tr>
+                            <tr>
+                                <td>Kategori Supplier</td>
+                                <td class="text-end">Lembaga</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Kategori Supplier</td>
+                                <td class="text-end">PT (Perseroan Terbatas)</td>
+                            </tr>
+                            <tr>
+                                <td>Tanggal Mulai Kerjasama</td>
+                                <td class="text-end">Selasa, 20 Mei 2022</td>
+                            </tr>
+                            <tr>
+                                <td>Durasi Kerjasama</td>
+                                <td class="text-end">1 Tahun</td>
+                            </tr>
+                            <tr>
+                                <td>NO Rekening Resmi</td>
+                                <td class="text-end">BNI - PT.Aston Putra - 32709273025</td>
+                            </tr>
+                            <tr>
+                                <td>Dokumen Kontrak Kerjasama</td>
+                                <td class="text-end">
+                                    <a href="" class="btn btn-dribbble" data-bs-toggle="modal" data-bs-target="#modal-contract">Lihat Dokumen</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
@@ -224,7 +226,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card">
         <div class="card-body">
             <div class="d-flex">
@@ -264,7 +266,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-6">
+<div class="col-md-6 mb-3">
     <div class="card shadow-sm" style="height: 22rem">
         <h2 class="ms-3 mt-3">Hutang Supllier</h2>
         <div class="card-body card-body-scrollable card-body-scrollable-shadow mx-3" style="padding: 0;margin:0">
@@ -321,7 +323,7 @@
         </div>
     </div>
 </div>
-<div class="col-lg-6">
+<div class="col-lg-6 mb-3">
     <div class="row row-cards">
         <div class="col-12">
             <div class="card shadow-sm" style="height: 22rem">

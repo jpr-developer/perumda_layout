@@ -2,10 +2,10 @@
 @section('title', "Produk")
 
 @section('content')
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <h1>PRODUK BIDANG PERDAGANGAN</h1>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card">
         <div class="card-body">
             <p>
@@ -15,7 +15,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card">
         <div class="card-body">
             <div class="row">

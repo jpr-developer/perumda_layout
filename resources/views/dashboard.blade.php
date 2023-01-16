@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-<div class="col-12">
+<div class="col-12 mb-3">
     <div class="row row-cards">
         <div class="col-sm-6 col-lg-3">
             <div class="card card-sm shadow-sm">
@@ -110,7 +110,7 @@
     </div>
 </div>
 <!-- Maps -->
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="ratio ratio-16x9">
@@ -201,7 +201,7 @@
 <!-- Maps End -->
 
 <!-- Chart Weekly Sales -->
-<div class="col-md-8">
+<div class="col-md-8 mb-3">
     <div class="card">
         <div class="card-header">
             <h1 class="card-title">Weekly Sales</h1>
@@ -211,7 +211,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 mb-3">
     <div class="row row-cards">
         <div class="col-md-12">
             <div class="card">
@@ -287,7 +287,7 @@
 <!-- Chart Weekly Sales End -->
 
 <!-- Card -->
-<div class="col-md-4">
+<div class="col-md-4 mb-3">
     <div class="card">
         <div class="card-header bg-danger">
             <h3 class="card-title">SARAN DAN MASUKAN</h3>
@@ -356,7 +356,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 mb-3">
     <div class="card">
         <div class="card-header bg-info">
             <h3 class="card-title">KOMPLAIN</h3>
@@ -446,7 +446,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-4">
+<div class="col-md-4 mb-3">
     <div class="card">
         <div class="card-header bg-success">
             <h3 class="card-title">JADWAL PENGIRIMAN</h3>

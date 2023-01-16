@@ -7,7 +7,7 @@
 <!-- Menu RKAPB End -->
 
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card">
         <div class="card-body">
             <p>
@@ -17,214 +17,131 @@
         </div>
     </div>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <div class="row">
-                <div class="col-md-9 mb-3">
-                    <h2>RKAPB Tahun 2023</h2>
+           <div class="row">
+                <div class="col-md-3 col-2">
+
                 </div>
-                <div class="col-md-3 mb-3">
-                    <div class="row">
-                        <div class="col-md-10 col-10">
-                            <form action="">
-                                <input type="search" class="form-control" placeholder="Cari uraian program ...">
-                            </form>
-                        </div>
-                        <div class="col-md-2 col-2">
-                            <a href="#" class="btn btn-rss w-100 btn-icon" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M5.5 5h13a1 1 0 0 1 .5 1.5l-5 5.5l0 7l-4 -3l0 -4l-5 -5.5a1 1 0 0 1 .5 -1.5"></path>
-                                </svg>
-                            </a>
-                        </div>
+                <div class="col-md-6 col-8">
+                    <h2 class="text-center">
+                        PENJABARAN <br>
+                        RENCANA KERJA ANGGARAN PENDAPATAN DAN BELANJA
+                        PERUSAHAAN UMUM DAERAH "ANEKA USAHA" KABUPATEN JEPARA <br>
+                        TAHUN 2023
+                    </h2>
+                </div>
+                <div class="col-md-3 col-2">
+                    <div class="d-flex justify-content-end">
+                        <a href="#" class="btn btn-icon btn-rss" data-bs-toggle="modal" data-bs-target="#modal-filter">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M5.5 5h13a1 1 0 0 1 .5 1.5l-5 5.5l0 7l-4 -3l0 -4l-5 -5.5a1 1 0 0 1 .5 -1.5"></path>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-
-                <div class="col-md-12">
+                <div class="col-md-12 mb-3">
                     <div class="table-responsive">
                         <table class="table table-bordered">
-                            <thead class="card-table">
-                                <th style="width: 5%" class="rounded-start">
-                                    <div class="form-control">
-                                        No
-                                    </div>
-                                </th>
-                                <th style="width: 15%">
-                                    <div class="form-control">
-                                        Kode Perkiraan
-                                    </div>
-                                </th>
-                                <th style="width: 20%">
-                                    <div class="form-control">
-                                        Uraian Program
-                                    </div>
-                                </th>
-                                <th style="width: 15%">
-                                    <div class="form-control">
-                                        Per Bulan
-                                    </div>
-                                </th>
-                                <th style="width: 15%">
-                                    <div class="form-control">
-                                        Per Tahun
-                                    </div>
-                                </th>
-                                <th style="width: 20%" class="rounded-end">
-                                    <div class="form-control">
-                                        Keterangan
-                                    </div>
-                                </th>
-                            </thead>
-                            <tbody class="fs-3">
-                                <!-- Kategori Bisnis - Pendapatan Usaha -->
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">1</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">4,1,2</span>
-                                    </td>
-                                    <td colspan="4">
-                                        <span class="form-control border border-0 fs-3 fw-bold">
-                                            Pendapatan Usaha
-                                        </span>
+                            <tr class="align-middle">
+                                <th style="width: 3%" class="text-center">No</th>
+                                <th>Kode Perkiraan</th>
+                                <th style="width: 15%">Uraian</th>
+                                <th style="width: 15%">RKAPB Tahun 2022</th>
+                                <th style="width: 15%">Estimasi s/d Desember 2022</th>
+                                <th style="width: 15%">RKAPB 2023</th>
+                                <th style="width: 20%">Keterangan</th>
+                            </tr>
+                            <tbody>
+                                <!-- Pendapatan Usaha -->
+                                <tr class="align-middle">
+                                    <td class="text-center">1</td>
+                                    <td>4,2,1</td>
+                                    <td colspan="5">
+                                        <span class="fw-bold">PENDAPATAN USAHA</span>
                                     </td>
                                 </tr>
-                                <!-- Kategori Bisnis - Pendapatan Usaha Data -->
-                                <tr>
+                                <tr class="align-middle">
                                     <td></td>
+                                    <td>4,2,1,1</td>
+                                    <td>Penerimaan Alat Tulis kantor</td>
+                                    <td>Rp 1.900.000.000</td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">4,1,2,1</span>
+                                        Rp 1.548.682.452
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Penerimaan Alat Tulis Kantor</span>
+                                        Rp 1.720.000.000
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Rp  143.333.333</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Rp 1.720.000.000</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        </span>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr class="align-middle">
                                     <td></td>
-                                    <td colspan="3">
-                                        <span class="form-control border border-0 fs-3 fw-bold">
-                                            JUMLAH PENDAPATAN
-                                        </span>
+                                    <td>4,2,1,2</td>
+                                    <td>Penjualan Barang Lain</td>
+                                    <td>Rp 0</td>
+                                    <td>
+                                        Rp 7.900.000
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3 fw-bold">Rp  6.355.250.000</span>
-                                    </td>
-                                </tr>
-
-                                <!-- Kategori Bisnis - Harga Pokok Penjualan -->
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">2</span>
+                                        Rp 0
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">5,1</span>
-                                    </td>
-                                    <td colspan="4">
-                                        <span class="form-control border border-0 fs-3 fw-bold">
-                                            Harga Pokok Penjualan
-                                        </span>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
                                     </td>
                                 </tr>
-                                 <!-- Kategori Bisnis - Harga Pokok Penjualan Data -->
-                                 <tr>
+                                <tr class="align-middle">
                                     <td></td>
+                                    <td>4,2,1,3</td>
+                                    <td>Penjualan Kopi</td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">5,1,1</span>
+                                        Rp 1.532.640.000
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Pembelian Alat Tulis Kantor</span>
+                                        Rp 299.905.500
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Rp  114.666.000</span>
+                                        Rp 2.055.250.000
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Rp 1.376.000.000</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td colspan="3">
-                                        <span class="form-control border border-0 fs-3 fw-bold">
-                                            JUMLAH Harga Pokok Penjualan
-                                        </span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3 fw-bold">Rp  5.569.240.000</span>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
+           </div>
 
-                <!-- Modal -->
-                <div class="modal modal-blur fade" id="modal-upload" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Upload Data Supplier</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <form action="">
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                        <label class="form-label">Import data supplier</label>
-                                        <input type="file" class="form-control" name="file">
-                                        <small class="text-small"><b>Note:</b> format file .xlxs, .xls</small>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary">Import</button>
-                                </div>
-                            </form>
-                        </div>
+           <!-- Modal -->
+           <div class="modal modal-blur fade" id="modal-filter" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Filter RKAPB</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                </div>
-                <div class="modal modal-blur fade" id="modal-filter" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Filter RKAPB</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <form action="">
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <label class="form-label">Pilih Tahun</label>
+                                <select name="" id="" class="form-select">
+                                    <option value="">2023</option>
+                                    <option value="">2022</option>
+                                    <option value="">2021</option>
+                                </select>
                             </div>
-                            <form action="">
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                        <label class="form-label">Filter RKAPB</label>
-                                        <select name="" id="" class="form-select">
-                                            <option value="">2023</option>
-                                            <option value="">2022</option>
-                                            <option value="">2021</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-rss">Filter</button>
-                                </div>
-                            </form>
                         </div>
-                    </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-rss">Filter</button>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </div>

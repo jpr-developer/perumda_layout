@@ -1,7 +1,7 @@
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <h1>RKAPB BIDANG PERDAGANGAN</h1>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <ul class="d-flex fs-3 fw-bolder" style="list-style: none; padding:0;margin:0;">

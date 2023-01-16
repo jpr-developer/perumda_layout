@@ -5,6 +5,9 @@ svg.radial-progress {
     transform: rotate(-90deg);
     width: 100%;
 }
+svg.indikator {
+    max-width: 120px;
+}
 
 svg.radial-progress circle {
     fill: rgba(0,0,0,0);
@@ -26,6 +29,8 @@ svg.radial-progress text {
 svg.radial-progress  circle.primary { stroke: #a2ed56; }
 svg.radial-progress  circle.secondary { stroke: #83e4e2; }
 svg.radial-progress  circle.third { stroke: #fd6470; }
+svg.radial-progress  circle.matrix-blue { stroke: #4680ff; }
+
 
 /* Scroll bar color */
 .scrollbar-red::-webkit-scrollbar-thumb {

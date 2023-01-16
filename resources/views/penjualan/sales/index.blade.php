@@ -4,7 +4,7 @@
 <!-- Get Nav menu Penjualan -->
 @include('penjualan.layout.nav-menu')
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card">
         <div class="card-body">
             <p>
@@ -14,7 +14,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">

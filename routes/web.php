@@ -260,10 +260,7 @@ Route::prefix('/financial')->group(function() {
 
 });
 
-// Kegiatan
-Route::get('/kegiatan', function() {
-    return view('kegiatan.index');
-});
-Route::get('/kegiatan/detail', function() {
-    return view('kegiatan.detail');
+// Jaminan Mutu
+Route::get('/jaminan-mutu', function() {
+    return view('jaminan_mutu.index');
 });

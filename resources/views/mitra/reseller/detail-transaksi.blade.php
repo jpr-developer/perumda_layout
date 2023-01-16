@@ -2,14 +2,14 @@
 @section('title', 'Mitra Reseller')
 
 @section('content')
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <h1>MITRA BIDANG PERDAGANGAN</h1>
 </div>
 {{-- Include Nav Menu Start --}}
 @include('mitra.layout.nav-menu')
 {{-- Include Nav Menu End --}}
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <a href="{{url('/mitra/reseller')}}" class=" fs-2 fw-bold">Mitra Reseller</a>
@@ -28,7 +28,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <h3>Taggal Transaksi : Selasa, 20 Mei 2022</h3>

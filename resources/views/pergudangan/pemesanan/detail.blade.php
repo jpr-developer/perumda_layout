@@ -6,7 +6,7 @@
 @include('pergudangan.layout.nav-menu')
 {{-- Include Nav Menu End --}}
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <a href="{{url('/warehouse/pemesanan')}}" class="text-decoration-underline fs-2 fw-bold">Pembelian Produk</a>
@@ -20,7 +20,7 @@
     </div>
 </div>
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card">
         <div class="card-body">
             <h3>Taggal Pembelian : Selasa, 20 Mei 2022</h3>

@@ -3,7 +3,7 @@
 @section('content')
 @include('penjualan.layout.nav-menu')
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <a href="{{url('/penjualan/retur')}}" class="text-decoration-underline fs-2 fw-bold">Retur Penjualan Produk</a>
@@ -16,8 +16,8 @@
         </div>
     </div>
 </div>
-<div class="col-md-12">
-    <div class="card">
+<div class="col-md-12 mb-3">
+    <div class="card shadow-sm">
         <div class="card-body">
             <h3>Taggal Retur : Selasa, 20 Mei 2022</h3>
             <h3>ID Retur : TR.123456789</h3>

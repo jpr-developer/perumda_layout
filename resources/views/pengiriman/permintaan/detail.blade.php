@@ -3,7 +3,7 @@
 @section('content')
 @include('pengiriman.layout.nav-menu')
 
-<div class="col-md-12">
+<div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <a href="{{url('/pengiriman/permintaan')}}" class="text-decoration-underline fs-2 fw-bold">Pengiriman Produk</a>
@@ -16,8 +16,8 @@
         </div>
     </div>
 </div>
-<div class="col-md-12">
-    <div class="card">
+<div class="col-md-12 mb-3">
+    <div class="card shadow-sm">
         <div class="card-body">
             <h3>Taggal Pengiriman : Selasa, 20 Mei 2022</h3>
             <h3>ID Pengiriman : TR.123456789</h3>
