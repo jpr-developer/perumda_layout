@@ -10,6 +10,8 @@
     <link href="{{asset('assets/dist/css/tabler-vendors.min.css')}}" rel="stylesheet"/>
     <link rel="stylesheet" href="{{asset('assets/dist/css/custome.css')}}">
 
+    <link rel="icon" href="{{asset('assets/logo/logo.png')}}">
+
     @yield('css')
 
   </head>
