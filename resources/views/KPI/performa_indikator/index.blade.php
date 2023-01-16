@@ -30,7 +30,7 @@
                                 </svg>
                                 <div>
                                     <p class="lh-sm">
-                                        <font class="fs-1 fw-bold">Rp. 25.000.000.000</font> <br>
+                                        <font class="fs-2 fw-bold">Rp. 25.000.000.000</font> <br>
                                         <small class="text-green">+20%</small>
                                     </p>
                                 </div>
@@ -56,7 +56,7 @@
                                 </svg>
                                 <div>
                                     <p class="lh-sm">
-                                        <font class="fs-1 fw-bold">Rp. 29.000.000.000</font> <br>
+                                        <font class="fs-2 fw-bold">Rp. 29.000.000.000</font> <br>
                                         <small class="text-red">-20%</small>
                                     </p>
                                 </div>
@@ -82,7 +82,7 @@
                                 </svg>
                                 <div>
                                     <p class="lh-sm">
-                                        <font class="fs-1 fw-bold">Rp. 25.000.000.000</font> <br>
+                                        <font class="fs-2 fw-bold">Rp. 25.000.000.000</font> <br>
                                         <small class="text-green">+20%</small>
                                     </p>
                                 </div>
@@ -96,7 +96,7 @@
             </div>
         </div>
         <div class="col-md-12 mb-3">
-            <div class="card shadow-sm" style="height: 19rem">
+            <div class="card shadow-sm" style="height: 19.8rem">
                 <div class="card-body">
                     <h1 class="text-center">Skor Performa Indikator</h1>
                     <div class="d-flex justify-content-center mb-2">
