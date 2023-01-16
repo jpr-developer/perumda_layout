@@ -58,7 +58,7 @@
                 </div>
             </div>
             <h3>Capaian Mutu Program Kegiatan Bisnis</h3>
-            <table class="table table-bordered mb-5">
+            <table class="table table-bordered mb-3">
                 <tr>
                     <th colspan="5">Penjualan : 20%</th>
                 </tr>
@@ -100,6 +100,51 @@
                     <td>80</td>
                     <td>B</td>
                     <td>Cukup Bagus</td>
+                </tr>
+            </table>
+            <h3>Capaian Mutu Program Kegiatan Penunjang Bisnis</h3>
+            <table class="table table-bordered mb-5">
+                <tr>
+                    <th colspan="5">Biaya Umum : 10%</th>
+                </tr>
+                <tr>
+                    <th>Kegiatan Penunjang Bisnis</th>
+                    <th>Bobot</th>
+                    <th>KPI Skor</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Gaji karyawan</td>
+                    <td>100</td>
+                    <td>A</td>
+                    <td>Sangat Bagus</td>
+                </tr>
+                <tr>
+                    <td>Biaya Kesejahteraan Pegawai</td>
+                    <td>100</td>
+                    <td>A</td>
+                    <td>Sangat Bagus</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Biaya Kantor : 10%</th>
+                </tr>
+                <tr>
+                    <th>Kegiatan Penunjang Bisnis</th>
+                    <th>Bobot</th>
+                    <th>KPI Skor</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Biaya Perlengkapan Kantor</td>
+                    <td>100</td>
+                    <td>A</td>
+                    <td>Sangat Bagus</td>
+                </tr>
+                <tr>
+                    <td>Biaya Pos dan Telepon</td>
+                    <td>100</td>
+                    <td>A</td>
+                    <td>Sangat Bagus Bagus</td>
                 </tr>
             </table>
             <div class="d-flex justify-content-end">

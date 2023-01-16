@@ -4,8 +4,8 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <div class="row">
-                <div class="col-md-2 col-4">
+            <ul class="d-flex fs-3 fw-bolder" style="list-style: none; padding:0;margin:0;">
+                <li class="me-4">
                     <a href="{{url('/warehouse/pemesanan')}}" class="@if(Request::is('warehouse/pemesanan*')) active-nav @else link-secondary @endif d-flex align-items-center">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -17,8 +17,8 @@
                         </span>
                         <span class="fs-3 fw-bolder">Pembelian</span>
                     </a>
-                </div>
-                <div class="col-md-2 col-4">
+                </li>
+                <li class="me-4">
                     <a href="{{url('/warehouse/stock')}}" class="@if(Request::is('warehouse/stock*')) active-nav @else link-secondary @endif d-flex align-items-center">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -30,8 +30,8 @@
                         </span>
                         <span class="fs-3 fw-bolder">Stok</span>
                     </a>
-                </div>
-                <div class="col-md-2 col-4">
+                </li>
+                <li class="me-4">
                     <a href="{{url('/warehouse/opname')}}" class="d-flex align-items-center @if(Request::is('warehouse/opname*')) active-nav @else link-secondary @endif">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -43,8 +43,8 @@
                         </span>
                         <span class="fs-3 fw-bolder">Opname</span>
                     </a>
-                </div>
-                <div class="col-md-2 col-4">
+                </li>
+                <li class="me-4">
                     <a href="{{url('/warehouse/spoil')}}" class="d-flex align-items-center @if(Request::is('warehouse/spoil*')) active-nav @else link-secondary @endif">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -56,8 +56,8 @@
                         </span>
                         <span class="fs-3 fw-bolder">Spoil</span>
                     </a>
-                </div>
-                <div class="col-md-2 col-4">
+                </li>
+                <li class="me-4">
                     <a href="{{url('/warehouse/arus-produk')}}" class="d-flex align-items-center @if(Request::is('warehouse/arus-produk*')) active-nav @else link-secondary @endif">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -69,8 +69,8 @@
                         </span>
                         <span class="fs-3 fw-bolder">Arus Produk</span>
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>

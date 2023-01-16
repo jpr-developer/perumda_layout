@@ -3,23 +3,15 @@
 
 @include('financial.layout.nav-menu')
 
-<div class="col-md-12 mb-3">
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <p>
-                <font class="fs-1 fw-bold">Financial Operasional</font> <br>
-                <span>Data financial operasional</span>
-            </p>
-        </div>
-    </div>
-</div>
+@include('financial.bisnis.layout.menu')
+
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
                 <div class="col-md-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h2>Data Financial Operasional</h2>
+                        <h2>Data Harga Pokok Penjualan</h2>
                         <div>
                             <a href="#" class="btn btn-rss w-100 btn-icon" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -76,7 +68,7 @@
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/financial/biaya_operasional/detail')}}" class="btn btn-dribbble form-control mx-3">View</a>
+                                            <a href="{{url('/financial/bisnis/hpp/detail')}}" class="btn btn-dribbble form-control mx-3">View</a>
                                         </div>
                                     </td>
                                 </tr>

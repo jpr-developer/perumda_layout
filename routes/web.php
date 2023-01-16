@@ -235,19 +235,58 @@ Route::prefix('/rkapb')->group(function() {
 
 // Financial
 Route::prefix('/financial')->group(function() {
-    Route::get('/pendapatan_usaha', function() {
-        return view('financial.pendapatan_usaha.index');
-    });
-    Route::get('/pendapatan_usaha/detail', function() {
-        return view('financial.pendapatan_usaha.detail');
+    Route::prefix('/bisnis')->group(function() {
+        Route::get('/pendapatan-usaha', function() {
+            return view('financial.bisnis.pendapatan_usaha.index');
+        });
+        Route::get('/pendapatan-usaha/detail', function() {
+            return view('financial.bisnis.pendapatan_usaha.detail');
+        });
+
+        Route::get('/hpp', function() {
+            return view('financial.bisnis.hpp.index');
+        });
+        Route::get('/hpp/detail', function() {
+            return view('financial.bisnis.hpp.detail');
+        });
+
+        Route::get('/laba-kotor', function() {
+            return view('financial.bisnis.laba_kotor.index');
+        });
+        Route::get('/laba-kotor/detail', function() {
+            return view('financial.bisnis.laba_kotor.detail');
+        });
+
     });
 
-    // HPP
-    Route::get('/hpp', function() {
-        return view('financial.hpp.index');
-    });
-    Route::get('/hpp/detail', function() {
-        return view('financial.hpp.detail');
+    Route::prefix('/penunjang-bisnis')->group(function() {
+        Route::get('/biaya-pegawai', function() {
+            return view('financial.penunjang_bisnis.biaya_pegawai.index');
+        });
+        Route::get('/biaya-pegawai/detail', function() {
+            return view('financial.penunjang_bisnis.biaya_pegawai.detail');
+        });
+
+        Route::get('/biaya-kantor', function() {
+            return view('financial.penunjang_bisnis.biaya_kantor.index');
+        });
+        Route::get('/biaya-kantor/detail', function() {
+            return view('financial.penunjang_bisnis.biaya_kantor.detail');
+        });
+
+        Route::get('/biaya-umum', function() {
+            return view('financial.penunjang_bisnis.biaya_umum.index');
+        });
+        Route::get('/biaya-umum/detail', function() {
+            return view('financial.penunjang_bisnis.biaya_umum.detail');
+        });
+
+        Route::get('/biaya-pemasaran', function() {
+            return view('financial.penunjang_bisnis.biaya_pemasaran.index');
+        });
+        Route::get('/biaya-pemasaran/detail', function() {
+            return view('financial.penunjang_bisnis.biaya_pemasaran.detail');
+        });
     });
 
     // Biaya Operasional

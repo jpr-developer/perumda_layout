@@ -88,7 +88,7 @@
                 </a>
             </li>
             <li class="@if(Request::is('financial*')) active @endif">
-                <a href="{{url('/financial/pendapatan_usaha')}}" class="title">
+                <a href="{{url('/financial/bisnis/pendapatan-usaha')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Financial_white.png')}}" alt="" class="icon">
                         <span class="name">Financial</span>

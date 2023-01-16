@@ -3,10 +3,12 @@
 @section('content')
 @include('financial.layout.nav-menu')
 
+@include('financial.penunjang_bisnis.layout.menu')
+
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/financial/biaya_operasional')}}" class="text-decoration-underline fs-2 fw-bold">Financial Operasional</a>
+            <a href="{{url('/financial/penunjang-bisnis/biaya-kantor')}}" class="text-decoration-underline fs-2 fw-bold">Biaya Kantor</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
@@ -19,13 +21,13 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h3>Taggal : Selasa, 20 Mei 2022</h3>
+            <h3>Taggal : Jumat, 30 Mei 2023</h3>
             <h3>ID Financial : TR.123456789</h3>
 
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead class="card-table">
-                        <th style="width: 5%" class="rounded-start">
+                        <th style="width: 3%" class="rounded-start">
                             <div class="form-control">
                                 No
                             </div>
@@ -37,7 +39,7 @@
                         </th>
                         <th style="width: 15%">
                             <div class="form-control">
-                                Sub Total
+                                Nominal
                             </div>
                         </th>
                     </thead>
@@ -47,10 +49,10 @@
                                 <span class="form-control border border-0 fs-3">1</span>
                             </td>
                             <td>
-                                <span class="form-control border border-0 fs-3">Kopi</span>
+                                <span class="form-control border border-0 fs-3">Nota Cetak</span>
                             </td>
                             <td>
-                                <span class="form-control border border-0 fs-3">Rp 10.000.000</span>
+                                <span class="form-control border border-0 fs-3">Rp 3.000.000</span>
                             </td>
                         </tr>
                         <tr>
@@ -58,19 +60,19 @@
                                 <span class="form-control border border-0 fs-3">2</span>
                             </td>
                             <td>
-                                <span class="form-control border border-0 fs-3">ATK</span>
+                                <span class="form-control border border-0 fs-3">Nota Rojoku</span>
                             </td>
                             <td>
-                                <span class="form-control border border-0 fs-3">Rp 8.000.000</span>
+                                <span class="form-control border border-0 fs-3">Rp 1.000.000</span>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="2">
-                                <span class="form-control border border-0 fs-3 fw-bold">TOTAL</span>
-                            </td>
-                            <td>
-                                <span class="form-control border border-0 fs-3 fw-bold">Rp 18.000.000</span>
-                            </td>
+                            <th colspan="2">
+                                <span class="form-control border border-0 fs-3 fw-bold">Total</span>
+                            </th>
+                            <th>
+                                <span class="form-control border border-0 fs-3 fw-bold">Rp 4.000.000</span>
+                            </th>
                         </tr>
                     </tbody>
                 </table>

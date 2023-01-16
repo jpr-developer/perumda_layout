@@ -59,7 +59,7 @@
                     <div class="mb-3 row">
                         <label class="col-3 col-form-label required">Nama Kategori Kegiatan</label>
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Nama bobot kegiatan" required>
+                            <input type="text" class="form-control" placeholder="Nama kategori kegiatan" required>
                         </div>
                     </div>
                     <div class="mb-3 row">
@@ -75,21 +75,38 @@
                     </div>
                 </form>
             </div>
-            <div class="table-responsive mb-3">
+            <div class=" mb-3">
                 <table class="table">
                     <tr>
                         <th>Program Kegiatan</th>
                         <th>Kategori Kegiatan</th>
                         <th>Bobot Kategori</th>
-                        <th>Action</th>
+                        <th class="text-center">Action</th>
                     </tr>
                     <tbody>
                         <tr>
                             <td>Prioritas</td>
                             <td>Penjualan</td>
                             <td>20%</td>
-                            <td>
-                                <a href="" class="btn btn-success btn-sm">Edit</a>
+                            <td class="text-center">
+                                <span class="dropdown">
+                                    <a href="" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <circle cx="12" cy="12" r="1"></circle>
+                                            <circle cx="12" cy="19" r="1"></circle>
+                                            <circle cx="12" cy="5" r="1"></circle>
+                                        </svg>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-start">
+                                        <a class="dropdown-item" href="#">
+                                            Edit
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            Delete
+                                        </a>
+                                    </div>
+                                </span>
                             </td>
                         </tr>
                     </tbody>
@@ -135,7 +152,7 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-3 col-form-label required">Bobit Kegiatan Bisnis</label>
+                        <label class="col-3 col-form-label required">Bobot Kegiatan Bisnis</label>
                         <div class="col">
                             <input type="number" class="form-control" placeholder="Bobot kegiatan bisnis" min="0" max="100" required>
                         </div>
@@ -152,6 +169,45 @@
                         </div>
                     </div>
                 </form>
+            </div>
+            <div class=" mb-3">
+                <table class="table">
+                    <tr>
+                        <th>Nama Kegiatan</th>
+                        <th>Kategori Kegiatan</th>
+                        <th>Bobot Kegiatan</th>
+                        <th>KPI Skor</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>Penjualan Kopi</td>
+                            <td>Penjualan</td>
+                            <td>100</td>
+                            <td>A</td>
+                            <td class="text-center">
+                                <span class="dropdown">
+                                    <a href="" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                            <circle cx="12" cy="12" r="1"></circle>
+                                            <circle cx="12" cy="19" r="1"></circle>
+                                            <circle cx="12" cy="5" r="1"></circle>
+                                        </svg>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-start">
+                                        <a class="dropdown-item" href="#">
+                                            Edit
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            Delete
+                                        </a>
+                                    </div>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

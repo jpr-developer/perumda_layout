@@ -1,26 +1,30 @@
 @extends('layout.general')
+
 @section('content')
 
+<!-- Menu Financial Start -->
 @include('financial.layout.nav-menu')
+<!-- Menu Financial End -->
 
-<div class="col-md-12 mb-3">
-    <div class="card">
-        <div class="card-body">
-            <p>
-                <font class="fs-1 fw-bold">Harga Pokok Penjualan</font> <br>
-                <span>Data harga pokok penjualan</span>
-            </p>
-        </div>
-    </div>
-</div>
+
+@include('financial.penunjang_bisnis.layout.menu')
+
+
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-12 mb-3">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <h2>Data Harga Pokok Penjualan</h2>
-                        <div>
+                <div class="col-md-9 mb-3">
+                    <h2>Financial Penunjang Bisnis - Biaya Kantor</h2>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="row">
+                        <div class="col-md-10 col-10">
+                            <form action="">
+                                <input type="search" class="form-control" placeholder="Cari uraian ...">
+                            </form>
+                        </div>
+                        <div class="col-md-2 col-2">
                             <a href="#" class="btn btn-rss w-100 btn-icon" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -30,6 +34,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-12">
                     <div class="table-responsive">
                         <table class="table table-borderless">
@@ -41,10 +46,15 @@
                                 </th>
                                 <th style="width: 15%">
                                     <div class="form-control">
-                                        ID Financial
+                                        ID Financial Penunjang Bisnis
                                     </div>
                                 </th>
                                 <th style="width: 20%">
+                                    <div class="form-control">
+                                        Uraian
+                                    </div>
+                                </th>
+                                <th style="width: 15%">
                                     <div class="form-control">
                                         Tanggal
                                     </div>
@@ -69,14 +79,17 @@
                                         <span class="form-control border border-0 fs-3">PR.12345678</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Selasa, 20 Mei 2022</span>
+                                        <span class="form-control border border-0 fs-3">Biaya Perlengkapan Kantor</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">RP. 1.500.000</span>
+                                        <span class="form-control border border-0 fs-3">Jumat, 30 Mei 2023</span>
+                                    </td>
+                                    <td>
+                                        <span class="form-control border border-0 fs-3">Rp 4.000.000</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/financial/hpp/detail')}}" class="btn btn-dribbble form-control mx-3">View</a>
+                                            <a href="{{url('/financial/penunjang-bisnis/biaya-kantor/detail')}}" class="btn btn-dribbble form-control mx-3">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -90,17 +103,17 @@
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Filter By Date</h5>
+                                <h5 class="modal-title">Filter by Date - Biaya Kantor</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <form action="">
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Filter by date</label>
+                                        <label class="form-label">Pilih Tahun</label>
                                         <select name="" id="" class="form-select">
-                                            <option value="">All</option>
-                                            <option value="">Bulan</option>
-                                            <option value="">Tahun</option>
+                                            <option value="">2023</option>
+                                            <option value="">2022</option>
+                                            <option value="">2021</option>
                                         </select>
                                     </div>
                                 </div>
