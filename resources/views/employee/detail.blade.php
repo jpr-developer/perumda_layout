@@ -14,7 +14,7 @@
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <span class="fs-2 fw-bold">Muhammad Fahruddin</span>
+            <span class="fs-2 fw-bold">{{$employee->name}}</span>
         </div>
     </div>
 </div>
@@ -27,31 +27,31 @@
                         <img class="rounded-circle" src="{{asset('assets/static/avatars/000f.jpg')}}" alt="" height="200" width="200">
                     </div>
                     <div class="col-md-8 mb-3">
-                        <h2>Muhammad Fahruddin</h2>
-                        <span class="fs-3">Manager</span> <br>
-                        <span class="fs-3">Karyawan Bidang Perdagangan</span>
+                        <h2>{{$employee->name}}</h2>
+                        <span class="fs-3">{{$employee->job}}</span> <br>
+                        <span class="fs-3">{{$employee->position}}</span>
                     </div>
                     <hr>
                     <table class="fs-3 table table-borderless">
                         <tr>
                             <td>Pendidikan</td>
-                            <td class="text-end">Sarjana Ekonomi</td>
+                            <td class="text-end">{{$employee->education}}</td>
                         </tr>
                         <tr>
                             <td>Alamat</td>
-                            <td class="text-end">Jl. Pemuda No.03</td>
+                            <td class="text-end">{{$employee->address}}</td>
                         </tr>
                         <tr>
                             <td>Tempat, Tanggal Lahir</td>
-                            <td class="text-end">Jepara, 20 Mei 1990</td>
+                            <td class="text-end">{{$employee->birth_place}}, {{date('d F Y', strtotime($employee->birth_date))}}</td>
                         </tr>
                         <tr>
                             <td>No Telepon</td>
-                            <td class="text-end">+62 8945 9878 4567</td>
+                            <td class="text-end">{{$employee->phone}}</td>
                         </tr>
                         <tr>
                             <td>Email</td>
-                            <td class="text-end">muhammadfahruddin@gmail.com</td>
+                            <td class="text-end">{{$employee->email}}</td>
                         </tr>
                     </table>
                 </div>
@@ -68,27 +68,27 @@
                         <table class="fs-3 table table-borderless">
                             <tr>
                                 <td>No Induk Karyawan</td>
-                                <td class="text-end">876788787687</td>
+                                <td class="text-end">{{$employee->nip}}</td>
                             </tr>
                             <tr>
                                 <td>Tanggal Bergabung</td>
-                                <td class="text-end">20 Mei 2020</td>
+                                <td class="text-end">{{date('d F Y', strtotime($employee->join_date))}}</td>
                             </tr>
                             <tr>
                                 <td>Posisi</td>
-                                <td class="text-end">Bidang Perdangan</td>
+                                <td class="text-end">{{$employee->position}}</td>
                             </tr>
                             <tr>
                                 <td>Jabatan</td>
-                                <td class="text-end">Manager</td>
+                                <td class="text-end">{{$employee->job}}</td>
                             </tr>
                             <tr>
                                 <td>Status Kepegawaian</td>
-                                <td class="text-end">Honorer</td>
+                                <td class="text-end">{{$employee->status}}</td>
                             </tr>
                             <tr>
                                 <td>No Kontrak</td>
-                                <td class="text-end">34398437532</td>
+                                <td class="text-end">{{$employee->contract_number}}</td>
                             </tr>
                         </table>
                     </div>

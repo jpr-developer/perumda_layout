@@ -17,6 +17,8 @@
   </head>
   <body >
     <div class="page">
+        @include('sweetalert::alert')
+
         @include('layout.sidebar')
         @include('layout.header')
 

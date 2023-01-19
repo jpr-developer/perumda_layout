@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\RkapbController;
+use App\Http\Controllers\EmployeeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,12 +22,11 @@ Route::get('/', function () {
     return view('dashboard');
 });
 Route::prefix('/employee')->group(function() {
-    Route::get('/', function() {
-        return view('employee.index');
-    });
-    Route::get('/detail', function() {
-        return view('employee.detail');
-    });
+    Route::get('/', [EmployeeController::class, 'index'])->name('employee.index');
+    Route::post('/import', [EmployeeController::class, 'import'])->name('employee.import');
+    Route::get('/detail/{nip}', [EmployeeController::class, 'detail'])->name('employee.detail');
+    Route::get('/search', [EmployeeController::class, 'search'])->name('employee.search');
+    Route::get('/export', [EmployeeController::class, 'export'])->name('employee.export');
 });
 
 Route::prefix('/mitra')->group(function() {
