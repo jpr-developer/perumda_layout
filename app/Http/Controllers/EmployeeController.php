@@ -25,16 +25,29 @@ class EmployeeController extends Controller
     public function search(Request $request)
     {
         if ($request->ajax()) {
-            $input = $request->input;
-            $data = Employee::where('name', 'like','%'.$input.'%')
+            $search = $request->search;
+            $employees = Employee::where('name', 'like','%'.$search.'%')
                                 ->select('nip', 'name', 'position', 'job')
-                                ->get();
+                                ->paginate(10);
 
-            return response()->json(
-                [
-                    'data' => $data
-                ]
-            );
+            $remappEmployee = [];
+            foreach ($employees as $value) {
+
+                $data = [
+                    'nip' => $value->nip,
+                    'name' => $value->name,
+                    'position' => $value->position,
+                    'job' => $value->job
+                ];
+
+                array_push($remappEmployee, $data);
+            }
+
+            $response = [
+                'employees' => $remappEmployee
+            ];
+
+            return response($response);
         }
     }
 
@@ -56,6 +69,12 @@ class EmployeeController extends Controller
 
                 Alert::toast('Format file harus .xlsx', 'error');
                 return back();
+            }
+
+            $employees = new Employee();
+            if (!empty($employees)) {
+
+                $employees->truncate();
             }
 
             Excel::queueImport(new EmployeeImport, $request->employee_import);

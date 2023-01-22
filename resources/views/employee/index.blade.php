@@ -24,9 +24,9 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="row">
-                        <div class="col-md-7 col-6">
+                        <div class="col-md-7 col-7">
                             <form action="">
-                                <input type="search" onkeyup="myFunction()" class="form-control" id="searchEmployee" placeholder="Cari karyawan ...">
+                                <input type="search" onkeyup="searchEmployee()" class="form-control" id="keywords" placeholder="Cari karyawan ...">
                             </form>
 
                         </div>
@@ -122,7 +122,9 @@
                                 @endforeach
                             </tbody>
                         </table>
-                        {{$employees->appends(['filter_job' => $filter_job])->links()}}
+                        <div id="pagination">
+                            {{$employees->appends(['filter_job' => $filter_job])->links()}}
+                        </div>
                     </div>
                 </div>
 
@@ -162,6 +164,7 @@
                                     <div class="mb-3">
                                         <label class="form-label">Filter berdasarkan jabatan karyawan</label>
                                         <select name="filter_job" id="" class="form-select">
+                                            <option value="">All</option>
                                             <option value="komisaris"
                                                 @if ($filter_job == 'komisaris')
                                                     selected
@@ -172,11 +175,6 @@
                                                 selected
                                             @endif
                                             >Staf</option>
-                                            <option value="manager"
-                                            @if ($filter_job == 'manager')
-                                                selected
-                                            @endif
-                                            >Manager</option>
                                         </select>
                                     </div>
                                 </div>
@@ -195,56 +193,57 @@
 
 @section('js')
 <script>
-    function myFunction()
+    function searchEmployee()
     {
-        var input = document.getElementById('searchEmployee').value;
+        var search = $("#keywords").val();
 
         $.ajax({
-            url: "{{route('employee.search')}}",
-            data: {input:input},
-            type: 'get',
-            dataType: 'json',
-            success: function(resp)
-            {
+                url: "{{route('employee.search')}}",
+                data: {search:search},
+                type: 'get',
+                dataType: 'json',
+                success: function(resp)
+                {
 
-                var data = resp.data;
-                var html = "";
+                    var employee = resp.employees;
+                    var html = "";
 
-                if (data.length > 0) {
-                        for (let i = 0; i < data.length; i++) {
-                            var no = i+1;
-                            html += "<tr>\
-                                        <td class='text-center'>\
-                                            <span class='form-control border border-0 fs-3'>"+no+"</span>\
-                                        </td>\
-                                        <td>\
-                                            <span class='form-control border border-0 fs-3'>"+data[i]['nip']+"</span>\
-                                        </td>\
-                                        <td>\
-                                            <span class='form-control border border-0 fs-3'>"+data[i]['name']+"</span>\
-                                        </td>\
-                                        <td>\
-                                            <span class='form-control border border-0 fs-3'>"+data[i]['position']+"</span>\
-                                        </td>\
-                                        <td>\
-                                            <span class='form-control border border-0 fs-3'>"+data[i]['job']+"</span>\
-                                        </td>\
-                                        <td>\
-                                            <div style='width: 75%;''>\
-                                                <a href='{{url('employee/detail')}}/"+data[i]['nip']+"' class='btn btn-dribbble form-control mx-2'>View</a>\
-                                            </div>\
-                                        </td>\
-                                    </tr>"
-                        }
-                } else {
-                    html += "<tr>\
-                                <td class='text-center' colspan='6'>Data tidak ditemukan</td>\
-                            </tr>"
+                    if (employee.length > 0) {
+                            for (let i = 0; i < employee.length; i++) {
+                                var no = i+1;
+                                html += "<tr>\
+                                            <td class='text-center'>\
+                                                <span class='form-control border border-0 fs-3'>"+no+"</span>\
+                                            </td>\
+                                            <td>\
+                                                <span class='form-control border border-0 fs-3'>"+employee[i]['nip']+"</span>\
+                                            </td>\
+                                            <td>\
+                                                <span class='form-control border border-0 fs-3'>"+employee[i]['name']+"</span>\
+                                            </td>\
+                                            <td>\
+                                                <span class='form-control border border-0 fs-3'>"+employee[i]['position']+"</span>\
+                                            </td>\
+                                            <td>\
+                                                <span class='form-control border border-0 fs-3'>"+employee[i]['job']+"</span>\
+                                            </td>\
+                                            <td>\
+                                                <div style='width: 75%;''>\
+                                                    <a href='{{url('employee/detail')}}/"+employee[i]['nip']+"' class='btn btn-dribbble form-control mx-2'>View</a>\
+                                                </div>\
+                                            </td>\
+                                        </tr>"
+                            }
+                    } else {
+                        html += "<tr>\
+                                    <td class='text-center' colspan='6'>Data tidak ditemukan</td>\
+                                </tr>"
+                    }
+
+                    $("#tableEmployee").html(html);
+                    $("#pagination").hide();
                 }
-
-                $("#tableEmployee").html(html);
-            }
-        });
+            });
     }
 </script>
 @endsection

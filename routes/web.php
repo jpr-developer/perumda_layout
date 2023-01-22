@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\Mitra\SupplierController;
+use App\Http\Controllers\Product\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -31,12 +33,12 @@ Route::prefix('/employee')->group(function() {
 
 Route::prefix('/mitra')->group(function() {
     // Supplier
-    Route::get('/supplier', function() {
-        return view('mitra.supplier.index');
-    });
-    Route::get('/supplier/detail', function() {
-        return view('mitra.supplier.detail');
-    });
+    Route::get('/supplier', [SupplierController::class, 'index'])->name('supplier.index');
+    Route::get('/supplier/detail/{code}', [SupplierController::class, 'detail'])->name('supplier.detail');
+    Route::get('/supplier/search', [SupplierController::class, 'search'])->name('supplier.search');
+    Route::post('/supplier/import', [SupplierController::class, 'import'])->name('supplier.import');
+    Route::get('/supplier/export', [SupplierController::class, 'export'])->name('supplier.export');
+
     Route::get('/supplier/detail/transaksi', function() {
         return view('mitra.supplier.detail-transaksi');
     });
@@ -65,12 +67,11 @@ Route::prefix('/mitra')->group(function() {
 });
 
 // Products
-Route::get('/products', function() {
-    return view('product.index');
-});
-Route::get('/products/detail', function() {
-    return view('product.detail');
-});
+Route::get('/products', [ProductController::class, 'index'])->name('product.index');
+Route::get('/products/search', [ProductController::class, 'search'])->name('product.search');
+Route::post('/products/import', [ProductController::class, 'import'])->name('product.import');
+Route::get('/products/export', [ProductController::class, 'export'])->name('product.export');
+Route::get('/product/detail/{code}', [ProductController::class, 'detail'])->name('product.detail');
 
 // Pergudangan
 Route::prefix('/warehouse')->group(function () {

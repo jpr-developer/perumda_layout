@@ -12,13 +12,13 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/mitra/supplier')}}" class="fs-2 fw-bold">Mitra Supplier</a>
+            <a href="{{route('supplier.index')}}" class="fs-2 fw-bold">Mitra Supplier</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <span class="fs-2 fw-bold">PT. Aston Putra</span>
+            <span class="fs-2 fw-bold">{{$supplier->name}}</span>
         </div>
     </div>
 </div>
@@ -32,27 +32,27 @@
                         <img class="rounded-circle" src="{{asset('assets/static/avatars/000f.jpg')}}" alt="" height="180" width="180">
                     </div>
                     <div class="col-md-8 mb-3">
-                        <h2>PT. Aston Putra</h2>
-                        <span class="fs-3">PT</span> <br>
+                        <h2>{{$supplier->name}}</h2>
+                        <span class="fs-3">{{$supplier->supplierCategory->name}}</span> <br>
                         <span class="fs-3">Mitra Supplier Bidang Perdagangan</span>
                     </div>
                     <hr>
                     <table class="fs-3 table table-borderless">
                         <tr>
-                            <td>Alamat</td>
-                            <td class="text-end">Jl. Pemuda No.03</td>
+                            <td style="width: 40%">Alamat</td>
+                            <td class="text-end">{{$supplier->address}}</td>
                         </tr>
                         <tr>
-                            <td>No Telepon Perusahaan</td>
-                            <td class="text-end">(0291) 4564 4565</td>
+                            <td  style="width: 40%">No Telepon Perusahaan</td>
+                            <td class="text-end">{{$supplier->phone}}</td>
                         </tr>
                         <tr>
-                            <td>Email</td>
-                            <td class="text-end">muhammadfahruddin@gmail.com</td>
+                            <td  style="width: 40%">Email</td>
+                            <td class="text-end">{{$supplier->email}}</td>
                         </tr>
                         <tr>
-                            <td>Website</td>
-                            <td class="text-end">fahruddin.com</td>
+                            <td  style="width: 40%">Website</td>
+                            <td class="text-end">{{$supplier->website}}</td>
                         </tr>
                     </table>
                 </div>
@@ -69,27 +69,27 @@
                         <table class="fs-3 table table-borderless">
                             <tr>
                                 <td>ID Supplier</td>
-                                <td class="text-end">SP.123456789</td>
+                                <td class="text-end">{{$supplier->code}}</td>
                             </tr>
                             <tr>
                                 <td>Kategori Supplier</td>
-                                <td class="text-end">Lembaga</td>
+                                <td class="text-end">{{$supplier->supplierCategory->name}}</td>
                             </tr>
                             <tr>
                                 <td>Sub Kategori Supplier</td>
-                                <td class="text-end">PT (Perseroan Terbatas)</td>
+                                <td class="text-end">{{$supplier->supplierSubCategory->name}}</td>
                             </tr>
                             <tr>
                                 <td>Tanggal Mulai Kerjasama</td>
-                                <td class="text-end">Selasa, 20 Mei 2022</td>
+                                <td class="text-end">{{date('l ,d F Y', strtotime($supplier->join_date))}}</td>
                             </tr>
                             <tr>
                                 <td>Durasi Kerjasama</td>
-                                <td class="text-end">1 Tahun</td>
+                                <td class="text-end">{{$supplier->contract_duration}} Tahun</td>
                             </tr>
                             <tr>
                                 <td>NO Rekening Resmi</td>
-                                <td class="text-end">BNI - PT.Aston Putra - 32709273025</td>
+                                <td class="text-end">{{$supplier->account_number}}</td>
                             </tr>
                             <tr>
                                 <td>Dokumen Kontrak Kerjasama</td>
@@ -111,7 +111,15 @@
                 <div class="col-md-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center">
                         <h2>Data Transaksi PT. Aston Putra</h2>
-                        <div>
+                        <div class="d-flex">
+                            <a href="#" class="btn btn-green w-100 btn-icon me-2" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-import">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-upload" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"></path>
+                                    <polyline points="9 15 12 12 15 15"></polyline>
+                                    <line x1="12" y1="12" x2="12" y2="21"></line>
+                                </svg>
+                            </a>
                             <a href="#" class="btn btn-rss w-100 btn-icon" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -462,6 +470,28 @@
             <div class="modal-body">
                 <img src="https://berita.99.co/wp-content/uploads/2020/11/kartap.jpg" alt="" width="100%">
             </div>
+        </div>
+    </div>
+</div>
+<div class="modal modal-blur fade" id="modal-import" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Import data transaksi supplier</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="">
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Import data transaksi supplier</label>
+                        <input type="file" class="form-control" required>
+                        <small class="fw-bold">Type file .xlsx</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-green">Import</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

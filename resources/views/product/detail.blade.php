@@ -8,13 +8,13 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/products')}}" class="text-decoration-underline fs-2 fw-bold">Produk</a>
+            <a href="{{route('product.index')}}" class="text-decoration-underline fs-2 fw-bold">Produk</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <span class="fs-2 fw-bold">Kopi Rojoku Pouds</span>
+            <span class="fs-2 fw-bold">{{$product->name}}</span>
         </div>
     </div>
 </div>
@@ -54,7 +54,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="ms-3">
-                        <h1>Kopi Rojoku Pouds</h1>
+                        <h1>{{$product->name}}</h1>
                         <div class="d-flex fs-3 mb-3">
                             <div class="me-3">
                                 <span class="text-decoration-underline" style="color: rgb(253, 118, 39)">5.0</span>
@@ -101,30 +101,22 @@
                             </div>
                         </div>
                         <div>
-                            <h1>Rp 1.500</h1>
+                            <h1>Rp {{number_format($product->selling_price, 2,',','.')}}</h1>
                         </div>
                         <div class="mb-3">
-                            <span class="fs-3">Kategori : Kopi</span>,
-                            <span class="fs-3">Sub Kategori : Kopi Sachet</span>
+                            <span class="fs-3">Kategori : {{$product->productCategory->name}}</span>,
+                            <span class="fs-3">Sub Kategori : {{$product->productSubCategory->name}}</span>
                         </div>
                         <div class="mb-3">
                             <span class="fs-2">Spesifikasi Produk</span>
                             <div>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a
-                                type specimen book. It has survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged.
+                                {!! $product->spesification !!}
                             </div>
                         </div>
                         <div>
                             <span class="fs-2">Deskripsi Produk</span>
                             <div>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a
-                                type specimen book. It has survived not only five centuries, but also the
-                                leap into electronic typesetting, remaining essentially unchanged.
+                                {!! $product->description !!}
                             </div>
                         </div>
                     </div>

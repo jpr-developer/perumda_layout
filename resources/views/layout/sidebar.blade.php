@@ -32,7 +32,7 @@
                 </a>
             </li>
             <li class="@if(Request::is('mitra*')) active @endif">
-                <a href="{{url('/mitra/supplier')}}" class="title">
+                <a href="{{route('supplier.index')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/partner.png')}}" alt="" class="icon">
                         <span class="name">Mitra</span>
@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li class="@if(Request::is('products*')) active @endif">
-                <a href="{{url('/products')}}" class="title">
+                <a href="{{route('product.index')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Product_white.png')}}" alt="" class="icon">
                         <span class="name">Produk</span>
