@@ -20,7 +20,7 @@
                         </div>
                         <div class="col">
                             <div class="">
-                               <span class="fs-2 fw-bold">$452</span>
+                               <span class="fs-2 fw-bold">Rp. 2.5 M</span>
                             </div>
                             <div class="text-muted">
                                 Total Pendapatan
@@ -45,10 +45,10 @@
                         </div>
                         <div class="col">
                             <div class="">
-                                <span class="fs-2 fw-bold">$1019</span>
+                                <span class="fs-2 fw-bold">2000</span>
                             </div>
                             <div class="text-muted">
-                                Total Penjualan / Hari
+                                Total Penjualan Produk
                             </div>
                         </div>
                     </div>
@@ -72,10 +72,10 @@
                         </div>
                         <div class="col">
                             <div class="">
-                                <span class="fs-2 fw-bold">$1012</span>
+                                <span class="fs-2 fw-bold">Rp. 2.6 M</span>
                             </div>
                             <div class="text-muted">
-                                Pendapatan / Bulan
+                                Target Pendapatan
                             </div>
                         </div>
                     </div>
@@ -97,10 +97,10 @@
                         </div>
                         <div class="col">
                             <div class="">
-                                <span class="fs-2 fw-bold">$450</span>
+                                <span class="fs-2 fw-bold">3000</span>
                             </div>
                             <div class="text-muted">
-                                Target / Bulan
+                                Target Penjualan Produk
                             </div>
                         </div>
                     </div>
