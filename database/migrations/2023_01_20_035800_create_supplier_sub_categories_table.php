@@ -16,7 +16,7 @@ class CreateSupplierSubCategoriesTable extends Migration
         Schema::create('supplier_sub_categories', function (Blueprint $table) {
             $table->id();
             $table->string('name', 100);
-            $table->string('slug')->unique();
+            $table->string('slug', 100)->unique();
             $table->timestamps();
         });
     }

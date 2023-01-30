@@ -25,8 +25,8 @@ class CreateSuppliersTable extends Migration
             $table->text('website')->nullable(true);
             $table->date('join_date');
             $table->integer('contract_duration');
-            $table->string('account_number');
-            $table->string('contract_docs')->nullable(true);
+            $table->string('account_number', 255);
+            $table->string('contract_docs', 255)->nullable(true);
             $table->boolean('status')->default(1);
             $table->softDeletes();
             $table->timestamps();
