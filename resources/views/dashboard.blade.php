@@ -114,7 +114,7 @@
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="ratio ratio-16x9">
-                <div class="mt-3 ms-3" style="position: absolute;">
+                <div class="mt-3 ms-3" style="position: absolute;" id="filter_map--dashboard">
                     <div class="row">
                         <div class="col-md-4" style="z-index:999;">
                             <form action="" class="mb-2">
