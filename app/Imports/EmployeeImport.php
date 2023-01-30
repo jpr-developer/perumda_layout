@@ -17,6 +17,13 @@ class EmployeeImport implements ToModel, WithHeadingRow, WithChunkReading, Shoul
     */
     public function model(array $row)
     {
+
+        // Check if there is same data
+        $employee = Employee::where('nip', $row['nomor_induk_pegawai'])->first();
+        if ($employee) {
+            return null;
+        }
+
         return new Employee([
             'nip' => $row['nomor_induk_pegawai'],
             'contract_number' => $row['nomor_kontrak'],

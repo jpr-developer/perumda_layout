@@ -18,6 +18,23 @@
 <div class="col-md-4 mb-3">
     <div class="row">
         <div class="col-md-12 mb-3">
+            <div class="card shadow-sm" style="height: 19.8rem">
+                <div class="card-body">
+                    <h1 class="text-center">Skor Performa Indikator</h1>
+                    <div class="d-flex justify-content-center mb-2">
+                        <div style="height: 200px; width:200px;" class="border border-1 rounded-circle border-success">
+                            <span style="font-size: 110pt" class="d-flex justify-content-center fw-bold">
+                                A
+                            </span>
+                        </div>
+                    </div>
+                    <span class="d-flex justify-content-center">
+                        Perusahaan dalam keadaan sehat
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 mb-3">
             <div class="card shadow-sm">
                 <div class="card-body">
                     <h3>Pendapatan Usaha</h3>
@@ -95,23 +112,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-12 mb-3">
-            <div class="card shadow-sm" style="height: 19.8rem">
-                <div class="card-body">
-                    <h1 class="text-center">Skor Performa Indikator</h1>
-                    <div class="d-flex justify-content-center mb-2">
-                        <div style="height: 200px; width:200px;" class="border border-1 rounded-circle border-success">
-                            <span style="font-size: 110pt" class="d-flex justify-content-center fw-bold">
-                                A
-                            </span>
-                        </div>
-                    </div>
-                    <span class="d-flex justify-content-center">
-                        Perusahaan dalam keadaan sehat
-                    </span>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 <div class="col-md-8">

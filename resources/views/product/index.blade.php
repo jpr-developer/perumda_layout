@@ -138,22 +138,6 @@
                                 @csrf
                                 <div class="modal-body">
                                     <div class="mb-3">
-                                        <label class="form-label">Kategori Produk</label>
-                                        <select name="product_category_id" class="form-select">
-                                            @foreach ($productCategories as $result)
-                                                <option value="{{$result->id}}">{{$result->name}}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Sub Kategori Produk</label>
-                                        <select name="product_sub_category_id" class="form-select">
-                                            @foreach ($productSubCategories as $result)
-                                                <option value="{{$result->id}}">{{$result->name}}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-                                    <div class="mb-3">
                                         <label class="form-label">Import produk</label>
                                         <input type="file" class="form-control" name="product_import">
                                         <small class="fw-bold">Type file .xlsx</small>

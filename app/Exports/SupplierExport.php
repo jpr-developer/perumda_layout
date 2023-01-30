@@ -15,11 +15,14 @@ class SupplierExport implements  FromQuery, WithHeadings, WithStyles
 
     public function query()
     {
-        return Supplier::query()->select(
-            'code', 'name', 'supplier_category_id', 'supplier_sub_category_id',
+        $suppliers =  Supplier::query()->select(
+            'code', 'suppliers.name', 'supplier_categories.name as category', 'supplier_sub_categories.name as sub_category',
             'address', 'phone', 'email', 'website', 'join_date', 'contract_duration',
             'account_number'
-        );
+        )->join('supplier_categories', 'supplier_categories.id', '=', 'suppliers.supplier_category_id')
+            ->join('supplier_sub_categories', 'supplier_sub_categories.id', '=', 'suppliers.supplier_sub_category_id');
+
+        return $suppliers;
     }
 
     public function headings(): array
@@ -27,8 +30,8 @@ class SupplierExport implements  FromQuery, WithHeadings, WithStyles
         return [
             'Kode Supplier',
             'Nama Supplier',
-            'Kategori Supplier',
-            'Sub Kategori Supplier',
+            'Kategori',
+            'Sub Kategori',
             'Alamat',
             'Telepon',
             'Email',

@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Product;
 
 use App\Exports\Product\ProductExport;
 use App\Http\Controllers\Controller;
+use App\Imports\Product\ProductCategoryImport;
 use App\Imports\Product\ProductImport;
+use App\Imports\Product\ProductSubCategoryImport;
 use App\Models\Product;
 use App\Models\ProductCategory;
 use App\Models\ProductSubCategory;
@@ -66,7 +68,12 @@ class ProductController extends Controller
     {
         if ($request->isMethod('post')) {
 
-            Excel::queueImport(new ProductImport($request->product_category_id, $request->product_sub_category_id), $request->product_import);
+            // Import category and sub first
+            Excel::queueImport(new ProductCategoryImport, $request->product_import);
+            Excel::queueImport(new ProductSubCategoryImport, $request->product_import);
+
+
+            Excel::queueImport(new ProductImport, $request->product_import);
             Alert::toast('Data berhasil diimport', 'success');
             return back();
 

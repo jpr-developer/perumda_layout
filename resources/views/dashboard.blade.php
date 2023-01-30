@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-<div class="col-12 mb-3">
+<div class="col-12 mb-4">
     <div class="row row-cards">
         <div class="col-sm-6 col-lg-3">
             <div class="card card-sm shadow-sm">
@@ -110,7 +110,7 @@
     </div>
 </div>
 <!-- Maps -->
-<div class="col-md-12 mb-3">
+<div class="col-md-12 mb-4">
     <div class="card shadow-sm">
         <div class="card-body">
             <div class="ratio ratio-16x9">
@@ -201,8 +201,8 @@
 <!-- Maps End -->
 
 <!-- Chart Weekly Sales -->
-<div class="col-md-8 mb-3">
-    <div class="card">
+<div class="col-md-8 mb-4">
+    <div class="card shadow-sm">
         <div class="card-header">
             <h1 class="card-title">Weekly Sales</h1>
         </div>
@@ -211,83 +211,300 @@
         </div>
     </div>
 </div>
-<div class="col-md-4 mb-3">
-    <div class="row row-cards">
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <div class="text-muted">
-                                <h2>Rojoku Store</h2>
+<div class="col-md-4 mb-4">
+    <div class="card shadow-sm">
+        <div class="card-header">
+            <h1 class="card-title">Produk Teratas</h1>
+        </div>
+        <div class="list-group list-group-flush overflow-auto scrollbar-green" style="max-height: 25rem">
+            <div class="list-group-item">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <img class="rounded-2 shadow-sm" src="{{asset('assets/images/kopi_rojoku.png')}}" alt="" width="100" height="100">
+                    </div>
+                    <div class="">
+                        <h3>Kopi Rojoku Pouds Aneka Usaha Jepara</h3>
+                        <div class="d-flex mb-3">
+                            <div class="me-3">
+                                <span class="text-decoration-underline" style="color: rgb(253, 118, 39)">5.0</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
                             </div>
-                            <div class="">
-                                <h2 class="fw-bold">1286+</h2>
+                            <div class="border-start border-secondary">
+                                <div class="ps-3">
+                                    <span class="text-decoration-underline fw-bold">50RB</span> Terjual
+                                </div>
                             </div>
                         </div>
-                        <div class="col-auto">
-                            <svg class="radial-progress" data-percentage="82" viewBox="0 0 80 80">
-                                <circle class="incomplete primary" cx="40" cy="40" r="35"></circle>
-                                <circle class="complete primary" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-                                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">82%</text>
-                            </svg>
+                        <div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and ...
+                                <a href="">selengkapnya</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <img class="rounded-2 shadow-sm" src="{{asset('assets/images/kopi_rojoku.png')}}" alt="" width="100" height="100">
+                    </div>
+                    <div class="">
+                        <h3>Kopi Rojoku Pouds Aneka Usaha Jepara</h3>
+                        <div class="d-flex mb-3">
+                            <div class="me-3">
+                                <span class="text-decoration-underline" style="color: rgb(253, 118, 39)">5.0</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="border-start border-secondary">
+                                <div class="ps-3">
+                                    <span class="text-decoration-underline fw-bold">50RB</span> Terjual
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and ...
+                                <a href="">selengkapnya</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <img class="rounded-2 shadow-sm" src="{{asset('assets/images/kopi_rojoku.png')}}" alt="" width="100" height="100">
+                    </div>
+                    <div class="">
+                        <h3>Kopi Rojoku Pouds Aneka Usaha Jepara</h3>
+                        <div class="d-flex mb-3">
+                            <div class="me-3">
+                                <span class="text-decoration-underline" style="color: rgb(253, 118, 39)">5.0</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="border-start border-secondary">
+                                <div class="ps-3">
+                                    <span class="text-decoration-underline fw-bold">50RB</span> Terjual
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and ...
+                                <a href="">selengkapnya</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <img class="rounded-2 shadow-sm" src="{{asset('assets/images/kopi_rojoku.png')}}" alt="" width="100" height="100">
+                    </div>
+                    <div class="">
+                        <h3>Kopi Rojoku Pouds Aneka Usaha Jepara</h3>
+                        <div class="d-flex mb-3">
+                            <div class="me-3">
+                                <span class="text-decoration-underline" style="color: rgb(253, 118, 39)">5.0</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="border-start border-secondary">
+                                <div class="ps-3">
+                                    <span class="text-decoration-underline fw-bold">50RB</span> Terjual
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and ...
+                                <a href="">selengkapnya</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="d-flex">
+                    <div class="me-3">
+                        <img class="rounded-2 shadow-sm" src="{{asset('assets/images/kopi_rojoku.png')}}" alt="" width="100" height="100">
+                    </div>
+                    <div class="">
+                        <h3>Kopi Rojoku Pouds Aneka Usaha Jepara</h3>
+                        <div class="d-flex mb-3">
+                            <div class="me-3">
+                                <span class="text-decoration-underline" style="color: rgb(253, 118, 39)">5.0</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-star" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="rgb(253, 118, 39)" fill="rgb(253, 118, 39)" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="border-start border-secondary">
+                                <div class="ps-3">
+                                    <span class="text-decoration-underline fw-bold">50RB</span> Terjual
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and ...
+                                <a href="">selengkapnya</a>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <div class="text-muted">
-                                <h2>Rojoku Mart</h2>
-                            </div>
-                            <div class="">
-                                <h2 class="fw-bold">1286+</h2>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <svg class="radial-progress" data-percentage="90" viewBox="0 0 80 80">
-                                <circle class="incomplete secondary" cx="40" cy="40" r="35"></circle>
-                                <circle class="complete secondary" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-                                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <div class="text-muted">
-                                <h2>Rojoku Corporate</h2>
-                            </div>
-                            <div class="">
-                                <h2 class="fw-bold">1286+</h2>
-                            </div>
-                        </div>
-                        <div class="col-auto">
-                            <svg class="radial-progress" data-percentage="75" viewBox="0 0 80 80">
-                                <circle class="incomplete third" cx="40" cy="40" r="35"></circle>
-                                <circle class="complete third" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-                                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 <!-- Chart Weekly Sales End -->
 
 <!-- Card -->
-<div class="col-md-4 mb-3">
+<div class="col-md-4 mb-4">
     <div class="card">
         <div class="card-header bg-danger">
             <h3 class="card-title">SARAN DAN MASUKAN</h3>
@@ -356,7 +573,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-4 mb-3">
+<div class="col-md-4 mb-4">
     <div class="card">
         <div class="card-header bg-info">
             <h3 class="card-title">KOMPLAIN</h3>
@@ -446,7 +663,7 @@
         </div>
     </div>
 </div>
-<div class="col-md-4 mb-3">
+<div class="col-md-4 mb-4">
     <div class="card">
         <div class="card-header bg-success">
             <h3 class="card-title">JADWAL PENGIRIMAN</h3>
@@ -751,7 +968,7 @@
             chart: {
                 type: "line",
                 fontFamily: 'inherit',
-                height: 340,
+                height: 370,
                 parentHeightOffset: 0,
                 toolbar: {
                     show: false,

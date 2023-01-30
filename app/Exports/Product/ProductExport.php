@@ -4,6 +4,7 @@ namespace App\Exports\Product;
 
 use App\Models\Product;
 use Maatwebsite\Excel\Concerns\Exportable;
+use Maatwebsite\Excel\Concerns\FromCollection;
 use Maatwebsite\Excel\Concerns\FromQuery;
 use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Concerns\WithStyles;
@@ -15,18 +16,22 @@ class ProductExport implements FromQuery, WithHeadings,WithStyles
 
     public function query()
     {
-        return Product::query()->select(
-            'name', 'spesification',
-            'description', 'stock', 'min_stock',
-            'selling_price', 'reseller_price'
-        );
+
+        $products = Product::query()->select(
+            'code', 'products.name','product_categories.name as category','product_sub_categories.name as sub_category',
+            'spesification', 'description', 'stock', 'selling_price', 'reseller_price'
+        )->join('product_categories', 'product_categories.id', '=', 'products.product_category_id')
+            ->join('product_sub_categories', 'product_sub_categories.id', '=', 'products.product_sub_category_id');
+
+        return $products;
+
     }
 
     public function headings(): array
     {
         return [
-            'Nama Produk', 'Spesifikasi Produk',
-            'Deskripsi Produk', 'Stok', 'Minimal Stok',
+            'Kode Produk','Nama Produk', 'Ketegori Produk', 'Sub Kategori Produk', 'Spesifikasi Produk',
+            'Deskripsi Produk', 'Stok',
             'Harga Jual', 'Harga Reseller'
         ];
     }

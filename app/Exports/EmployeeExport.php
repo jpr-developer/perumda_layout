@@ -27,7 +27,7 @@ class EmployeeExport implements FromQuery, WithHeadings, WithStyles
     public function headings(): array
     {
         return [
-            'Nama Induk Pegawai',
+            'Nomor Induk Pegawai',
             'Nomor Kontrak',
             'Nama Pegawai',
             'Pendidikan',

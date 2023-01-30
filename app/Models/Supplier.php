@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Carbon;
 
 class Supplier extends Model
 {
@@ -23,5 +24,10 @@ class Supplier extends Model
     public function supplierSubCategory()
     {
         return $this->belongsTo(SupplierSubCategory::class);
+    }
+
+    public function join_date()
+    {
+        return Carbon::parse($this->attributes['join_date'])->translatedFormat('l, d F Y');
     }
 }

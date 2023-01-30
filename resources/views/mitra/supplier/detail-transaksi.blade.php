@@ -18,7 +18,7 @@
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <a href="{{url('/mitra/supplier/detail')}}" class="fs-2 fw-bold">PT. Aston Putra</a>
+            <a href="{{route('supplier.detail', $code_sp)}}" class="fs-2 fw-bold">PT. Aston Putra</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
@@ -32,8 +32,8 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h3>Taggal Transaksi : Selasa, 20 Mei 2022</h3>
-            <h3>ID Transaksi : TR.123456789</h3>
+            <h3>Taggal Transaksi : {{$transaction->getDateAttribute()}}</h3>
+            <h3>ID Transaksi : {{$transaction->code}}</h3>
 
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -65,62 +65,36 @@
                         </th>
                     </thead>
                     <tbody class="fs-3">
-                        <tr>
-                            <td class="text-center">
-                                <span class="form-control border border-0 fs-3">1</span>
-                            </td>
-                            <td>
-                                <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                            </td>
-                            <td>
-                                <span class="form-control border border-0 fs-3">1000 PCS</span>
-                            </td>
-                            <td>
-                                <span class="form-control border border-0 fs-3">RP 1.500</span>
-                            </td>
-                            <td>
-                                <span class="form-control border border-0 fs-3">RP 1.500.0000</span>
-                            </td>
-                        </tr>
+                        @for ($i = 0; $i < count($transaction_details); $i++)
+                            <tr>
+                                <td class="text-center">
+                                    <span class="form-control border border-0 fs-3">{{$i + 1}}</span>
+                                </td>
+                                <td>
+                                    <span class="form-control border border-0 fs-3">{{$transaction_details[$i]['uraian']}}</span>
+                                </td>
+                                <td>
+                                    <span class="form-control border border-0 fs-3">{{$transaction_details[$i]['qty']}} PCS</span>
+                                </td>
+                                <td>
+                                    <span class="form-control border border-0 fs-3">RP {{number_format($transaction_details[$i]['unit_price'],0,',','.')}}</span>
+                                </td>
+                                <td>
+                                    <span class="form-control border border-0 fs-3">
+                                        RP {{number_format($transaction_details[$i]['qty']*$transaction_details[$i]['unit_price'], 0, ',','.')}}
+                                    </span>
+                                </td>
+                            </tr>
+                        @endfor
                         <tr>
                             <td colspan="4">
                                 <span class="form-control border border-0 fs-3 fw-bold">TOTAL</span>
                             </td>
                             <td>
-                                <span class="form-control border border-0 fs-3 fw-bold">RP 1.500.0000</span>
+                                <span class="form-control border border-0 fs-3 fw-bold">RP {{number_format($transaction->nominal, 0, ',', '.')}}</span>
                             </td>
                         </tr>
                     </tbody>
-                </table>
-            </div>
-
-            <div class="mt-4">
-                <h2>Informasi Lainnya</h2>
-                <table class="table table-borderless fs-3">
-                    <tr>
-                        <td style="width: 40%">
-                            Supllier
-                        </td>
-                        <td>
-                            : Agung Priyanto
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Petugas
-                        </td>
-                        <td>
-                            : Hendrawan
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Metode Pembayaran
-                        </td>
-                        <td>
-                            : Transfer
-                        </td>
-                    </tr>
                 </table>
             </div>
         </div>

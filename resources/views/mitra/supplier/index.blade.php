@@ -23,9 +23,6 @@
         <div class="card-body">
             @if ($errors->any())
                 @foreach ($errors->all() as $error)
-                    {{-- @php
-                        toast('Gagal import. Periksa kembali data Anda','error');
-                    @endphp --}}
                     {{$error}}
                 @endforeach
             @endif
@@ -33,6 +30,7 @@
             <div class="row">
                 <div class="col-md-9 mb-3">
                     <h2>Data Mitra Supplier</h2>
+
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="row">
@@ -218,7 +216,7 @@
     {
         var search = document.getElementById('search').value;
 
-        if (search != '') {
+        if (search !== null) {
             $.ajax({
             url: "{{route('supplier.search')}}",
             data: {search:search},

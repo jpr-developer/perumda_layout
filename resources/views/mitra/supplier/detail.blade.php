@@ -81,7 +81,7 @@
                             </tr>
                             <tr>
                                 <td>Tanggal Mulai Kerjasama</td>
-                                <td class="text-end">{{date('l ,d F Y', strtotime($supplier->join_date))}}</td>
+                                <td class="text-end">{{$supplier->join_date()}}</td>
                             </tr>
                             <tr>
                                 <td>Durasi Kerjasama</td>
@@ -161,44 +161,27 @@
                                 </th>
                             </thead>
                             <tbody class="fs-3">
+                                @foreach ($supplierTransactions as $result => $key)
                                 <tr>
                                     <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">1</span>
+                                        <span class="form-control border border-0 fs-3">{{$result + $supplierTransactions->firstitem()}}</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">TR.12345678</span>
+                                        <span class="form-control border border-0 fs-3">{{$key->code}}</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">20 Mei 2022</span>
+                                        <span class="form-control border border-0 fs-3">{{$key->getDateAttribute()}}</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Rp. 1.500.000</span>
+                                        <span class="form-control border border-0 fs-3">Rp. {{number_format($key->nominal,2,',','.')}}</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/mitra/supplier/detail/transaksi')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{route('supplier.detail-transaction', [$supplier->code, $key->code])}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">2</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">TR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">20 Mei 2022</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Rp. 1.500.000</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/mitra/supplier/detail/transaksi')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>
@@ -242,18 +225,13 @@
                 <div class="ms-auto">
                     <div class="dropdown">
                         <a class="dropdown-toggle text-muted me-3" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tahun</a>
-                        <div class="dropdown-menu dropdown-menu-end card-body-scrollable" style="height: 18rem">
-                            <a class="dropdown-item" href="#">2015</a>
-                            <a class="dropdown-item" href="#">2016</a>
-                            <a class="dropdown-item" href="#">2017</a>
-                            <a class="dropdown-item" href="#">2018</a>
-                            <a class="dropdown-item" href="#">2019</a>
+                        <div class="dropdown-menu dropdown-menu-end card-body-scrollable" style="height: 10rem">
                             <a class="dropdown-item" href="#">2020</a>
                             <a class="dropdown-item" href="#">2021</a>
-                            <a class="dropdown-item" href="#">2022</a>
+                            <a class="dropdown-item" href="javascript:void(0)" id="years">2022</a>
                         </div>
                         <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bulan</a>
-                        <div class="dropdown-menu dropdown-menu-end card-body-scrollable" style="height: 18rem">
+                        <div class="dropdown-menu dropdown-menu-end card-body-scrollable" style="height: 10rem">
                             <a class="dropdown-item" href="#">Januari</a>
                             <a class="dropdown-item" href="#">Februari</a>
                             <a class="dropdown-item" href="#">Maret</a>
@@ -480,11 +458,12 @@
                 <h5 class="modal-title">Import data transaksi supplier</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="">
+            <form action="{{route('supplier.transaction-import', $supplier->id)}}" method="POST" enctype="multipart/form-data">
+                @csrf
                 <div class="modal-body">
                     <div class="mb-3">
-                        <label class="form-label">Import data transaksi supplier</label>
-                        <input type="file" class="form-control" required>
+                        <label class="form-label"></label>
+                        <input type="file" name="supplier_transaction_import" class="form-control" required>
                         <small class="fw-bold">Type file .xlsx</small>
                     </div>
                 </div>
@@ -502,8 +481,24 @@
 <script src="{{asset('assets/dist/libs/apexcharts/dist/apexcharts.min.js')}}" defer></script>
 <!-- Chart Weekly Sales -->
 <script>
+    $(document).ready(function() {
+        $.ajax({
+            url: "{{route('supplier.chart', $supplier->code)}}",
+            type: 'get',
+            dataType: 'json',
+            success: function(resp)
+            {
+                var total = resp.total;
+                var month = resp.month;
+                grafik(total, month);
+            }
+        });
+    });
+</script>
+<script>
     // @formatter:off
-    document.addEventListener("DOMContentLoaded", function () {
+    function grafik(total, month)
+    {
         window.ApexCharts && (new ApexCharts(document.getElementById('chart-line-stroke'), {
             chart: {
                 type: "line",
@@ -527,7 +522,7 @@
             },
             series: [{
                 name: "Grafik",
-                data: [8, 10, 11, 12, 20, 27, 30, 20, 10, 40, 50, 60]
+                data: total
             },],
             grid: {
 
@@ -540,7 +535,7 @@
                 tooltip: {
                     enabled: false
                 },
-                categories: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
+                categories: month
             },
             yaxis: {
                 labels: {
@@ -552,6 +547,11 @@
                 show: false,
             },
         })).render();
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+
     });
     // @formatter:on
 </script>

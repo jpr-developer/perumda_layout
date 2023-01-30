@@ -33,15 +33,23 @@ Route::prefix('/employee')->group(function() {
 
 Route::prefix('/mitra')->group(function() {
     // Supplier
-    Route::get('/supplier', [SupplierController::class, 'index'])->name('supplier.index');
-    Route::get('/supplier/detail/{code}', [SupplierController::class, 'detail'])->name('supplier.detail');
-    Route::get('/supplier/search', [SupplierController::class, 'search'])->name('supplier.search');
-    Route::post('/supplier/import', [SupplierController::class, 'import'])->name('supplier.import');
-    Route::get('/supplier/export', [SupplierController::class, 'export'])->name('supplier.export');
+    Route::prefix('/supplier')->group(function() {
+        Route::get('/', [SupplierController::class, 'index'])->name('supplier.index');
+        Route::get('/detail/{code}', [SupplierController::class, 'detail'])->name('supplier.detail');
+        Route::get('/search', [SupplierController::class, 'search'])->name('supplier.search');
+        Route::post('/import', [SupplierController::class, 'import'])->name('supplier.import');
+        Route::get('/export', [SupplierController::class, 'export'])->name('supplier.export');
 
-    Route::get('/supplier/detail/transaksi', function() {
-        return view('mitra.supplier.detail-transaksi');
+        // Transaction Data
+        Route::prefix('/transaction')->group(function() {
+            Route::get('/grafik/{code}', [SupplierController::class, 'chart'])->name('supplier.chart');
+            Route::post('/import/{supplier_id}', [SupplierController::class, 'import_transaction'])->name('supplier.transaction-import');
+            Route::get('/detail/{code_sp}/{code_tr}', [SupplierController::class, 'detail_transaction'])->name('supplier.detail-transaction');
+        });
     });
+
+
+
 
     // Reseller
     Route::get('/reseller', function() {
