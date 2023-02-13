@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Imports\Supplier\Transaction;
+namespace App\Imports\Purchase;
 
-use App\Models\SupplierTransaction;
+use App\Models\PurchaseTransaction;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithChunkReading;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class SupplierTransactionImport implements ToModel, WithHeadingRow, WithChunkReading, ShouldQueue
+class PurchaseTransactionImport implements ToModel, WithHeadingRow, WithChunkReading, ShouldQueue
 {
     protected $supplier_id;
 
@@ -19,14 +19,14 @@ class SupplierTransactionImport implements ToModel, WithHeadingRow, WithChunkRea
 
     public function model(array $row)
     {
-        $check = SupplierTransaction::where('code', $row['kode_transaksi'])->first();
+        $check = PurchaseTransaction::where('code', $row['kode_transaksi'])->first();
 
         if ($check) {
             $check->update(['nominal' => $check->nominal + ($row['harga_satuan']*$row['quantity'])]);
             return null;
         }
 
-        return new SupplierTransaction([
+        return new PurchaseTransaction([
             'code' => $row['kode_transaksi'],
             'supplier_id' => $this->supplier_id,
             'date' => \PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row['tanggal_transaksi'])->format('Y-m-d'),

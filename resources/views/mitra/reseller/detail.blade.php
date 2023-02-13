@@ -12,18 +12,17 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/mitra/reseller')}}" class="fs-2 fw-bold">Mitra Reseller</a>
+            <a href="{{route('reseller.index')}}" class="fs-2 fw-bold">Mitra Reseller</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <span class="fs-2 fw-bold">Muhammad Fahruddin</span>
+            <span class="fs-2 fw-bold">{{$reseller->name}}</span>
         </div>
     </div>
 </div>
-<div class="row row-deck">
-    <!-- Data Personal -->
+<!-- Data Personal -->
 <div class="col-md-6 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
@@ -32,27 +31,27 @@
                     <img class="rounded-circle" src="{{asset('assets/static/avatars/000f.jpg')}}" alt="" height="180" width="180">
                 </div>
                 <div class="col-md-8 mb-3">
-                    <h2>Muhammad Fahruddin</h2>
-                    <span class="fs-3">Personal</span> <br>
+                    <h2>{{$reseller->name}}</h2>
+                    <span class="fs-3">{{$reseller->resellerCategory->name}}</span> <br>
                     <span class="fs-3">Mitra Reseller Bidang Perdagangan</span>
                 </div>
                 <hr>
                 <table class="fs-3 table table-borderless">
                     <tr>
                         <td>Alamat</td>
-                        <td class="text-end">Jl. Pemuda No.03</td>
+                        <td class="text-end">{{$reseller->address}}</td>
                     </tr>
                     <tr>
                         <td>No Telepon Perusahaan</td>
-                        <td class="text-end">(0291) 4564 4565</td>
+                        <td class="text-end">{{$reseller->phone}}</td>
                     </tr>
                     <tr>
                         <td>Email</td>
-                        <td class="text-end">muhammadfahruddin@gmail.com</td>
+                        <td class="text-end">{{$reseller->email}}</td>
                     </tr>
                     <tr>
                         <td>Website</td>
-                        <td class="text-end">fahruddin.com</td>
+                        <td class="text-end">{{$reseller->website}}</td>
                     </tr>
                 </table>
             </div>
@@ -70,27 +69,27 @@
                     <table class="fs-3 table table-borderless">
                         <tr>
                             <td>ID Reseller</td>
-                            <td class="text-end">SP.123456789</td>
+                            <td class="text-end">{{$reseller->code}}</td>
                         </tr>
                         <tr>
                             <td>Kategori Reseller</td>
-                            <td class="text-end">Lembaga</td>
+                            <td class="text-end">{{$reseller->resellerCategory->name}}</td>
                         </tr>
                         <tr>
                             <td>Sub Kategori Reseller</td>
-                            <td class="text-end">Dropshipper</td>
+                            <td class="text-end">{{$reseller->resellerSubCategory->name}}</td>
                         </tr>
                         <tr>
                             <td>Tanggal Mulai Kerjasama</td>
-                            <td class="text-end">Selasa, 20 Mei 2022</td>
+                            <td class="text-end">{{$reseller->join_date}}</td>
                         </tr>
                         <tr>
                             <td>Durasi Kerjasama</td>
-                            <td class="text-end">1 Tahun</td>
+                            <td class="text-end">{{$reseller->contract_duration}} Tahun</td>
                         </tr>
                         <tr>
                             <td>NO Rekening Resmi</td>
-                            <td class="text-end">BNI - PT.Aston Putra - 32709273025</td>
+                            <td class="text-end">{{$reseller->account_number}}</td>
                         </tr>
                         <tr>
                             <td>Dokumen Kontrak Kerjasama</td>
@@ -104,7 +103,6 @@
         </div>
     </div>
 </div>
-</div>
 <!-- Table Transaksi -->
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
@@ -112,12 +110,14 @@
             <div class="row">
                 <div class="col-md-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h2>Data Transaksi PT. Aston Putra</h2>
-                        <div>
-                            <a href="#" class="btn btn-rss w-100 btn-icon" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <h2>Data Transaksi {{$reseller->name}}</h2>
+                        <div class="d-flex">
+                            <a href="" class="btn btn-green w-100 btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M5.5 5h13a1 1 0 0 1 .5 1.5l-5 5.5l0 7l-4 -3l0 -4l-5 -5.5a1 1 0 0 1 .5 -1.5"></path>
+                                    <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4"></path>
+                                    <path d="M12 13l0 9"></path>
+                                    <path d="M9 19l3 3l3 -3"></path>
                                 </svg>
                             </a>
                         </div>
@@ -170,7 +170,7 @@
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/mitra/reseller/detail/transaksi')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{route('reseller.transaction-detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
@@ -202,21 +202,6 @@
                             <a class="dropdown-item" href="#">2020</a>
                             <a class="dropdown-item" href="#">2021</a>
                             <a class="dropdown-item" href="#">2022</a>
-                        </div>
-                        <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bulan</a>
-                        <div class="dropdown-menu dropdown-menu-end card-body-scrollable" style="height: 18rem">
-                            <a class="dropdown-item" href="#">Januari</a>
-                            <a class="dropdown-item" href="#">Februari</a>
-                            <a class="dropdown-item" href="#">Maret</a>
-                            <a class="dropdown-item" href="#">April</a>
-                            <a class="dropdown-item" href="#">Mei</a>
-                            <a class="dropdown-item" href="#">Juni</a>
-                            <a class="dropdown-item" href="#">Juli</a>
-                            <a class="dropdown-item" href="#">Agustus</a>
-                            <a class="dropdown-item" href="#">September</a>
-                            <a class="dropdown-item" href="#">Oktober</a>
-                            <a class="dropdown-item" href="#">November</a>
-                            <a class="dropdown-item" href="#">Desember</a>
                         </div>
                     </div>
                 </div>
@@ -340,21 +325,6 @@
                             <a class="dropdown-item" href="#">2020</a>
                             <a class="dropdown-item" href="#">2021</a>
                             <a class="dropdown-item" href="#">2022</a>
-                        </div>
-                        <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bulan</a>
-                        <div class="dropdown-menu dropdown-menu-end card-body-scrollable" style="height: 18rem">
-                            <a class="dropdown-item" href="#">Januari</a>
-                            <a class="dropdown-item" href="#">Februari</a>
-                            <a class="dropdown-item" href="#">Maret</a>
-                            <a class="dropdown-item" href="#">April</a>
-                            <a class="dropdown-item" href="#">Mei</a>
-                            <a class="dropdown-item" href="#">Juni</a>
-                            <a class="dropdown-item" href="#">Juli</a>
-                            <a class="dropdown-item" href="#">Agustus</a>
-                            <a class="dropdown-item" href="#">September</a>
-                            <a class="dropdown-item" href="#">Oktober</a>
-                            <a class="dropdown-item" href="#">November</a>
-                            <a class="dropdown-item" href="#">Desember</a>
                         </div>
                     </div>
                 </div>
@@ -609,6 +579,28 @@
 </div>
 
 <!-- Modal -->
+<div class="modal modal-blur fade" id="modal-import" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Import Data Transaksi Reseller</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Import data</label>
+                        <input type="file" class="form-control" required name="import">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-green">Import</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <div class="modal modal-blur fade" id="modal-filter" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">

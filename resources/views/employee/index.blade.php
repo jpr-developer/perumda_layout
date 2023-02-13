@@ -24,23 +24,14 @@
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="row">
-                        <div class="col-md-7 col-7">
+                        <div class="col-md-9 col-9">
                             <form action="">
                                 <input type="search" onkeyup="searchEmployee()" class="form-control" id="keywords" placeholder="Cari karyawan ...">
                             </form>
-
                         </div>
-                        <div class="col-md-5 col-5">
-                            <div class="d-flex justify-content-between">
-                                <a href="#" class="btn btn-danger btn-icon" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-upload" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                        <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"></path>
-                                        <polyline points="9 15 12 12 15 15"></polyline>
-                                        <line x1="12" y1="12" x2="12" y2="21"></line>
-                                    </svg>
-                                </a>
-                                <a href="{{route('employee.export')}}" class="btn btn-success btn-icon" title="Download">
+                        <div class="col-md-3 col-3">
+                            <div class="d-flex">
+                                <a href="{{route('employee.export')}}" class="btn btn-success btn-icon me-1" title="Download">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                         <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4"></path>
@@ -129,29 +120,6 @@
                 </div>
 
                 <!-- Modal -->
-                <div class="modal modal-blur fade" id="modal-import" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Import Data Karyawan</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <form action="{{route('employee.import')}}" method="POST" enctype="multipart/form-data">
-                                @csrf
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                        <label class="form-label">Import data karyawan</label>
-                                        <input type="file" class="form-control" name="employee_import" required>
-                                        <small class="text-muted fw-bold">Type file : .xlxs</small>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="submit" class="btn btn-danger">Import</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
                 <div class="modal modal-blur fade" id="modal-filter" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
                         <div class="modal-content">
@@ -197,6 +165,10 @@
     {
         var search = $("#keywords").val();
 
+        if (search == "") {
+            window.location.reload(true);
+        }
+
         $.ajax({
                 url: "{{route('employee.search')}}",
                 data: {search:search},
@@ -229,7 +201,7 @@
                                             </td>\
                                             <td>\
                                                 <div style='width: 75%;''>\
-                                                    <a href='{{url('employee/detail')}}/"+employee[i]['nip']+"' class='btn btn-dribbble form-control mx-2'>View</a>\
+                                                    <a href='{{url('dashboard/employee/detail')}}/"+employee[i]['nip']+"' class='btn btn-dribbble form-control mx-2'>View</a>\
                                                 </div>\
                                             </td>\
                                         </tr>"

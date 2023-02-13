@@ -270,7 +270,7 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <div class="mb-2">
-                        <h3>Pendapatan Usaha</h3>
+                        <h3>Penjualan Kopi</h3>
                     </div>
                     <div class="text-center">
                         <svg class="radial-progress indikator" data-percentage="60" viewBox="0 0 80 80">
@@ -286,7 +286,7 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <div class="mb-2">
-                        <h3>Pembelian Produk</h3>
+                        <h3>Pembelian Bahan</h3>
                     </div>
                     <div class="text-center">
                         <svg class="radial-progress indikator" data-percentage="80" viewBox="0 0 80 80">
@@ -303,7 +303,7 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <div class="mb-2">
-                        <h3>Laba Kotor</h3>
+                        <h3>Transport</h3>
                     </div>
                     <div class="text-center">
                         <svg class="radial-progress indikator" data-percentage="90" viewBox="0 0 80 80">
@@ -319,7 +319,7 @@
             <div class="card shadow-sm">
                 <div class="card-body">
                     <div class="mb-2">
-                        <h3>Gaji Pegawai</h3>
+                        <h3>Penjualan ATK</h3>
                     </div>
                     <div class="text-center">
                         <svg class="radial-progress indikator" data-percentage="100" viewBox="0 0 80 80">

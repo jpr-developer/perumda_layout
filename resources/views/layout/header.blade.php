@@ -5,12 +5,12 @@
             <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
                 <span class="avatar avatar-sm" style="background-image: url({{asset('assets/static/avatars/002f.jpg')}})"></span>
                 <div class="d-none d-xl-block ps-2">
-                <div>Andre</div>
+                <div>Administrator</div>
                 <div class="mt-1 small text-muted">Administrator</div>
                 </div>
             </a>
             <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
-                <a href="#" class="dropdown-item">Kembali</a>
+                <a href="{{route('home.screen')}}" class="dropdown-item">Kembali</a>
             </div>
             </div>
         </div>
@@ -27,7 +27,7 @@
                 </button>
             </div>
             <div class="nav-item  col-xl-auto">
-                <a href="{{url('/')}}">
+                <a href="{{url('/dashboard')}}">
                     <img src="{{asset('assets/logo/logo.png')}}" alt="" height="40">
                 </a>
             </div>

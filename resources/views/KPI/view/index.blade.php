@@ -16,7 +16,7 @@
                     <h2>Skor Matrik Prioritas 60%</h2>
                 </div>
                 <div>
-                    
+
                 </div>
             </div>
             <div class="table-responsive">
@@ -25,7 +25,6 @@
                         <th rowspan="2" colspan="4" class="align-middle" style="width:40%">Program Kegiatan Bisnis</th>
                         <th colspan="5" class="text-center">KPI Skor</th>
                         <th rowspan="3" class="align-middle text-center" style="width:30%">Keterangan</th>
-                        <th rowspan="3" class="align-middle text-center" style="width:8%">Action</th>
                     </tr>
                     <tr class="text-center">
                         <th rowspan="2">
@@ -76,9 +75,6 @@
                             <td>
                                 Bobot kegiatan = ( 8.000.000 / 10.000.000 ) x 100 = 80%
                             </td>
-                            <td class="text-center">
-                                <a href="" class="btn btn-dribbble">View</a>
-                            </td>
                         </tr>
                         <tr>
                             <td class="text-center align-middle">Kopi</td>
@@ -96,9 +92,6 @@
                             <td>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </td>
-                            <td class="text-center">
-                                <a href="" class="btn btn-dribbble">View</a>
-                            </td>
                         </tr>
                         <tr>
                             <td class="text-center align-middle">Air</td>
@@ -115,9 +108,6 @@
                             <td></td>
                             <td>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </td>
-                            <td class="text-center">
-                                <a href="" class="btn btn-dribbble">View</a>
                             </td>
                         </tr>
                         <!-- Pembelian -->
@@ -139,9 +129,6 @@
                             <td>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </td>
-                            <td class="text-center">
-                                <a href="" class="btn btn-dribbble">View</a>
-                            </td>
                         </tr>
                         <tr>
                             <td class="text-center align-middle">Kopi</td>
@@ -159,9 +146,6 @@
                             <td>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </td>
-                            <td class="text-center">
-                                <a href="" class="btn btn-dribbble">View</a>
-                            </td>
                         </tr>
                         <tr>
                             <td class="text-center align-middle">Air</td>
@@ -178,9 +162,6 @@
                             <td></td>
                             <td>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </td>
-                            <td class="text-center">
-                                <a href="" class="btn btn-dribbble">View</a>
                             </td>
                         </tr>
                         <!-- Laba Kotor -->
@@ -202,9 +183,6 @@
                             <td>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </td>
-                            <td class="text-center">
-                                <a href="" class="btn btn-dribbble">View</a>
-                            </td>
                         </tr>
                         <tr>
                             <td class="text-center align-middle">Kopi</td>
@@ -221,9 +199,6 @@
                             <td></td>
                             <td>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            </td>
-                            <td class="text-center">
-                                <a href="" class="btn btn-dribbble">View</a>
                             </td>
                         </tr>
                         <tr>
@@ -242,16 +217,12 @@
                             <td>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             </td>
-                            <td class="text-center">
-                                <a href="" class="btn btn-dribbble">View</a>
-                            </td>
                         </tr>
                         <tr>
                             <th>Total KPI</th>
                             <th class="text-center">60%</th>
                             <th></th>
                             <th class="text-center">58.66%</th>
-                            <th></th>
                             <th></th>
                             <th></th>
                             <th></th>

@@ -7,102 +7,98 @@
 @endsection
 
 @section('content')
-<div class="col-12 mb-4">
-    <div class="row row-cards">
-        <div class="col-sm-6 col-lg-3">
-            <div class="card card-sm shadow-sm">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-auto">
-                            <span class="bg-blue text-white avatar rounded-circle"><!-- Download SVG icon from http://tabler-icons.io/i/currency-dollar -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2"></path><path d="M12 3v3m0 12v3"></path></svg>
-                            </span>
-                        </div>
-                        <div class="col">
-                            <div class="">
-                               <span class="fs-2 fw-bold">Rp. 2.5 M</span>
-                            </div>
-                            <div class="text-muted">
-                                Total Pendapatan
-                            </div>
-                        </div>
+<div class="col-sm-6 col-lg-3 mb-4">
+    <div class="card card-sm shadow-sm">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <span class="bg-blue text-white avatar rounded-circle"><!-- Download SVG icon from http://tabler-icons.io/i/currency-dollar -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2"></path><path d="M12 3v3m0 12v3"></path></svg>
+                    </span>
+                </div>
+                <div class="col">
+                    <div class="">
+                       <span class="fs-2 fw-bold">Rp. 2.5 M</span>
+                    </div>
+                    <div class="text-muted">
+                        Total Pendapatan
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="card card-sm shadow-sm">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-auto">
-                            <span class="bg-dribbble text-white avatar rounded-circle"><!-- Download SVG icon from http://tabler-icons.io/i/shopping-cart -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-laptop" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <line x1="3" y1="19" x2="21" y2="19"></line>
-                                    <rect x="5" y="6" width="14" height="10" rx="1"></rect>
-                                 </svg>
-                            </span>
-                        </div>
-                        <div class="col">
-                            <div class="">
-                                <span class="fs-2 fw-bold">2000</span>
-                            </div>
-                            <div class="text-muted">
-                                Total Penjualan Produk
-                            </div>
-                        </div>
+    </div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-4">
+    <div class="card card-sm shadow-sm">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <span class="bg-dribbble text-white avatar rounded-circle"><!-- Download SVG icon from http://tabler-icons.io/i/shopping-cart -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-laptop" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <line x1="3" y1="19" x2="21" y2="19"></line>
+                            <rect x="5" y="6" width="14" height="10" rx="1"></rect>
+                         </svg>
+                    </span>
+                </div>
+                <div class="col">
+                    <div class="">
+                        <span class="fs-2 fw-bold">2000</span>
+                    </div>
+                    <div class="text-muted">
+                        Total Penjualan Produk
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="card card-sm shadow-sm">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-auto">
-                            <span class="bg-info text-white avatar rounded-circle"><!-- Download SVG icon from http://tabler-icons.io/i/brand-twitter -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cash-banknote" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                    <rect x="3" y="6" width="18" height="12" rx="2"></rect>
-                                    <line x1="18" y1="12" x2="18.01" y2="12"></line>
-                                    <line x1="6" y1="12" x2="6.01" y2="12"></line>
-                                 </svg>
-                            </span>
-                        </div>
-                        <div class="col">
-                            <div class="">
-                                <span class="fs-2 fw-bold">Rp. 2.6 M</span>
-                            </div>
-                            <div class="text-muted">
-                                Target Pendapatan
-                            </div>
-                        </div>
+    </div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-4">
+    <div class="card card-sm shadow-sm">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <span class="bg-info text-white avatar rounded-circle"><!-- Download SVG icon from http://tabler-icons.io/i/brand-twitter -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cash-banknote" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <rect x="3" y="6" width="18" height="12" rx="2"></rect>
+                            <line x1="18" y1="12" x2="18.01" y2="12"></line>
+                            <line x1="6" y1="12" x2="6.01" y2="12"></line>
+                         </svg>
+                    </span>
+                </div>
+                <div class="col">
+                    <div class="">
+                        <span class="fs-2 fw-bold">Rp. 2.6 M</span>
+                    </div>
+                    <div class="text-muted">
+                        Target Pendapatan
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-6 col-lg-3">
-            <div class="card card-sm shadow-sm">
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-auto">
-                            <span class="bg-warning text-white avatar rounded-circle"><!-- Download SVG icon from http://tabler-icons.io/i/brand-facebook -->
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-pie" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M10 3.2a9 9 0 1 0 10.8 10.8a1 1 0 0 0 -1 -1h-6.8a2 2 0 0 1 -2 -2v-7a0.9 .9 0 0 0 -1 -.8"></path>
-                                    <path d="M15 3.5a9 9 0 0 1 5.5 5.5h-4.5a1 1 0 0 1 -1 -1v-4.5"></path>
-                                 </svg>
-                            </span>
-                        </div>
-                        <div class="col">
-                            <div class="">
-                                <span class="fs-2 fw-bold">3000</span>
-                            </div>
-                            <div class="text-muted">
-                                Target Penjualan Produk
-                            </div>
-                        </div>
+    </div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-4">
+    <div class="card card-sm shadow-sm">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <span class="bg-warning text-white avatar rounded-circle"><!-- Download SVG icon from http://tabler-icons.io/i/brand-facebook -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chart-pie" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M10 3.2a9 9 0 1 0 10.8 10.8a1 1 0 0 0 -1 -1h-6.8a2 2 0 0 1 -2 -2v-7a0.9 .9 0 0 0 -1 -.8"></path>
+                            <path d="M15 3.5a9 9 0 0 1 5.5 5.5h-4.5a1 1 0 0 1 -1 -1v-4.5"></path>
+                         </svg>
+                    </span>
+                </div>
+                <div class="col">
+                    <div class="">
+                        <span class="fs-2 fw-bold">3000</span>
+                    </div>
+                    <div class="text-muted">
+                        Target Penjualan Produk
                     </div>
                 </div>
             </div>
@@ -845,7 +841,7 @@
     }).addTo(map);
 
     myIcon = L.icon({
-        iconUrl: './assets/plugin/images/shopping.png',
+        iconUrl: '{{asset('assets/plugin/images/shopping.png')}}',
         iconSize: [40, 40],
         iconAnchor: [22, 94],
         popupAnchor: [0, -86],
@@ -865,7 +861,7 @@
             .setLatLng(e.latlng)
             .setContent(
                 "<div class='card text-start'>"+
-                    "<img src='./assets/static/photos/1b73704b282a8ec6.jpg' style='filter: brightness(80%); height: 120px'>"+
+                    "<img src='{{asset('assets/static/photos/1b73704b282a8ec6.jpg')}}' style='filter: brightness(80%); height: 120px'>"+
                     "<div class='card-body'>"+
                         "<div class='d-flex justify-content-between'>"+
                             "<div>"+
@@ -915,10 +911,59 @@
     });
     maker1.on('click', function(e) {
         L.popup({
-            offset: [0, -86]
+            offset: [0, -80],
+            minWidth: 280,
+            maxWidth:280,
             })
             .setLatLng(e.latlng)
-            .setContent('<p>Hello world!<br />This is a nice popup.</p>')
+            .setContent(
+                "<div class='card text-start'>"+
+                    "<img src='{{asset('assets/static/photos/1b73704b282a8ec6.jpg')}}' style='filter: brightness(80%); height: 120px'>"+
+                    "<div class='card-body'>"+
+                        "<div class='d-flex justify-content-between'>"+
+                            "<div>"+
+                                "<span class='fw-bold'>Joglokebon Resto & Kopi</span>"+
+                            "</div>"+
+                            "<div>"+
+                                "<svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-brand-whatsapp' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='currentColor' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><path d='M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9'></path><path d='M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1'></path></svg>"+
+                            "</div>"+
+                        "</div>"+
+                        "<div class='mb-2 mt-2'>"+
+                            "<span class='fs-4 fw-bold text-danger'>Produk</span>"+
+                            "<table class='table table-borderless mb-2'>"+
+                                "<tr>"+
+                                    "<td class='p-0'>Kopi Rojoku Sachet</td>"+
+                                    "<td class='p-0'>20 PCS</td>"+
+                                "</tr>"+
+                                "<tr>"+
+                                    "<td class='p-0'>Kopi Rojoku Pouch</td>"+
+                                    "<td class='p-0'>5 PCS</td>"+
+                                "</tr>"+
+                                "<tr>"+
+                                    "<td class='p-0'>Minyak Goreng</td>"+
+                                    "<td class='p-0'>10 DUS</td>"+
+                                "</tr>"+
+                            "</table>"+
+                            "<span class='fs-4 fw-bold text-danger'>Transaksi</span>"+
+                            "<table class='table table-borderless mb-2'>"+
+                                "<tr>"+
+                                    "<td class='p-0'>Total Transaksi</td>"+
+                                    "<td class='p-0'>Rp. 20.000.000</td>"+
+                                "</tr>"+
+                                "<tr>"+
+                                    "<td class='p-0'>Nilai Persediaan</td>"+
+                                    "<td class='p-0'>Rp. 2.500.000</td>"+
+                                "</tr>"+
+                            "</table>"+
+                            "<span class='fs-4 fw-bold text-danger'>Sales Visit</span>"+
+                            "<br>"+
+                            "<span>Kunjungan Terakhir</span>"+
+                            "<br>"+
+                            "<span>10 Novenber 2022</span>"+
+                        "</div>"+
+                    "</div>"+
+                "</div>"
+            )
             .openOn(map);
     });
 

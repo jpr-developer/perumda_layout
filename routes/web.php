@@ -1,8 +1,16 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\EmployeeController;
+use App\Http\Controllers\HomeScreenController;
+use App\Http\Controllers\Import\ImportDataController;
+use App\Http\Controllers\Mitra\ResellerController;
+use App\Http\Controllers\Mitra\StoreController;
 use App\Http\Controllers\Mitra\SupplierController;
 use App\Http\Controllers\Product\ProductController;
+use App\Http\Controllers\Purchase\PurchaseController;
+use App\Http\Controllers\Sales\SalesResellerTransactionController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,12 +25,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
-Route::get('/', function () {
-    return view('dashboard');
+
+Auth::routes();
+
+Route::get('/home-screen', [HomeScreenController::class, 'index'])->name('home.screen');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+Route::prefix('import-data')->group(function() {
+    Route::get('/', [ImportDataController::class, 'index'])->name('import.index');
+
+    // Purchase Transaction Import
+    Route::post('/purchase', [PurchaseController::class, 'import'])->name('purchase.import');
+
+    // Sales Transaction Reseller
+    Route::post('/sales-transaction-reseller', [SalesResellerTransactionController::class, 'import'])->name('sales-transaction-reseller.import');
 });
+
+
 Route::prefix('/employee')->group(function() {
     Route::get('/', [EmployeeController::class, 'index'])->name('employee.index');
     Route::post('/import', [EmployeeController::class, 'import'])->name('employee.import');
@@ -42,36 +64,46 @@ Route::prefix('/mitra')->group(function() {
 
         // Transaction Data
         Route::prefix('/transaction')->group(function() {
-            Route::get('/grafik/{code}', [SupplierController::class, 'chart'])->name('supplier.chart');
-            Route::post('/import/{supplier_id}', [SupplierController::class, 'import_transaction'])->name('supplier.transaction-import');
+            Route::get('/chart/{code}', [SupplierController::class, 'chart'])->name('supplier.chart');
             Route::get('/detail/{code_sp}/{code_tr}', [SupplierController::class, 'detail_transaction'])->name('supplier.detail-transaction');
+            Route::get('/chart/filter/year/{code}', [SupplierController::class, 'chart_filter'])->name('supplier.chart-filter');
+            Route::get('/export/{supplier_id}', [SupplierController::class, 'export_transaction'])->name('supplier.export-transaction');
         });
     });
 
-
-
-
     // Reseller
-    Route::get('/reseller', function() {
-        return view('mitra.reseller.index');
-    });
-    Route::get('/reseller/detail', function() {
-        return view('mitra.reseller.detail');
-    });
-    Route::get('/reseller/detail/transaksi', function() {
-        return view('mitra.reseller.detail-transaksi');
+    Route::prefix('reseller')->group(function() {
+        Route::get('/', [ResellerController::class, 'index'])->name('reseller.index');
+        Route::get('/detail/{code}', [ResellerController::class, 'detail'])->name('reseller.detail');
+        Route::post('/import', [ResellerController::class, 'import'])->name('reseller.import');
+        Route::get('/search', [ResellerController::class, 'search'])->name('reseller.search');
+
+
+        Route::prefix('/transactions')->group(function() {
+            Route::get('/detail', [ResellerController::class, 'transaction_detail'])->name('reseller.transaction-detail');
+            Route::post('/import/{id}', [ResellerController::class, 'import_transaction'])->name('reseller.import-transaction');
+        });
+
     });
 
-    // Toko
-    Route::get('/store', function() {
-        return view('mitra.toko.index');
+    Route::prefix('/store')->group(function() {
+        Route::get('/', [StoreController::class, 'index'])->name('store.index');
+        Route::get('/search', [StoreController::class, 'search'])->name('store.search');
+        Route::get('/detail/{code}', [StoreController::class, 'detail'])->name('store.detail');
+        Route::post('/import', [StoreController::class, 'import'])->name('store.import');
+
+
+        Route::prefix('/transactions')->group(function() {
+            Route::get('detail', function() {
+                return view('mitra.toko.detail-transaksi');
+            });
+            Route::post('/import/{id}', [StoreController::class, 'import_transaction'])->name('store.import-transaction');
+            Route::get('/detail/{code_store}/{code_tr}', [StoreController::class, 'transaction_detail'])->name('store.transaction.detail');
+            Route::get('/chart/{code}', [StoreController::class, 'chart'])->name('store.chart');
+            Route::get('/chart/filter/year/{code}', [StoreController::class, 'chart_filter'])->name('store.chart-filter');
+        });
     });
-    Route::get('/store/detail', function() {
-        return view('mitra.toko.detail');
-    });
-    Route::get('/store/detail/transaksi', function() {
-        return view('mitra.toko.detail-transaksi');
-    });
+
 });
 
 // Products

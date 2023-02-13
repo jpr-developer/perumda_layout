@@ -110,6 +110,78 @@
                                         Lorem Ipsum is simply dummy text of the printing and typesetting industry
                                     </td>
                                 </tr>
+                                <tr class="align-middle">
+                                    <td></td>
+                                    <td>4,2,1,4</td>
+                                    <td>Penjualan Air Mineral Dalam Kemasan</td>
+                                    <td>
+                                        Rp 602.190.000
+                                    </td>
+                                    <td>
+                                        Rp 583.380.541
+                                    </td>
+                                    <td>
+                                        Rp 900.000.000
+                                    </td>
+                                    <td>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                    </td>
+                                </tr>
+                                <!-- HPP -->
+                                <tr class="align-middle">
+                                    <td class="text-center">2</td>
+                                    <td>5,1</td>
+                                    <td colspan="5">
+                                        <span class="fw-bold">HARGA POKOK PENJUALAN</span>
+                                    </td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <td></td>
+                                    <td>5,1,1</td>
+                                    <td>Pembelian Alat Tulis Kantor</td>
+                                    <td>Rp 1.463.000.000</td>
+                                    <td>
+                                        1.037.664.532
+                                    </td>
+                                    <td>
+                                        Rp 1.376.000.000
+                                    </td>
+                                    <td>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                    </td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <td></td>
+                                    <td>5,1,2</td>
+                                    <td>Pembelian Barang lain</td>
+                                    <td>Rp 0</td>
+                                    <td>
+                                        Rp07.900.000
+                                    </td>
+                                    <td>
+                                        Rp 0
+                                    </td>
+                                    <td>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                    </td>
+                                </tr>
+                                <tr class="align-middle">
+                                    <td></td>
+                                    <td>5,1,3</td>
+                                    <td>Transport ATK</td>
+                                    <td>
+                                        Rp 3.000.000
+                                    </td>
+                                    <td>
+                                        Rp 2.390.208
+                                    </td>
+                                    <td>
+                                        Rp 2.500.000
+                                    </td>
+                                    <td>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

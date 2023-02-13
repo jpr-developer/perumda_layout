@@ -15,8 +15,8 @@
     <!-- Menu -->
     <div class="sidebar-group">
         <ul class="sidebar-list ">
-            <li class="@if(Request::is('/')) active @endif">
-                <a href="{{url('/')}}" class="title">
+            <li class="@if(Request::routeIs('dashboard')) active @endif">
+                <a href="{{route('dashboard')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Dashboard_white.png')}}" alt="" class="icon">
                         <span class="name">Dashboard</span>
@@ -24,7 +24,7 @@
                 </a>
             </li>
             <li class="@if(Request::is('employee*')) active @endif">
-                <a href="{{url('/employee')}}" class="title">
+                <a href="{{route('employee.index')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Mitra_white.png')}}" alt="" class="icon">
                         <span class="name">Karyawan</span>
@@ -119,6 +119,14 @@
                     </div>
                 </a>
             </li>
+            {{-- <li class="@if(Request::is('import-data*')) active @endif">
+                <a href="{{route('import.index')}}" class="title">
+                    <div class="mb-2 mt-2">
+                        <img src="{{asset('assets/icon/Product_white.png')}}" alt="" class="icon">
+                        <span class="name">Import Data</span>
+                    </div>
+                </a>
+            </li> --}}
         </ul>
     </div>
     <!-- End Menu -->

@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Imports\Supplier\Transaction;
+namespace App\Imports\Sales;
 
-use App\Models\SupplierTransaction;
-use App\Models\SupplierTransactionDetail;
+use App\Models\SalesTransactionReseller;
+use App\Models\SalesTransactionResellerDetail;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithChunkReading;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 
-class SupplierTransactionDetailImport implements ToModel, WithHeadingRow, WithChunkReading, ShouldQueue
+class SalesTransactionResellerDetailImport implements ToModel, WithHeadingRow, WithChunkReading, ShouldQueue
 {
     /**
     * @param array $row
@@ -19,10 +19,10 @@ class SupplierTransactionDetailImport implements ToModel, WithHeadingRow, WithCh
     public function model(array $row)
     {
 
-        $supplierTransaction = SupplierTransaction::where('code', $row['kode_transaksi'])->first();
+        $salesTransactionReseller = SalesTransactionReseller::where('code', $row['kode_transaksi'])->first();
 
-        return new SupplierTransactionDetail([
-            'supplier_transaction_id' => $supplierTransaction->id,
+        return new SalesTransactionResellerDetail([
+            'sales_transaction_reseller_id' => $salesTransactionReseller->id,
             'uraian' => $row['uraian'],
             'unit_price' => $row['harga_satuan'],
             'qty' => $row['quantity']

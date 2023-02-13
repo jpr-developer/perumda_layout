@@ -38,7 +38,7 @@ class SupplierExport implements  FromQuery, WithHeadings, WithStyles
             'Website',
             'Tanggal Bergabung',
             'Durasi Kontrak',
-            'Nomor Rekening',
+            'Rekening',
         ];
     }
 

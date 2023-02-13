@@ -15,7 +15,7 @@
     @yield('css')
 
   </head>
-  <body >
+  <body>
     <div class="page">
         @include('sweetalert::alert')
 
@@ -25,7 +25,7 @@
         <div class="page-wrapper">
             <div class="container-fluid">
                 <div class="page-body">
-                    <div class="row">
+                    <div class="row row-deck">
                         @yield('content')
                     </div>
                 </div>

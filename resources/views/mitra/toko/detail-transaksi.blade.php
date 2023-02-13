@@ -12,13 +12,13 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/mitra/store')}}" class="fs-2 fw-bold">Mitra Toko</a>
+            <a href="{{route('store.index')}}" class="fs-2 fw-bold">Mitra Toko</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <a href="{{url('/mitra/store/detail')}}" class="fs-2 fw-bold">Toko Indah Lestari</a>
+            <a href="{{route('store.detail', 'TK001')}}" class="fs-2 fw-bold">Toko Indah Barokah</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
@@ -31,8 +31,8 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <h3>Taggal Transaksi : Selasa, 20 Mei 2022</h3>
-            <h3>ID Transaksi : TR.123456789</h3>
+            <h3>Taggal Transaksi : Senin, 20 Mei 2022</h3>
+            <h3>ID Transaksi : TR/TK001/01/20/05/2022</h3>
 
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -69,7 +69,7 @@
                                 <span class="form-control border border-0 fs-3">1</span>
                             </td>
                             <td>
-                                <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
+                                <span class="form-control border border-0 fs-3">Kopi Rojoku</span>
                             </td>
                             <td>
                                 <span class="form-control border border-0 fs-3">1000 PCS</span>
@@ -78,7 +78,7 @@
                                 <span class="form-control border border-0 fs-3">RP 1.500</span>
                             </td>
                             <td>
-                                <span class="form-control border border-0 fs-3">RP 1.500.0000</span>
+                                <span class="form-control border border-0 fs-3">RP 1.500.000</span>
                             </td>
                         </tr>
                         <tr>
@@ -86,7 +86,7 @@
                                 <span class="form-control border border-0 fs-3 fw-bold">TOTAL</span>
                             </td>
                             <td>
-                                <span class="form-control border border-0 fs-3 fw-bold">RP 1.500.0000</span>
+                                <span class="form-control border border-0 fs-3 fw-bold">RP 1.500.000</span>
                             </td>
                         </tr>
                     </tbody>
@@ -98,18 +98,18 @@
                 <table class="table table-borderless fs-3">
                     <tr>
                         <td style="width: 40%">
-                            Supllier
+                            Nama Toko
                         </td>
                         <td>
-                            : Agung Priyanto
+                            : Toko Indah
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Petugas
+                            Reseller
                         </td>
                         <td>
-                            : Hendrawan
+                            : MUhammad Andreas
                         </td>
                     </tr>
                     <tr>

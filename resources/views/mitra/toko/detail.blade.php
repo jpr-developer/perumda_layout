@@ -12,93 +12,94 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/mitra/store')}}" class="text-decoration-underline fs-2 fw-bold">Mitra Toko</a>
+            <a href="{{route('store.index')}}" class="text-decoration-underline fs-2 fw-bold">Mitra Toko</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <span class="fs-2 fw-bold">Toko Indah Lestari</span>
+            <span class="fs-2 fw-bold">{{$store->name}}</span>
         </div>
     </div>
 </div>
 
 <div class="row row-deck">
-    <div class="col-md-6 mb-3">
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col-md-4 mb-3 text-center">
-                        <img class="rounded-circle" src="{{asset('assets/static/avatars/000f.jpg')}}" alt="" height="180" width="180">
-                    </div>
-                    <div class="col-md-8 mb-3">
-                        <h2>Toko Indah Lestari</h2>
-                        <span class="fs-3">Personal</span> <br>
-                        <span class="fs-3">Mitra Toko Bidang Perdagangan</span>
-                    </div>
-                    <hr>
-                    <table class="fs-3 table table-borderless">
-                        <tr>
-                            <td>Alamat</td>
-                            <td class="text-end">Jl. Pemuda No.03</td>
-                        </tr>
-                        <tr>
-                            <td>No Telepon Perusahaan</td>
-                            <td class="text-end">(0291) 4564 4565</td>
-                        </tr>
-                        <tr>
-                            <td>Email</td>
-                            <td class="text-end">muhammadfahruddin@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>Website</td>
-                            <td class="text-end">fahruddin.com</td>
-                        </tr>
-                    </table>
+
+</div>
+<div class="col-md-6 mb-3">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 text-center">
+                    <img class="rounded-circle" src="{{asset('assets/static/avatars/000f.jpg')}}" alt="" height="180" width="180">
                 </div>
+                <div class="col-md-8 mb-3">
+                    <h2>{{$store->name}}</h2>
+                    <span class="fs-3">{{$store->storeCategory->name}}</span> <br>
+                    <span class="fs-3">Mitra Toko Bidang Perdagangan</span>
+                </div>
+                <hr>
+                <table class="fs-3 table table-borderless">
+                    <tr>
+                        <td>Alamat</td>
+                        <td class="text-end">{{$store->address}}</td>
+                    </tr>
+                    <tr>
+                        <td>No Telepon Perusahaan</td>
+                        <td class="text-end">{{$store->phone}}</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td class="text-end">{{$store->email}}</td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td class="text-end">{{$store->website}}</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
-    <div class="col-md-6 mb-3">
-        <div class="card shadow-sm">
-            <div class="card-body">
-                <div class="mb-3">
-                    <h2>Status Toko</h2>
-                    <hr class="mt-1 mb-1">
-                    <div class="table-responsive">
-                        <table class="fs-3 table table-borderless">
-                            <tr>
-                                <td>ID Toko</td>
-                                <td class="text-end">SP.123456789</td>
-                            </tr>
-                            <tr>
-                                <td>Kategori Toko</td>
-                                <td class="text-end">Lembaga</td>
-                            </tr>
-                            <tr>
-                                <td>Sub Kategori Toko</td>
-                                <td class="text-end">PT (Perseroan Terbatas)</td>
-                            </tr>
-                            <tr>
-                                <td>Tanggal Mulai Kerjasama</td>
-                                <td class="text-end">Selasa, 20 Mei 2022</td>
-                            </tr>
-                            <tr>
-                                <td>Durasi Kerjasama</td>
-                                <td class="text-end">1 Tahun</td>
-                            </tr>
-                            <tr>
-                                <td>NO Rekening Resmi</td>
-                                <td class="text-end">BNI - PT.Aston Putra - 32709273025</td>
-                            </tr>
-                            <tr>
-                                <td>Dokumen Kontrak Kerjasama</td>
-                                <td class="text-end">
-                                    <a href="" class="btn btn-dribbble" data-bs-toggle="modal" data-bs-target="#modal-contract">Lihat Dokumen</a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+</div>
+<div class="col-md-6 mb-3">
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="mb-3">
+                <h2>Status Toko</h2>
+                <hr class="mt-1 mb-1">
+                <div class="table-responsive">
+                    <table class="fs-3 table table-borderless">
+                        <tr>
+                            <td>ID Toko</td>
+                            <td class="text-end">{{$store->code}}</td>
+                        </tr>
+                        <tr>
+                            <td>Kategori Toko</td>
+                            <td class="text-end">{{$store->storeCategory->name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Sub Kategori Toko</td>
+                            <td class="text-end">{{$store->storeSubCategory->name}}</td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Mulai Kerjasama</td>
+                            <td class="text-end">{{$store->join_date}}</td>
+                        </tr>
+                        <tr>
+                            <td>Durasi Kerjasama</td>
+                            <td class="text-end">{{$store->contract_duration}} Tahun</td>
+                        </tr>
+                        <tr>
+                            <td>NO Rekening Resmi</td>
+                            <td class="text-end">{{$store->account_number}}</td>
+                        </tr>
+                        <tr>
+                            <td>Dokumen Kontrak Kerjasama</td>
+                            <td class="text-end">
+                                <a href="" class="btn btn-dribbble" data-bs-toggle="modal" data-bs-target="#modal-contract">Lihat Dokumen</a>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -110,12 +111,22 @@
             <div class="row">
                 <div class="col-md-12 mb-3">
                     <div class="d-flex justify-content-between align-items-center">
-                        <h2>Data Transaksi Toko Indah Lestari</h2>
-                        <div>
-                            <a href="#" class="btn btn-rss w-100 btn-icon" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-filter">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-filter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <h2>Data Transaksi {{$store->name}}</h2>
+                        <div class="d-flex">
+                            <a href="#" class="btn btn-green w-100 btn-icon me-2" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-import">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-upload" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M5.5 5h13a1 1 0 0 1 .5 1.5l-5 5.5l0 7l-4 -3l0 -4l-5 -5.5a1 1 0 0 1 .5 -1.5"></path>
+                                    <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"></path>
+                                    <polyline points="9 15 12 12 15 15"></polyline>
+                                    <line x1="12" y1="12" x2="12" y2="21"></line>
+                                </svg>
+                            </a>
+                            <a href="" class="btn btn-red w-100 btn-icon me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4"></path>
+                                    <path d="M12 13l0 9"></path>
+                                    <path d="M9 19l3 3l3 -3"></path>
                                 </svg>
                             </a>
                         </div>
@@ -158,22 +169,25 @@
                                         <span class="form-control border border-0 fs-3">1</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">TR.12345678</span>
+                                        <span class="form-control border border-0 fs-3">TR/TK001/01/20/05/2022</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">20 Mei 2022</span>
+                                        <span class="form-control border border-0 fs-3">Senin, 20 Mei 2022</span>
                                     </td>
                                     <td>
                                         <span class="form-control border border-0 fs-3">Rp. 1.500.000</span>
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('/mitra/store/detail/transaksi')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('mitra/store/transactions/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
+                        <div class="d-flex justify-content-center">
+
+                        </div>
                     </div>
                 </div>
 
@@ -185,39 +199,20 @@
     <div class="card">
         <div class="card-body">
             <div class="d-flex">
-                <h2>Grafik Data Transaksi</h2>
+                <div id="chart-title">
+                    <h2>Grafik Transaksi 2022</h2>
+                </div>
                 <div class="ms-auto">
                     <div class="dropdown">
                         <a class="dropdown-toggle text-muted me-3" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tahun</a>
-                        <div class="dropdown-menu dropdown-menu-end card-body-scrollable" style="height: 18rem">
-                            <a class="dropdown-item" href="#">2015</a>
-                            <a class="dropdown-item" href="#">2016</a>
-                            <a class="dropdown-item" href="#">2017</a>
-                            <a class="dropdown-item" href="#">2018</a>
-                            <a class="dropdown-item" href="#">2019</a>
-                            <a class="dropdown-item" href="#">2020</a>
-                            <a class="dropdown-item" href="#">2021</a>
+                        <div class="dropdown-menu dropdown-menu-end card-body-scrollable" style="height: 3rem" id="yearsChart">
                             <a class="dropdown-item" href="#">2022</a>
-                        </div>
-                        <a class="dropdown-toggle text-muted" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bulan</a>
-                        <div class="dropdown-menu dropdown-menu-end card-body-scrollable" style="height: 18rem">
-                            <a class="dropdown-item" href="#">Januari</a>
-                            <a class="dropdown-item" href="#">Februari</a>
-                            <a class="dropdown-item" href="#">Maret</a>
-                            <a class="dropdown-item" href="#">April</a>
-                            <a class="dropdown-item" href="#">Mei</a>
-                            <a class="dropdown-item" href="#">Juni</a>
-                            <a class="dropdown-item" href="#">Juli</a>
-                            <a class="dropdown-item" href="#">Agustus</a>
-                            <a class="dropdown-item" href="#">September</a>
-                            <a class="dropdown-item" href="#">Oktober</a>
-                            <a class="dropdown-item" href="#">November</a>
-                            <a class="dropdown-item" href="#">Desember</a>
+                            <a class="dropdown-item" href="#">2023</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="chart-line-stroke2"></div>
+            <div id="chart-line-stroke"></div>
         </div>
     </div>
 </div>
@@ -278,101 +273,97 @@
         </div>
     </div>
 </div>
-<div class="col-lg-6 mb-3">
-    <div class="row row-cards">
-        <div class="col-12">
-            <div class="card shadow-sm" style="height: 22rem">
-                <h2 class="ms-3 mt-3">Permasalahan ( Komplain )</h2>
-                <div class="card-body card-body-scrollable card-body-scrollable-shadow">
-                    <div class="divide-y">
-                        <div>
-                            <div class="row">
-                                <div class="col-auto">
-                                    <span class="avatar text-white">JL</span>
-                                </div>
-                                <div class="col">
-                                    <div class="text-truncate">
-                                        <strong>Jeffie Lewzey</strong> memberikan komplain. <strong>"Produk sering rusak"</strong>
-                                    </div>
-                                    <div class="text-muted">yesterday</div>
-                                </div>
-                                <div class="col-auto align-self-center">
-                                    <div>
-                                        <a href="" class="text-decoration-underline" data-bs-toggle="modal" data-bs-target="#modal-komplain">lihat detail</a>
-                                    </div>
-                                </div>
+<div class="col-md-6 mb-3">
+    <div class="card shadow-sm" style="height: 22rem">
+        <h2 class="ms-3 mt-3">Permasalahan ( Komplain )</h2>
+        <div class="card-body card-body-scrollable card-body-scrollable-shadow">
+            <div class="divide-y">
+                <div>
+                    <div class="row">
+                        <div class="col-auto">
+                            <span class="avatar text-white">JL</span>
+                        </div>
+                        <div class="col">
+                            <div class="text-truncate">
+                                <strong>Jeffie Lewzey</strong> memberikan komplain. <strong>"Produk sering rusak"</strong>
+                            </div>
+                            <div class="text-muted">yesterday</div>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <div>
+                                <a href="" class="text-decoration-underline" data-bs-toggle="modal" data-bs-target="#modal-komplain">lihat detail</a>
                             </div>
                         </div>
-                        <div>
-                            <div class="row">
-                                <div class="col-auto">
-                                    <span class="avatar" style="background-image: url({{asset('assets/static/avatars/002m.jpg')}})"></span>
-                                </div>
-                                <div class="col">
-                                    <div class="text-truncate">
-                                        <strong>Andrawan</strong> memberikan komplain. <strong>"Pengiriman tidak sesuai jadwal"</strong>
-                                    </div>
-                                    <div class="text-muted">2 days ago</div>
-                                </div>
-                                <div class="col-auto align-self-center">
-                                    <div>
-                                        <a href="" class="text-decoration-underline">lihat detail</a>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-auto">
+                            <span class="avatar" style="background-image: url({{asset('assets/static/avatars/002m.jpg')}})"></span>
+                        </div>
+                        <div class="col">
+                            <div class="text-truncate">
+                                <strong>Andrawan</strong> memberikan komplain. <strong>"Pengiriman tidak sesuai jadwal"</strong>
+                            </div>
+                            <div class="text-muted">2 days ago</div>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <div>
+                                <a href="" class="text-decoration-underline">lihat detail</a>
                             </div>
                         </div>
-                        <div>
-                            <div class="row">
-                                <div class="col-auto">
-                                    <span class="avatar" style="background-image: url({{asset('assets/static/avatars/003m.jpg')}})"></span>
-                                </div>
-                                <div class="col">
-                                    <div class="text-truncate">
-                                        <strong>Agustin</strong> memberikan komplain. <strong>"Pengiriman tidak sesuai jadwal"</strong>
-                                    </div>
-                                    <div class="text-muted">today</div>
-                                </div>
-                                <div class="col-auto align-self-center">
-                                    <div>
-                                        <a href="" class="text-decoration-underline">lihat detail</a>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-auto">
+                            <span class="avatar" style="background-image: url({{asset('assets/static/avatars/003m.jpg')}})"></span>
+                        </div>
+                        <div class="col">
+                            <div class="text-truncate">
+                                <strong>Agustin</strong> memberikan komplain. <strong>"Pengiriman tidak sesuai jadwal"</strong>
+                            </div>
+                            <div class="text-muted">today</div>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <div>
+                                <a href="" class="text-decoration-underline">lihat detail</a>
                             </div>
                         </div>
-                        <div>
-                            <div class="row">
-                                <div class="col-auto">
-                                    <span class="avatar" style="background-image: url({{asset('assets/static/avatars/000f.jpg')}})"></span>
-                                </div>
-                                <div class="col">
-                                    <div class="text-truncate">
-                                        <strong>Endah Listiwati</strong> memberikan komplain. <strong>"Pengiriman tidak sesuai jadwal"</strong>
-                                    </div>
-                                    <div class="text-muted">4 days ago</div>
-                                </div>
-                                <div class="col-auto align-self-center">
-                                    <div>
-                                        <a href="" class="text-decoration-underline">lihat detail</a>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-auto">
+                            <span class="avatar" style="background-image: url({{asset('assets/static/avatars/000f.jpg')}})"></span>
+                        </div>
+                        <div class="col">
+                            <div class="text-truncate">
+                                <strong>Endah Listiwati</strong> memberikan komplain. <strong>"Pengiriman tidak sesuai jadwal"</strong>
+                            </div>
+                            <div class="text-muted">4 days ago</div>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <div>
+                                <a href="" class="text-decoration-underline">lihat detail</a>
                             </div>
                         </div>
-                        <div>
-                            <div class="row">
-                                <div class="col-auto">
-                                    <span class="avatar" style="background-image: url({{asset('assets/static/avatars/001f.jpg')}})"></span>
-                                </div>
-                                <div class="col">
-                                    <div class="text-truncate">
-                                        <strong>Agustina</strong> memberikan komplain. <strong>"Barang sering rusak"</strong>
-                                    </div>
-                                    <div class="text-muted">2 days ago</div>
-                                </div>
-                                <div class="col-auto align-self-center">
-                                    <div>
-                                        <a href="" class="text-decoration-underline">lihat detail</a>
-                                    </div>
-                                </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-auto">
+                            <span class="avatar" style="background-image: url({{asset('assets/static/avatars/001f.jpg')}})"></span>
+                        </div>
+                        <div class="col">
+                            <div class="text-truncate">
+                                <strong>Agustina</strong> memberikan komplain. <strong>"Barang sering rusak"</strong>
+                            </div>
+                            <div class="text-muted">2 days ago</div>
+                        </div>
+                        <div class="col-auto align-self-center">
+                            <div>
+                                <a href="" class="text-decoration-underline">lihat detail</a>
                             </div>
                         </div>
                     </div>
@@ -406,6 +397,28 @@
     </div>
 </div>
 {{-- modal --}}
+<div class="modal modal-blur fade" id="modal-import" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Import Data Transaksi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="{{route('store.import-transaction', $store->id)}}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Import data transaksi</label>
+                        <input type="file" name="import" required class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-green">Import</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 <div class="modal modal-blur fade" id="modal-contract" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -452,10 +465,75 @@
 <!-- Libs JS -->
 <script src="{{asset('assets/dist/libs/apexcharts/dist/apexcharts.min.js')}}" defer></script>
 <!-- Chart Weekly Sales2 -->
-<script>
+{{-- <script>
+    $(document).ready(function() {
+        $.ajax({
+            url: "{{route('store.chart', $store->code)}}",
+            type: 'get',
+            dataType: 'json',
+            success: function(resp)
+            {
+                var total = resp.total;
+                var months = resp.months;
+                var years = resp.years;
+
+                // Chart title
+                var date = new Date();
+                $("#chart-title").html("<h2>Grafik Total Transaksi "+date.getFullYear()+"</h2>")
+
+                // Chart
+                grafik(total, months);
+
+                // Filter Years
+                var listYears = "";
+                if (years.length > 0) {
+                    for (let i = 0; i < years.length; i++) {
+                        listYears += "<a class='dropdown-item' href='javascript:void(0)' onclick='years("+years[i]+")'>"+years[i]+"</a>"
+                    }
+                } else {
+                    listYears += "<a class='dropdown-item' href='#'>Data kosong</a>"
+                }
+
+                $("#yearsChart").html(listYears);
+
+            }
+        });
+    });
+
+
+    function years(year)
+    {
+        $.ajax({
+            url: "{{route('store.chart-filter', $store->code)}}",
+            data: {year:year},
+            dataType: 'json',
+            success: function(resp)
+            {
+                var total = resp.total;
+                var months = resp.months;
+
+                if (months.length < 2) {
+
+                    alert("Transaksi hanya pada bulan :"+ " " + months + ", Total : Rp. "+ " " + total);
+
+
+                } else {
+                    grafik(total, months);
+
+                    // Chart title
+                    $("#chart-title").html("<h2>Grafik Total Transaksi "+resp.year+"</h2>");
+                }
+
+            }
+        });
+    }
+
+</script> --}}
+{{-- <script>
     // @formatter:off
-    document.addEventListener("DOMContentLoaded", function () {
-        window.ApexCharts && (new ApexCharts(document.getElementById('chart-line-stroke2'), {
+    function grafik(total, months)
+    {
+        window.ApexCharts && (new ApexCharts(document.getElementById('chart-line-stroke'), {
             chart: {
                 type: "line",
                 fontFamily: 'inherit',
@@ -477,8 +555,8 @@
                 curve: "straight",
             },
             series: [{
-                name: "Grafik",
-                data: [8, 10, 11, 12, 20, 27, 30, 20, 10, 40, 50, 60]
+                name: "Total Transaksi",
+                data: total,
             },],
             grid: {
 
@@ -491,7 +569,7 @@
                 tooltip: {
                     enabled: false
                 },
-                categories: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
+                categories: months,
             },
             yaxis: {
                 labels: {
@@ -503,7 +581,12 @@
                 show: false,
             },
         })).render();
-    });
+    }
+    // @formatter:on
+</script> --}}
+<script>
+    // @formatter:off
+    document.addEventListener("DOMContentLoaded",function(){window.ApexCharts&&(new ApexCharts(document.getElementById('chart-line-stroke'),{chart:{type:"line",fontFamily:'inherit',height:340,parentHeightOffset:0,toolbar:{show:false,},animations:{enabled:false},},fill:{opacity:1,},stroke:{width:2,lineCap:"round",curve:"straight",},series:[{name:"Grafik",data:[8,10,11,12,20,27,30,20,10,40,50,60]},],grid:{strokeDashArray:2,},xaxis:{labels:{padding:0,},tooltip:{enabled:false},categories:['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'],},yaxis:{labels:{padding:4},},colors:["#ff922b","#206bc4","#5eba00"],legend:{show:false,},})).render();});
     // @formatter:on
 </script>
 <!-- Chart Weekly Sales1 End -->
