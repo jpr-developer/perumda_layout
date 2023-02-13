@@ -113,15 +113,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <h2>Data Transaksi {{$store->name}}</h2>
                         <div class="d-flex">
-                            <a href="#" class="btn btn-green w-100 btn-icon me-2" aria-label="Filter" data-bs-toggle="modal" data-bs-target="#modal-import">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-upload" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                    <path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1"></path>
-                                    <polyline points="9 15 12 12 15 15"></polyline>
-                                    <line x1="12" y1="12" x2="12" y2="21"></line>
-                                </svg>
-                            </a>
-                            <a href="" class="btn btn-red w-100 btn-icon me-2">
+                            <a href="" class="btn btn-green w-100 btn-icon">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cloud-download" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                                     <path d="M19 18a3.5 3.5 0 0 0 0 -7h-1a5 4.5 0 0 0 -11 -2a4.6 4.4 0 0 0 -2.1 8.4"></path>
