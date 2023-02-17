@@ -71,44 +71,27 @@
                                 </th>
                             </thead>
                             <tbody class="fs-3">
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">1</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Rabu, 21 Mei 2022</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/warehouse/opname/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">2</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Selasa, 20 Mei 2022</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/warehouse/opname/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                @foreach ($opnames as $opname => $key)
+                                    <tr>
+                                        <td class="text-center">
+                                            <span class="form-control border border-0 fs-3">{{$opname + $opnames->firstitem()}}</span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control border border-0 fs-3">{{$key->code}}</span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control border border-0 fs-3">{{$key->date}}</span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control border border-0 fs-3">{{$key->product->name}}</span>
+                                        </td>
+                                        <td>
+                                            <div style="width: 75%;">
+                                                <a href="{{route('warehouse.opname-detail', $key->code)}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
                     </div>

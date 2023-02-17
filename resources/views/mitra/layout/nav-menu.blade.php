@@ -3,7 +3,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-md-2 col-4">
-                    <a href="{{route('supplier.index')}}" class="@if(Request::is('mitra/supplier*')) active-nav @else link-secondary @endif d-flex align-items-center">
+                    <a href="{{route('supplier.index')}}" class="@if(Request::is('dashboard/mitra/supplier*')) active-nav @else link-secondary @endif d-flex align-items-center">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>

@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Detail Spoil</title>
+    <title>Home Screen Perumda Leadership Dashboard</title>
     <!-- CSS files -->
     <link href="{{asset('assets/dist/css/tabler.css')}}" rel="stylesheet"/>
     <link href="{{asset('assets/dist/css/tabler-vendors.min.css')}}" rel="stylesheet"/>
@@ -39,7 +39,7 @@
             <div class="">
                 <ul class="navbar-nav justify-content-center">
                     <li class="nav-item me-2">
-                        {{-- <a class="nav-link text-white"href="{{ route('logout') }}"
+                        <a class="nav-link text-white"href="{{ route('logout') }}"
                                         onclick="event.preventDefault();
                                       document.getElementById('logout-form').submit();">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -51,15 +51,7 @@
                         </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
-                        </form> --}}
-                        <a class="nav-link text-white"href="{{ route('login') }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
-                                <path d="M7 12h14l-3 -3m0 6l3 -3"></path>
-                            </svg>
-                            <div class="fs-4">Logout</div>
-                        </a>
+                        </form>
                     </li>
                 </ul>
             </div>

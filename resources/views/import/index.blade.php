@@ -1,246 +1,287 @@
 @extends('layout.general')
 @section('content')
 
-
-<div class="col-sm-6 col-lg-3 mb-4">
-    <div class="card card-sm shadow-sm">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <span class="bg-yellow text-white avatar rounded-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
-                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
-                            <path d="M9 7l1 0"></path>
-                            <path d="M9 13l6 0"></path>
-                            <path d="M13 17l2 0"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="">
-                       <span class="fs-2 fw-bold">RKAPB</span>
+<div class="row">
+    <div class="col-md-12 mb-3">
+        <h1>Data Umum</h1>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-yellow text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-invoice" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 3v4a1 1 0 0 0 1 1h4"></path>
+                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z"></path>
+                                <path d="M9 7l1 0"></path>
+                                <path d="M9 13l6 0"></path>
+                                <path d="M13 17l2 0"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <div class="text-muted">
-                        <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-rkapb">Import data</a>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">RKAPB</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-rkapb">Import data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-blue text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"></path>
+                                <path d="M10 16h6"></path>
+                                <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                <path d="M4 8h3"></path>
+                                <path d="M4 12h3"></path>
+                                <path d="M4 16h3"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">Karyawan</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-karyawan">Import data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-green text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">Supplier</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-supplier">Import data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-red text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M3 21l18 0"></path>
+                                <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4"></path>
+                                <path d="M5 21l0 -10.15"></path>
+                                <path d="M19 21l0 -10.15"></path>
+                                <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">Toko</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-store">Import data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-info text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                                <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">Reseller</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-reseller">Import data</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="col-sm-6 col-lg-3 mb-4">
-    <div class="card card-sm shadow-sm">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <span class="bg-dribbble text-white avatar rounded-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cash-banknote" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                            <path d="M3 6m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
-                            <path d="M18 12l.01 0"></path>
-                            <path d="M6 12l.01 0"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="">
-                       <span class="fs-2 fw-bold">Financial</span>
+<div class="row">
+    <div class="col-md-12 mb-2">
+        <h1>Pergudangan</h1>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-green text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                                <path d="M17 17h-11v-14h-2"></path>
+                                <path d="M6 5l14 1l-1 7h-13"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <div class="text-muted">
-                        <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-financial">Import data</a>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">Produk</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-product">Import data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-dribbble text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cash-banknote" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M3 6m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                                <path d="M18 12l.01 0"></path>
+                                <path d="M6 12l.01 0"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">Opname</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-opname">Import data</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="col-sm-6 col-lg-3 mb-4">
-    <div class="card card-sm shadow-sm">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <span class="bg-blue text-white avatar rounded-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"></path>
-                            <path d="M10 16h6"></path>
-                            <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                            <path d="M4 8h3"></path>
-                            <path d="M4 12h3"></path>
-                            <path d="M4 16h3"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="">
-                       <span class="fs-2 fw-bold">Karyawan</span>
+<div class="row">
+    <div class="col-md-12 mb-3">
+        <h1>Transaksi</h1>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-dribbble text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cash-banknote" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M3 6m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                                <path d="M18 12l.01 0"></path>
+                                <path d="M6 12l.01 0"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <div class="text-muted">
-                        <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-karyawan">Import data</a>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">Financial</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-financial">Import data</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="col-sm-6 col-lg-3 mb-4">
-    <div class="card card-sm shadow-sm">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <span class="bg-green text-white avatar rounded-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
-                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="">
-                       <span class="fs-2 fw-bold">Supplier</span>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-yellow text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-mastercard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M12 9.765a3 3 0 1 0 0 4.47"></path>
+                                <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <div class="text-muted">
-                        <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-supplier">Import data</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-sm-6 col-lg-3 mb-4">
-    <div class="card card-sm shadow-sm">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <span class="bg-red text-white avatar rounded-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M3 21l18 0"></path>
-                            <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4"></path>
-                            <path d="M5 21l0 -10.15"></path>
-                            <path d="M19 21l0 -10.15"></path>
-                            <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="">
-                       <span class="fs-2 fw-bold">Toko</span>
-                    </div>
-                    <div class="text-muted">
-                        <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-store">Import data</a>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">Transaksi Pembelian</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-purchase-transaction">Import data</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="col-sm-6 col-lg-3 mb-4">
-    <div class="card card-sm shadow-sm">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <span class="bg-info text-white avatar rounded-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
-                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="">
-                       <span class="fs-2 fw-bold">Reseller</span>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-green text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-mastercard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M12 9.765a3 3 0 1 0 0 4.47"></path>
+                                <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                            </svg>
+                        </span>
                     </div>
-                    <div class="text-muted">
-                        <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-reseller">Import data</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-sm-6 col-lg-3 mb-4">
-    <div class="card card-sm shadow-sm">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <span class="bg-green text-white avatar rounded-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                            <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-                            <path d="M17 17h-11v-14h-2"></path>
-                            <path d="M6 5l14 1l-1 7h-13"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="">
-                       <span class="fs-2 fw-bold">Produk</span>
-                    </div>
-                    <div class="text-muted">
-                        <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-product">Import data</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-sm-6 col-lg-3 mb-4">
-    <div class="card card-sm shadow-sm">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <span class="bg-yellow text-white avatar rounded-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-mastercard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M14 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                            <path d="M12 9.765a3 3 0 1 0 0 4.47"></path>
-                            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="">
-                       <span class="fs-2 fw-bold">Transaksi Pembelian</span>
-                    </div>
-                    <div class="text-muted">
-                        <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-purchase-transaction">Import data</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-sm-6 col-lg-3 mb-4">
-    <div class="card card-sm shadow-sm">
-        <div class="card-body">
-            <div class="row align-items-center">
-                <div class="col-auto">
-                    <span class="bg-green text-white avatar rounded-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-mastercard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M14 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                            <path d="M12 9.765a3 3 0 1 0 0 4.47"></path>
-                            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="col">
-                    <div class="">
-                       <span class="fs-2 fw-bold">Transaksi Penjualan Reseller</span>
-                    </div>
-                    <div class="text-muted">
-                        <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-sales-transaction-reseller">Import data</a>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">Transaksi Penjualan Reseller</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-sales-transaction-reseller">Import data</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -409,7 +450,7 @@
                 <h5 class="modal-title">Import Data Produk</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <form action="" method="POST" enctype="multipart/form-data">
+            <form action="{{route('product.import')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="modal-body">
                     <div class="mb-3">
@@ -476,6 +517,30 @@
                     </div>
                     <div class="mb-3">
                         <label class="form-label">Import data transaksi pembelian</label>
+                        <input type="file" class="form-control" name="import" required>
+                        <small class="text-muted fw-bold">Type file : .xlxs</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-green">Import</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-blur fade" id="modal-import-opname" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Import Data Opname</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="{{route('warehouse.opname-import')}}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Import data opname</label>
                         <input type="file" class="form-control" name="import" required>
                         <small class="text-muted fw-bold">Type file : .xlxs</small>
                     </div>

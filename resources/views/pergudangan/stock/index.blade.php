@@ -75,86 +75,29 @@
                                 </th>
                             </thead>
                             <tbody class="fs-3">
+                                @foreach ($products as $product => $key)
                                 <tr>
                                     <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">1</span>
+                                        <span class="form-control border border-0 fs-3">{{$product + $products->firstitem()}}</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
+                                        <span class="form-control border border-0 fs-3">{{$key->code}}</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
+                                        <span class="form-control border border-0 fs-3">{{$key->name}}</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
+                                        <span class="form-control border border-0 fs-3">{{$key->productCategory->name}}</span>
                                     </td>
                                     <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
+                                        <span class="form-control border border-0 fs-3">{{$key->productSubCategory->name}}</span>
                                     </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">100 DUS</span>
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">2</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">100 DUS</span>
+                                        <span class="form-control border border-0 fs-3">{{$key->stock}}</span>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">3</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">100 DUS</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">4</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Kopi Sachet</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">100 DUS</span>
-                                    </td>
-                                </tr>
+                                @endforeach
+
                             </tbody>
                         </table>
                     </div>

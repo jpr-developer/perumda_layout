@@ -9,13 +9,13 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('/warehouse/pemesanan')}}" class="text-decoration-underline fs-2 fw-bold">Pembelian Produk</a>
+            <a href="{{route('warehouse.purchase')}}" class="text-decoration-underline fs-2 fw-bold">Pembelian Produk</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <span class="fs-2 fw-bold">TR.123456789</span>
+            <span class="fs-2 fw-bold">{{$transaction->code}}</span>
         </div>
     </div>
 </div>
@@ -23,8 +23,8 @@
 <div class="col-md-12 mb-3">
     <div class="card">
         <div class="card-body">
-            <h3>Taggal Pembelian : Selasa, 20 Mei 2022</h3>
-            <h3>ID Pembelian : TR.123456789</h3>
+            <h3>Taggal Pembelian : {{$transaction->date}}</h3>
+            <h3>ID Pembelian : {{$transaction->code}}</h3>
 
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -56,29 +56,31 @@
                         </th>
                     </thead>
                     <tbody class="fs-3">
-                        <tr>
-                            <td class="text-center">
-                                <span class="form-control border border-0 fs-3">1</span>
-                            </td>
-                            <td>
-                                <span class="form-control border border-0 fs-3">Kopi Rojoku Pouds</span>
-                            </td>
-                            <td>
-                                <span class="form-control border border-0 fs-3">2000 PCS</span>
-                            </td>
-                            <td>
-                                <span class="form-control border border-0 fs-3">RP 1.000</span>
-                            </td>
-                            <td>
-                                <span class="form-control border border-0 fs-3">RP 2.000.000</span>
-                            </td>
-                        </tr>
+                        @for ($i = 0; $i < count($detailTransactions); $i++)
+                            <tr>
+                                <td class="text-center">
+                                    <span class="form-control border border-0 fs-3">{{$i+1}}</span>
+                                </td>
+                                <td>
+                                    <span class="form-control border border-0 fs-3">{{$detailTransactions[$i]['uraian']}}</span>
+                                </td>
+                                <td>
+                                    <span class="form-control border border-0 fs-3">{{$detailTransactions[$i]['qty']}}</span>
+                                </td>
+                                <td>
+                                    <span class="form-control border border-0 fs-3">Rp. {{number_format($detailTransactions[$i]['unit_price'],0,',','.')}}</span>
+                                </td>
+                                <td>
+                                    <span class="form-control border border-0 fs-3">Rp. {{number_format($detailTransactions[$i]['qty'] * $detailTransactions[$i]['unit_price'],0,',','.')}}</span>
+                                </td>
+                            </tr>
+                        @endfor
                         <tr>
                             <td colspan="4">
                                 <span class="form-control border border-0 fs-3 fw-bold">TOTAL</span>
                             </td>
                             <td>
-                                <span class="form-control border border-0 fs-3 fw-bold">Rp 2.000.000</span>
+                                <span class="form-control border border-0 fs-3 fw-bold">Rp {{number_format($transaction->nominal,0,'.','.')}}</span>
                             </td>
                         </tr>
                     </tbody>
@@ -93,7 +95,7 @@
                             Supplier
                         </td>
                         <td>
-                            : PT. Aston Putra
+                            : {{$transaction->supplier->name}}
                         </td>
                     </tr>
                     <tr>
@@ -101,7 +103,7 @@
                             Alamat Pemesanan
                         </td>
                         <td>
-                            : Jl. Pemuda No.4
+                            : {{$transaction->supplier->address}}
                         </td>
                     </tr>
                 </table>

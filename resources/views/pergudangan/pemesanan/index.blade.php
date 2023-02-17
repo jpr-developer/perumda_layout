@@ -64,27 +64,30 @@
                                 </th>
                             </thead>
                             <tbody class="fs-3">
-                                <tr>
-                                    <td class="text-center">
-                                        <span class="form-control border border-0 fs-3">1</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">PR.12345678</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">Selasa, 24 Mei 2022</span>
-                                    </td>
-                                    <td>
-                                        <span class="form-control border border-0 fs-3">RP. 1.500.000</span>
-                                    </td>
-                                    <td>
-                                        <div style="width: 75%;">
-                                            <a href="{{url('/warehouse/pemesanan/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
-                                        </div>
-                                    </td>
-                                </tr>
+                                @foreach ($transactions as $transaction => $key)
+                                    <tr>
+                                        <td class="text-center">
+                                            <span class="form-control border border-0 fs-3">{{$transaction + $transactions->firstitem()}}</span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control border border-0 fs-3">{{$key->code}}</span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control border border-0 fs-3">{{$key->date}}</span>
+                                        </td>
+                                        <td>
+                                            <span class="form-control border border-0 fs-3">Rp. {{number_format($key->nominal,0,',','.')}}</span>
+                                        </td>
+                                        <td>
+                                            <div style="width: 75%;">
+                                                <a href="{{route('warehouse.purchase_detail', $key->code)}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
+                        {{$transactions->links()}}
                     </div>
                 </div>
 

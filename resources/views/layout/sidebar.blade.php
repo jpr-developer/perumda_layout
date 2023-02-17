@@ -23,7 +23,7 @@
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('employee*')) active @endif">
+            <li class="@if(Request::routeIs('employee*')) active @endif">
                 <a href="{{route('employee.index')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Mitra_white.png')}}" alt="" class="icon">
@@ -31,7 +31,7 @@
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('mitra*')) active @endif">
+            <li class="@if(Request::is('dashboard/mitra*')) active @endif">
                 <a href="{{route('supplier.index')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/partner.png')}}" alt="" class="icon">
@@ -47,8 +47,8 @@
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('warehouse*')) active @endif">
-                <a href="{{url('/warehouse/pemesanan')}}" class="title">
+            <li class="@if(Request::is('dashboard/warehouse*')) active @endif">
+                <a href="{{route('warehouse.purchase')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/warehouse_white.png')}}" alt="" class="icon">
                         <span class="name">Pergudangan</span>
@@ -119,14 +119,14 @@
                     </div>
                 </a>
             </li>
-            {{-- <li class="@if(Request::is('import-data*')) active @endif">
+            <li class="@if(Request::is('import-data*')) active @endif">
                 <a href="{{route('import.index')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Product_white.png')}}" alt="" class="icon">
                         <span class="name">Import Data</span>
                     </div>
                 </a>
-            </li> --}}
+            </li>
         </ul>
     </div>
     <!-- End Menu -->

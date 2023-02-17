@@ -69,11 +69,11 @@ class ProductController extends Controller
         if ($request->isMethod('post')) {
 
             // Import category and sub first
-            Excel::queueImport(new ProductCategoryImport, $request->product_import);
-            Excel::queueImport(new ProductSubCategoryImport, $request->product_import);
+            Excel::queueImport(new ProductCategoryImport, $request->import);
+            Excel::queueImport(new ProductSubCategoryImport, $request->import);
 
 
-            Excel::queueImport(new ProductImport, $request->product_import);
+            Excel::queueImport(new ProductImport, $request->import);
             Alert::toast('Data berhasil diimport', 'success');
             return back();
 

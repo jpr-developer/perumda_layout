@@ -6,7 +6,7 @@
         <div class="card-body">
             <ul class="d-flex fs-3 fw-bolder" style="list-style: none; padding:0;margin:0;">
                 <li class="me-4">
-                    <a href="{{url('/warehouse/pemesanan')}}" class="@if(Request::is('warehouse/pemesanan*')) active-nav @else link-secondary @endif d-flex align-items-center">
+                    <a href="{{route('warehouse.purchase')}}" class="@if(Request::is('dashboard/warehouse/purchase*')) active-nav @else link-secondary @endif d-flex align-items-center">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -19,7 +19,7 @@
                     </a>
                 </li>
                 <li class="me-4">
-                    <a href="{{url('/warehouse/stock')}}" class="@if(Request::is('warehouse/stock*')) active-nav @else link-secondary @endif d-flex align-items-center">
+                    <a href="{{route('warehouse.stock')}}" class="@if(Request::is('dashboard/warehouse/stock*')) active-nav @else link-secondary @endif d-flex align-items-center">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li class="me-4">
-                    <a href="{{url('/warehouse/opname')}}" class="d-flex align-items-center @if(Request::is('warehouse/opname*')) active-nav @else link-secondary @endif">
+                    <a href="{{route('warehouse.opname')}}" class="d-flex align-items-center @if(Request::is('dashboard/warehouse/opname*')) active-nav @else link-secondary @endif">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -45,7 +45,7 @@
                     </a>
                 </li>
                 <li class="me-4">
-                    <a href="{{url('/warehouse/spoil')}}" class="d-flex align-items-center @if(Request::is('warehouse/spoil*')) active-nav @else link-secondary @endif">
+                    <a href="{{route('warehouse.spoil')}}" class="d-flex align-items-center @if(Request::is('dashboard/warehouse/spoil*')) active-nav @else link-secondary @endif">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -58,7 +58,7 @@
                     </a>
                 </li>
                 <li class="me-4">
-                    <a href="{{url('/warehouse/arus-produk')}}" class="d-flex align-items-center @if(Request::is('warehouse/arus-produk*')) active-nav @else link-secondary @endif">
+                    <a href="{{route('warehouse.arus-produk')}}" class="d-flex align-items-center @if(Request::is('dashboard/warehouse/arus-produk*')) active-nav @else link-secondary @endif">
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="" width="30" height="30" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>

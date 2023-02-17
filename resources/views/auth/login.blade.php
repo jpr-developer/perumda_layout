@@ -103,14 +103,25 @@
                                     <a href="." class="navbar-brand navbar-brand-autodark"><img src="https://perumdajepara.co.id/public/logo/logo_perumda_jepara.png" height="60" alt=""></a>
                                 </div>
                                 <h2 class="h2 text-center mb-4">Login to your account</h2>
-                                <form method="GET" action="{{route('home.screen')}}">
+                                <form method="POST" action="{{route('login')}}">
+                                    @csrf
                                     <div class="mb-3">
-                                        <label class="form-label">Email address</label>
-                                        <input type="email" class="form-control " placeholder="your@email.com" name="email" value="" required autocomplete="email" autofocus>
+                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="mb-2">
-                                        <label class="form-label">Password</label>
-                                        <input type="password" class="form-control" placeholder="********" name="password" required autocomplete="current-password">
+                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
                                     <div class="form-footer">
                                         <button type="submit" class="btn btn-primary w-100">Sign in</button>
