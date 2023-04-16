@@ -10,6 +10,7 @@ use App\Http\Controllers\Mitra\SupplierController;
 use App\Http\Controllers\Product\ProductController;
 use App\Http\Controllers\Purchase\PurchaseController;
 use App\Http\Controllers\Sales\SalesResellerTransactionController;
+use App\Http\Controllers\TestDataController;
 use App\Http\Controllers\Warehouse\WarehouseController;
 use App\Http\Controllers\Warehouse\WarehouseImportController;
 use Illuminate\Support\Facades\Auth;
@@ -35,7 +36,10 @@ Auth::routes();
 
 Route::get('/home-screen', [HomeScreenController::class, 'index'])->name('home.screen');
 
-Route::prefix('/dashboard')->middleware(['auth'])->group(function() {
+Route::prefix('/dashboard')->group(function() {
+    Route::post('/import/test-data', [TestDataController::class, 'import'])->name('test.import');
+
+
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
 
     Route::prefix('import-data')->group(function() {

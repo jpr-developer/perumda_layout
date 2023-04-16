@@ -171,7 +171,7 @@
                                     </td>
                                     <td>
                                         <div style="width: 75%;">
-                                            <a href="{{url('mitra/store/transactions/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
+                                            <a href="{{url('dashboard/mitra/store/transactions/detail')}}" class="btn btn-dribbble form-control mx-2">View</a>
                                         </div>
                                     </td>
                                 </tr>

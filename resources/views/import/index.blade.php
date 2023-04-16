@@ -213,33 +213,6 @@
             <div class="card-body">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <span class="bg-dribbble text-white avatar rounded-circle">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cash-banknote" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                                <path d="M3 6m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
-                                <path d="M18 12l.01 0"></path>
-                                <path d="M6 12l.01 0"></path>
-                            </svg>
-                        </span>
-                    </div>
-                    <div class="col">
-                        <div class="">
-                           <span class="fs-2 fw-bold">Financial</span>
-                        </div>
-                        <div class="text-muted">
-                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-financial">Import data</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-lg-3 mb-4">
-        <div class="card card-sm shadow-sm">
-            <div class="card-body">
-                <div class="row align-items-center">
-                    <div class="col-auto">
                         <span class="bg-yellow text-white avatar rounded-circle">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-mastercard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -281,6 +254,32 @@
                         </div>
                         <div class="text-muted">
                             <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-sales-transaction-reseller">Import data</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-lg-3 mb-4">
+        <div class="card card-sm shadow-sm">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <span class="bg-green text-white avatar rounded-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-mastercard" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                                <path d="M12 9.765a3 3 0 1 0 0 4.47"></path>
+                                <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                           <span class="fs-2 fw-bold">Testing Import</span>
+                        </div>
+                        <div class="text-muted">
+                            <a href="#" title="Import" data-bs-toggle="modal" data-bs-target="#modal-import-test">Import data</a>
                         </div>
                     </div>
                 </div>
@@ -541,6 +540,31 @@
                 <div class="modal-body">
                     <div class="mb-3">
                         <label class="form-label">Import data opname</label>
+                        <input type="file" class="form-control" name="import" required>
+                        <small class="text-muted fw-bold">Type file : .xlxs</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-green">Import</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal modal-blur fade" id="modal-import-test" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Import test</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="{{route('test.import')}}" method="POST" enctype="multipart/form-data">
+                @csrf
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Import test</label>
                         <input type="file" class="form-control" name="import" required>
                         <small class="text-muted fw-bold">Type file : .xlxs</small>
                     </div>

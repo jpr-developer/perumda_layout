@@ -1,4 +1,4 @@
-<header class="navbar navbar-expand-md navbar-expand-sm navbar-light d-lg-flex d-print-none sticky-top">
+<header class="navbar navbar-expand-md shadow-sm navbar-expand-sm navbar-light d-lg-flex d-print-none sticky-top">
     <div class="container-fluid">
         <div class="navbar-nav flex-row order-md-last">
             <div class="nav-item dropdown">

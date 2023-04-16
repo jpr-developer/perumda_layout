@@ -13,7 +13,7 @@ class WarehouseController extends Controller
 {
     public function purchase()
     {
-        $transactions = PurchaseTransaction::select('code', 'date', 'nominal')->orderBy('id', 'desc')->paginate(10);
+        $transactions = PurchaseTransaction::select('code', 'date', 'nominal')->orderBy('id', 'desc')->paginate(5);
         return view('pergudangan.pemesanan.index', compact('transactions'));
     }
 

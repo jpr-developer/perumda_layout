@@ -12,13 +12,13 @@
 <div class="col-md-12 mb-3">
     <div class="card shadow-sm">
         <div class="card-body">
-            <a href="{{url('mitra/reseller')}}" class=" fs-2 fw-bold">Mitra Reseller</a>
+            <a href="{{url('dashboard/mitra/reseller')}}" class=" fs-2 fw-bold">Mitra Reseller</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>
                 <polyline points="13 7 18 12 13 17"></polyline>
             </svg>
-            <a href="{{url('mitra/reseller/detail/RSL001')}}" class="fs-2 fw-bold">Karang Taruna Jepara</a>
+            <a href="{{url('dashboard/mitra/reseller/detail/RSL001')}}" class="fs-2 fw-bold">Karang Taruna Jepara</a>
             <svg xmlns="http://www.w3.org/2000/svg" class="" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                 <polyline points="7 7 12 12 7 17"></polyline>

@@ -39,7 +39,7 @@
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('products*')) active @endif">
+            <li class="@if(Request::is('dashboard/products*')) active @endif">
                 <a href="{{route('product.index')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Product_white.png')}}" alt="" class="icon">
@@ -55,71 +55,71 @@
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('penjualan*')) active @endif">
-                <a href="{{url('/penjualan')}}" class="title">
+            <li class="@if(Request::is('dashboard/penjualan*')) active @endif">
+                <a href="{{url('dashboard/penjualan')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/penjualan_white.png')}}" alt="" class="icon">
                         <span class="name">Penjualan</span>
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('pengiriman*')) active @endif">
-                <a href="{{url('/pengiriman/permintaan')}}" class="title">
+            <li class="@if(Request::is('dashboard/pengiriman*')) active @endif">
+                <a href="{{url('dashboard/pengiriman/permintaan')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Pengiriman_white.png')}}" alt="" class="icon">
                         <span class="name">Pengiriman</span>
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('pendapatan_lain*')) active @endif">
-                <a href="{{url('/pendapatan_lain')}}" class="title">
+            <li class="@if(Request::is('dashboard/pendapatan_lain*')) active @endif">
+                <a href="{{url('dashboard/pendapatan_lain')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/operasional.png')}}" alt="" class="icon">
                         <span class="name">Pendapatan Lain</span>
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('operasional*')) active @endif">
-                <a href="{{url('/operasional/bisnis')}}" class="title">
+            <li class="@if(Request::is('dashboard/operasional*')) active @endif">
+                <a href="{{url('dashboard/operasional/bisnis')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/operasional.png')}}" alt="" class="icon">
                         <span class="name">Operasional</span>
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('financial*')) active @endif">
-                <a href="{{url('/financial/bisnis/pendapatan-usaha')}}" class="title">
+            <li class="@if(Request::is('dashboard/financial*')) active @endif">
+                <a href="{{url('dashboard/financial/bisnis/pendapatan-usaha')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Financial_white.png')}}" alt="" class="icon">
                         <span class="name">Financial</span>
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('rkapb*')) active @endif">
-                <a href="{{url('/rkapb/program-bisnis/pendapatan-usaha')}}" class="title">
+            <li class="@if(Request::is('dashboard/rkapb*')) active @endif">
+                <a href="{{url('dashboard/rkapb/program-bisnis/pendapatan-usaha')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/RKAB_white.png')}}" alt="" class="icon">
                         <span class="name">RKAP</span>
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('kpi*')) active @endif">
-                <a href="{{url('/kpi/performa_indikator')}}" class="title">
+            <li class="@if(Request::is('dashboard/kpi*')) active @endif">
+                <a href="{{url('dashboard/kpi/performa_indikator')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/KPI_white.png')}}" alt="" class="icon">
                         <span class="name">KPI</span>
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('jaminan-mutu*')) active @endif">
-                <a href="{{url('/jaminan-mutu')}}" class="title">
+            <li class="@if(Request::is('dashboard/jaminan-mutu*')) active @endif">
+                <a href="{{url('dashboard/jaminan-mutu')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Quality_white.png')}}" alt="" class="icon">
                         <span class="name">Jaminan Mutu</span>
                     </div>
                 </a>
             </li>
-            <li class="@if(Request::is('import-data*')) active @endif">
+            <li class="@if(Request::is('dashboard/import-data*')) active @endif">
                 <a href="{{route('import.index')}}" class="title">
                     <div class="mb-2 mt-2">
                         <img src="{{asset('assets/icon/Product_white.png')}}" alt="" class="icon">

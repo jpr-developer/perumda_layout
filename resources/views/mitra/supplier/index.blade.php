@@ -30,7 +30,6 @@
             <div class="row">
                 <div class="col-md-9 mb-3">
                     <h2>Data Mitra Supplier</h2>
-
                 </div>
                 <div class="col-md-3 mb-3">
                     <div class="row">
